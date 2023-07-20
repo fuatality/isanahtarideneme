@@ -8,7 +8,6 @@ import FeaturedBlock3 from "../block/FeaturedBlock3";
 import Testimonial6 from "../testimonial/Testimonial6";
 import Subscribe2 from "../call-to-action/subcribe-box/Subscribe2";
 import AppSection4 from "../app-section/AppSection4";
-import Footer from "./Footer";
 import LoginPopup from "../common/form/login/LoginPopup";
 import MobileMenu from "../header/MobileMenu";
 import Link from "next/link";
