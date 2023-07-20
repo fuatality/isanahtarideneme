@@ -6,8 +6,8 @@ const Address = () => {
       title: "Address",
       text: (
         <>
-          329 Queensberry Street, North
-          <br /> Melbourne VIC 3051, Australia.
+          Atatürk Mahallesi, Ataşehir Bulvarı
+          <br /> Ataşehir, İstanbul.
         </>
       ),
     },

@@ -12,6 +12,7 @@ import Footer from "./Footer";
 import LoginPopup from "../common/form/login/LoginPopup";
 import MobileMenu from "../header/MobileMenu";
 import Link from "next/link";
+import FooterDefault from "../footer/common-footer";
 
 const index = () => {
   return (
@@ -157,7 +158,7 @@ const index = () => {
       <AppSection4 />
       {/* <!-- End App Section --> */}
 
-      <Footer />
+      <FooterDefault />
       {/* <!-- End Main Footer --> */}
     </>
   );

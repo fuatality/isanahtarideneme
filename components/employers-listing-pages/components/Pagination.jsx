@@ -8,15 +8,15 @@ const Pagination = () => {
           </a>
         </li>
         <li>
-          <a href="#">1</a>
+          <a href="#"></a> 
         </li>
         <li>
           <a href="#" className="current-page">
-            2
+            1
           </a>
         </li>
         <li>
-          <a href="#">3</a>
+          <a href="#">2</a>
         </li>
         <li className="next">
           <a href="#">

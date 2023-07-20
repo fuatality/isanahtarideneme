@@ -13,13 +13,13 @@ const CopyrightFooter2 = () => {
               </Link>
             </div>
             <div className="copyright-text">
-              © {new Date().getFullYear()} Superio by{" "}
+              © {new Date().getFullYear()} Created by{" "}
               <a
-                href="https://themeforest.net/user/ib-themes"
+                href="http://cgd.com.tr"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ib-themes
+                CGD ve İnsan Kaynakları
               </a>
               . All Right Reserved.
             </div>
