@@ -14,21 +14,21 @@ const SearchForm3 = () => {
           <input
             type="text"
             name="field_name"
-            placeholder="Job title, keywords, or company"
+            placeholder="İş tanımı, şirket veya anahtar kelime yaz."
           />
         </div>
 
         {/* <!-- Form Group --> */}
         <div className="form-group col-lg-3 col-md-12 col-sm-12 location">
           <span className="icon flaticon-map-locator"></span>
-          <input type="text" name="field_name" placeholder="City or postcode" />
+          <input type="text" name="field_name" placeholder="Şehir" />
         </div>
 
         {/* <!-- Form Group --> */}
         <div className="form-group col-lg-3 col-md-12 col-sm-12 category">
           <span className="icon flaticon-briefcase"></span>
           <select className="chosen-single form-select">
-            <option defaultValue="">All Categories</option>
+            <option defaultValue="">Departmanlar</option>
             <option defaultValue="44">Accounting / Finance</option>
             <option defaultValue="106">Automotive Jobs</option>
             <option defaultValue="46">Customer</option>
@@ -45,9 +45,9 @@ const SearchForm3 = () => {
           <button
             type="submit"
             className="theme-btn btn-style-one"
-            onClick={() => Router.push("/job-list-v3")}
+            onClick={() => Router.push("/job-list-v5")}
           >
-            Find Jobs
+            Hemen Ara!
           </button>
         </div>
       </div>

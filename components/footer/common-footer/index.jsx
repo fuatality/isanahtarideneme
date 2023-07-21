@@ -12,10 +12,10 @@ const index = ({ footerStyle = "" }) => {
               <div className="footer-column about-widget">
                 <div className="logo">
                   <a href="#">
-                    <img src="/images/logoBig.png" alt="brand" />
+                    <img src="/images/logo.png" alt="brand" />
                   </a>
                 </div>
-                <p className="phone-num">
+                {/*<p className="phone-num">
                   <span>Call us </span>
                   <a href="thebeehost@support.com">123 456 7890</a>
                 </p>
@@ -25,7 +25,7 @@ const index = ({ footerStyle = "" }) => {
                   <a href="mailto:help@isanahtari.com" className="email">
                     help@isanahtari.com
                   </a>
-                </p>
+                </p>*/}
               </div>
             </div>
             {/* End footer left widget */}

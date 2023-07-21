@@ -6,7 +6,7 @@ const DefaulHeader2 = () => {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY >= 0) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -21,7 +21,7 @@ const DefaulHeader2 = () => {
     // <!-- Main Header-->
     <header
       className={`main-header  ${
-        navbar ? "fixed-header animated slideInDown" : ""
+        navbar ? "fixed-header" : ""
       }`}
     >
       {/* <!-- Main box --> */}
@@ -31,7 +31,7 @@ const DefaulHeader2 = () => {
           <div className="logo-box">
             <div className="logo">
               <Link href="/">
-                <img src="/images/logo.png" alt="brand" />
+                <img src="/images/logo.png" alt="brand" height="50px" width="50px"/>
               </Link>
             </div>
           </div>
@@ -45,24 +45,24 @@ const DefaulHeader2 = () => {
         <div className="outer-box">
           {/* <!-- Add Listing --> */}
           <Link href="/candidates-dashboard/cv-manager" className="upload-cv">
-            Upload your CV
+            CV Yükle
           </Link>
           {/* <!-- Login/Register --> */}
           <div className="btn-box">
-            <a
-              href="#"
-              className="theme-btn btn-style-three call-modal"
-              data-bs-toggle="modal"
-              data-bs-target="#loginPopupModal"
-            >
-              Login / Register
-            </a>
             <Link
               href="/employers-dashboard/post-jobs"
               className="theme-btn btn-style-one"
             >
-              Job Post
+              İlan Ver
             </Link>
+            <a
+              href="#"
+              className="theme-btn btn-style-four  call-modal"
+              data-bs-toggle="modal"
+              data-bs-target="#loginPopupModal"
+            >
+              Giriş Yap / Üye Ol
+            </a>    
           </div>
         </div>
       </div>

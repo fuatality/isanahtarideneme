@@ -21,7 +21,7 @@ const SearchBox = () => {
             <input
                 type="text"
                 name="listing-search"
-                placeholder="Job title, keywords, or company"
+                placeholder="İş İlanı, Anahtar Kelime ya da Şirket"
                 value={getKeyWord}
                 onChange={keywordHandler}
             />

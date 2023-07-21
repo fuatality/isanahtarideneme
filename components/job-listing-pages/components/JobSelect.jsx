@@ -45,7 +45,7 @@ export default function JobSelect() {
                             className="chosen-single form-select"
                             value={jobList?.jobTypeSelect}
                         >
-                            <option value="">Job Type</option>
+                            <option value="">İş Türü</option>
                             {jobTypeList?.map((item) => (
                                 <option value={item.value} key={item.id}>
                                     {item.name}
@@ -60,7 +60,8 @@ export default function JobSelect() {
                             onChange={datePostHandler}
                             className="chosen-single form-select"
                             value={jobList?.datePosted}
-                        >
+                        >   
+                            <option value="">Yayınlanma Tarihi</option>
                             {datePost?.map((item) => (
                                 <option value={item.value} key={item.id}>
                                     {item.name}
@@ -76,7 +77,7 @@ export default function JobSelect() {
                             className="chosen-single form-select"
                             value={jobList?.experienceSelect}
                         >
-                            <option>Experience Level</option>
+                            <option>Deneyim Seviyesi</option>
                             {experienceLavel?.map((item) => (
                                 <option value={item.value} key={item.id}>
                                     {item.name}
@@ -98,7 +99,7 @@ export default function JobSelect() {
                                     max: 20000,
                                 })}
                             >
-                                Salary estimate
+                                Maaş Aralığı
                             </option>
                             <option
                                 value={JSON.stringify({

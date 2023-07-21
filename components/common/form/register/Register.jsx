@@ -6,20 +6,20 @@ import Link from "next/link";
 const Register = () => {
   return (
     <div className="form-inner">
-      <h3>Bedava Üyelik Oluştur</h3>
+      <h3>Hesabını Yarat</h3>
 
       <Tabs>
         <div className="form-group register-dual">
           <TabList className="btn-box row">
             <Tab className="col-lg-6 col-md-12">
               <button className="theme-btn btn-style-four">
-                <i className="la la-user"></i> Çalışan
+                <i className="la la-user"></i> İş Arayan
               </button>
             </Tab>
 
             <Tab className="col-lg-6 col-md-12">
               <button className="theme-btn btn-style-four">
-                <i className="la la-briefcase"></i> İşveren
+                <i className="la la-briefcase"></i> Şirket
               </button>
             </Tab>
           </TabList>
@@ -40,7 +40,7 @@ const Register = () => {
 
       <div className="bottom-box">
         <div className="text">
-          Bir hesabın var mı?{" "}
+          Zaten Üye Misin?{" "}
           <Link
             href="#"
             className="call-modal login"

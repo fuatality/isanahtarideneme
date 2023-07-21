@@ -4,6 +4,7 @@ import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import FilterJobBox from "./FilterJobBox";
 import JobSearchForm from "./JobSearchForm";
+import SearchForm3 from "../../common/job-search/SearchForm3";
 
 const index = () => {
   return (
@@ -21,10 +22,13 @@ const index = () => {
       {/* End MobileMenu */}
 
       <section className="page-title style-two">
-        <div className="auto-container">
-          <JobSearchForm />
-          {/* <!-- Job Search Form --> */}
-        </div>
+          <div
+            className="job-search-form"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <SearchForm3 btnStyle="btn-style-two" />
+          </div>
       </section>
       {/* <!--End Page Title--> */}
 

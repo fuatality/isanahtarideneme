@@ -4,22 +4,22 @@ import LoginWithSocial from "./LoginWithSocial";
 const FormContent = () => {
   return (
     <div className="form-inner">
-      <h3>Login to Superio</h3>
+      <h3>Giriş Yap</h3>
 
       {/* <!--Login Form--> */}
       <form method="post">
         <div className="form-group">
-          <label>Username</label>
-          <input type="text" name="username" placeholder="Username" required />
+          <label>E-mail Adresi</label>
+          <input type="email" name="user-email" placeholder="@" required />
         </div>
         {/* name */}
 
         <div className="form-group">
-          <label>Password</label>
+          <label>Şifre</label>
           <input
             type="password"
             name="password"
-            placeholder="Password"
+            placeholder="****"
             required
           />
         </div>
@@ -30,11 +30,11 @@ const FormContent = () => {
             <div className="input-group checkboxes square">
               <input type="checkbox" name="remember-me" id="remember" />
               <label htmlFor="remember" className="remember">
-                <span className="custom-checkbox"></span> Remember me
+                <span className="custom-checkbox"></span> Beni Hatırla
               </label>
             </div>
             <a href="#" className="pwd">
-              Forgot password?
+              Şifremi Unuttum
             </a>
           </div>
         </div>
@@ -46,7 +46,7 @@ const FormContent = () => {
             type="submit"
             name="log-in"
           >
-            Log In
+            Giriş Yap
           </button>
         </div>
         {/* login */}
@@ -55,19 +55,19 @@ const FormContent = () => {
 
       <div className="bottom-box">
         <div className="text">
-          Don&apos;t have an account?{" "}
+          Hesabınız Yok Mu?{" "}
           <Link
             href="#"
             className="call-modal signup"
             data-bs-toggle="modal"
             data-bs-target="#registerModal"
           >
-            Signup
+            Kayıt Ol
           </Link>
         </div>
 
         <div className="divider">
-          <span>or</span>
+          <span>ya da</span>
         </div>
 
         <LoginWithSocial />
