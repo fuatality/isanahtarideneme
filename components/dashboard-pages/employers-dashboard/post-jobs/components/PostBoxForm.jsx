@@ -173,7 +173,7 @@ const PostBoxForm = () => {
           <input
             type="text"
             name="name"
-            placeholder="329 Queensberry Street, North Melbourne VIC 3051, Australia."
+            placeholder="Ataşehir Bulvarı, Ataşehir, İstanbul/Türkiye"
           />
         </div>
 
@@ -183,20 +183,20 @@ const PostBoxForm = () => {
           <input
             type="text"
             name="name"
-            placeholder="329 Queensberry Street, North Melbourne VIC 3051, Australia."
+            placeholder="Ataşehir Bulvarı, Ataşehir, İstanbul/Türkiye"
           />
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-3 col-md-12">
           <label>Latitude</label>
-          <input type="text" name="name" placeholder="Melbourne" />
+          <input type="text" name="name" placeholder="İstanbul" />
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-3 col-md-12">
           <label>Longitude</label>
-          <input type="text" name="name" placeholder="Melbourne" />
+          <input type="text" name="name" placeholder="İstanbul" />
         </div>
 
         {/* <!-- Input --> */}

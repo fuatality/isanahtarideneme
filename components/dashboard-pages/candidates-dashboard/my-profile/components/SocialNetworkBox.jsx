@@ -8,7 +8,7 @@ const SocialNetworkBox = () => {
           <input
             type="text"
             name="name"
-            placeholder="www.facebook.com/Invision"
+            placeholder="www.facebook.com/isanahtari"
             required
           />
         </div>

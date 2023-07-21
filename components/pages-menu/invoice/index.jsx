@@ -46,16 +46,16 @@ const index = () => {
               <ul className="bottom-links">
                 <li>
                   <a
-                    href="https://themeforest.net/user/ib-themes"
+                    href="http://cgd.com.tr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="link"
                   >
-                    www.ibthemespro.com
+                    cgd.com.tr
                   </a>
                 </li>
                 <li>
-                  <a href="invoice@superio.com">invoice@superio.com</a>
+                  <a href="invoice@superio.com">help@isanahtari.com</a>
                 </li>
                 <li>
                   <a href="tel:123123456">(123) 123-456</a>

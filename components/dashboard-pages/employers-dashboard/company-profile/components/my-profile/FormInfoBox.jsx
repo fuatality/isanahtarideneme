@@ -21,7 +21,7 @@ const FormInfoBox = () => {
                     <input
                         type="text"
                         name="name"
-                        placeholder="Invisionn"
+                        placeholder="İş Anahtarı"
                         required
                     />
                 </div>
@@ -32,7 +32,7 @@ const FormInfoBox = () => {
                     <input
                         type="text"
                         name="name"
-                        placeholder="ib-themes"
+                        placeholder="help@isanahtari.com"
                         required
                     />
                 </div>
@@ -54,7 +54,7 @@ const FormInfoBox = () => {
                     <input
                         type="text"
                         name="name"
-                        placeholder="www.invision.com"
+                        placeholder="www.isanahtari.com"
                         required
                     />
                 </div>

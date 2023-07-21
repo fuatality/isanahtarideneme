@@ -29,7 +29,7 @@ const Header = () => {
             <div className="logo-box">
               <div className="logo">
                 <Link href="/" className="noSticky">
-                  <img src="images/logo-2.svg" alt="logo" title="brand" />
+                  <img src="images/logo.png" alt="logo" title="brand" />
                 </Link>
                 <Link href="/" className="isSticky">
                   <img src="images/logo.svg" alt="logo" title="brand" />

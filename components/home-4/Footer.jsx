@@ -26,18 +26,18 @@ const Footer = () => {
               <div className="footer-column about-widget">
                 <div className="logo">
                   <a href="#">
-                    <img src="/images/logo-2.svg" alt="brand" />
+                    <img src="/images/logo.png" alt="brand" />
                   </a>
                 </div>
                 <p className="phone-num">
                   <span>Call us </span>
-                  <a href="thebeehost@support.com">123 456 7890</a>
+                  <a href="help@isanahtari.com">123 456 7890</a>
                 </p>
                 <p className="address">
-                  329 Queensberry Street, North Melbourne VIC
-                  <br /> 3051, Australia. <br />
-                  <a href="mailto:support@superio.com" className="email">
-                    support@superio.com
+                Ataşehir Bulvarı, Ataşehir, İstanbul
+                  <br /> 34000, Türkiye. <br />
+                  <a href="mailto:help@isanahtari.com" className="email">
+                    help@isanahtari.com
                   </a>
                 </p>
               </div>
