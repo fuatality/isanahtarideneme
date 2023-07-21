@@ -37,8 +37,8 @@ const AppSection4 = () => {
               data-aos="fade-left"
             >
               <div className="sec-title">
-                <span className="sub-title text-green">DOWNLOAD & ENJOY</span>
-                <h2>Get the Superio Job Search App</h2>
+                <span className="sub-title text-green">HEMEN İNDİR!</span>
+                <h2>İşAnahtarı Mobil Uygulamasını Yükle</h2>
               </div>
 
               <div className="content-icons">

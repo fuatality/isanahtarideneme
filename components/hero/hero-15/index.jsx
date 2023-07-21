@@ -5,15 +5,13 @@ const index = () => {
   return (
     <section
       className="banner-section -type-15"
-      style={{ backgroundImage: "url(images/index-15/header/13.png)" }}
+      style={{ backgroundImage: "url(images/index-15/header/45.png)"
+       }}
     >
       <div className="auto-container">
         <div className="cotnent-box">
           <div className="title-box" data-wow-delay="300" data-aos="fade-up">
             <h3>Hayalindeki İşi Burada Bul!</h3>
-            <div className="text">
-              Find Jobs, Employment & Career Opportunities
-            </div>
           </div>
           {/* End title-box */}
 

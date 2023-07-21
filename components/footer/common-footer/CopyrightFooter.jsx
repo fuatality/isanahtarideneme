@@ -14,7 +14,7 @@ const CopyrightFooter = () => {
             >
               CGD ve İnsan Kaynakları
             </a>
-            . All Right Reserved.
+            . Bütün Hakları Saklıdır.
           </div>
           <div className="social-links">
             <Social />

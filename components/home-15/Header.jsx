@@ -45,20 +45,20 @@ const Header = () => {
         <div className="outer-box">
           {/* <!-- Login/Register --> */}
           <div className="btn-box">
-            <a
-              href="#"
-              className="theme-btn btn-style-four btn-outline-black call-modal"
-              data-bs-toggle="modal"
-              data-bs-target="#loginPopupModal"
-            >
-              Login / Register
-            </a>
             <Link
               href="/employers-dashboard/post-jobs"
               className="theme-btn btn-style-one"
             >
-              Job Post
+              İlan Ver
             </Link>
+            <a
+              href="#"
+              className="theme-btn btn-style-four  call-modal"
+              data-bs-toggle="modal"
+              data-bs-target="#loginPopupModal"
+            >
+              Giriş Yap / Üye Ol
+            </a>  
           </div>
         </div>
       </div>

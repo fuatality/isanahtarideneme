@@ -27,7 +27,7 @@ Buttons Styles
   text-align: center;
   white-space: nowrap;
   color: #ffffff;
-  background-color: var(--primary-color);
+  background-color: var(--primary-2nd-color);
   font-size: 15px;
   line-height: 20px;
   border-radius: 8px;
@@ -37,7 +37,7 @@ Buttons Styles
 
 .btn-style-one:hover {
   color: #ffffff;
-  background-color: var(--primary-hover-bg-color);
+  background-color: var(--primary-2nd-hover-bg-color);
 }
 
 /* Btn Style Two */
@@ -83,8 +83,8 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
-  color: var(--primary-color);
-  background-color: #e2eaf8;
+  color: #e2eaf8;
+  background-color: var(--primary-color);
   font-size: 16px;
   line-height: 20px;
   border-radius: 8px;

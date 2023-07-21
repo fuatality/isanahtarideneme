@@ -1,7 +1,7 @@
 import Hero15 from "../hero/hero-15";
 import Header from "./Header";
 import Block7 from "../block/Block7";
-import JobFeatured10 from "../job-featured/JobFeatured10";
+import JobFeatured8 from "../job-featured/JobFeatured8";
 import CallToAction9 from "../call-to-action/CallToAction9";
 import TopCompany from "../top-company/TopCompany";
 import FeaturedBlock3 from "../block/FeaturedBlock3";
@@ -28,7 +28,7 @@ const index = () => {
       <Hero15 />
       {/* End Hero Section */}
 
-      <section className="layout-pt-60 layout-pb-60">
+      {/*<section className="layout-pt-60 layout-pb-60">
         <div className="auto-container">
           <div className="row justify-content-center">
             <div className="col-lg-5">
@@ -41,30 +41,29 @@ const index = () => {
               </div>
             </div>
           </div>
-          {/* End .row */}
+           End .row 
 
           <div className="row grid-base" data-aos="fade-up">
             <Block7 />
           </div>
         </div>
-      </section>
+      </section>*/}
       {/* <!-- End Work Section --> */}
 
       <section className="layout-pt-60 layout-pb-120">
         <div className="auto-container">
           <div className="sec-title text-center mb-0">
-            <h2>Jobs of the day</h2>
-            <div className="text">
-              Know your worth and find the job that qualify your life
-            </div>
+            <h2>Öne Çıkan İlanlar</h2>
           </div>
           {/* End sec-title */}
-          <JobFeatured10 />
+          <div className="row mt-50" data-aos="fade-up">
+            <JobFeatured8 />
+          </div>
         </div>
       </section>
       {/* End Job Featured Section */}
 
-      <CallToAction9 />
+      {/*<CallToAction9 />*/}
       {/* <!-- End Call To Action --> */}
 
       <section className="layout-pt-120 layout-pb-60">
@@ -73,11 +72,10 @@ const index = () => {
             <div className="col-lg-6">
               <div className="sec-title mb-0">
                 <h2 className="color-blue-dark fw-700">
-                  Top Company Registered
+                  Öne Çıkan Firmalar
                 </h2>
                 <div className="text">
-                  Some of the companies we have helped recruit excellent
-                  applicants over the years.
+                  Yıllar boyunca mükemmel adayların işe alınmasına yardımcı olduğumuz bazı şirketler.
                 </div>
               </div>
             </div>
@@ -104,7 +102,7 @@ const index = () => {
       </section>
       {/* <!-- End Top Companies --> */}
 
-      <section className="layout-pt-60 layout-pb-60">
+      {/*<section className="layout-pt-60 layout-pb-60">
         <div className="auto-container">
           <div className="sec-title-outer">
             <div className="sec-title">
@@ -113,23 +111,23 @@ const index = () => {
                 Lorem ipsum dolor sit amet elit, sed do eiusmod tempor
               </div>
             </div>
-            {/* End sec-title */}
+             End sec-title 
             <Link href="/job-list-v13" className="link text-green">
               Browse All Locations <span className="fa fa-angle-right"></span>
             </Link>
           </div>
-          {/* End .sec-title-outer */}
+           End .sec-title-outer 
 
           <div className="row" data-aos="fade-up">
             <FeaturedBlock3 />
           </div>
-          {/* End .row */}
+           End .row 
         </div>
-        {/* End auto-container */}
-      </section>
+         End auto-container 
+      </section>*/}
       {/* <!-- End Features Section --> */}
 
-      <section className="layout-pt-60 layout-pb-120">
+      {/*<section className="layout-pt-60 layout-pb-120">
         <div className="auto-container">
           <div className="row justify-content-center text-center">
             <div className="col-auto">
@@ -141,17 +139,17 @@ const index = () => {
               </div>
             </div>
           </div>
-          {/* End .row */}
+          End .row 
 
           <div className="job-carousel pt-50" data-aos="fade-up">
             <Testimonial6 />
           </div>
-          {/* End .job-carousel pt-50 */}
+           End .job-carousel pt-50 
         </div>
-      </section>
+    </section>*/}
       {/* <!-- End Testimonials Section --> */}
 
-      <Subscribe2 />
+      {/*<Subscribe2 />*/}
       {/* <!-- End Subscribe Section --> */}
 
       <AppSection4 />

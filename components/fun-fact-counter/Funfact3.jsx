@@ -16,14 +16,14 @@ const Funfact3 = () => {
     {
       id: 2,
       startCount: "0",
-      endCount: "4782",
+      endCount: "75432",
       meta: "Members",
       animationDelay: "800",
     },
     {
       id: 3,
       startCount: "0",
-      endCount: "5322",
+      endCount: "71256",
       meta: "Resume",
       animationDelay: "900",
     },
