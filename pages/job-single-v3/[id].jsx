@@ -14,6 +14,7 @@ import JobDetailsDescriptions from "../../components/job-single-pages/shared-com
 import RelatedJobs2 from "../../components/job-single-pages/related-jobs/RelatedJobs2";
 import JobOverView2 from "../../components/job-single-pages/job-overview/JobOverView2";
 import ApplyJobModalContent from "../../components/job-single-pages/shared-components/ApplyJobModalContent";
+import DefaulHeader2 from "../../components/header/DefaulHeader2";
 
 const JobSingleDynamicV3 = () => {
   const router = useRouter();
@@ -37,7 +38,7 @@ const JobSingleDynamicV3 = () => {
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <DefaulHeader2 />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
@@ -96,7 +97,7 @@ const JobSingleDynamicV3 = () => {
                 {/* <!-- job block outer --> */}
 
                 <div className="job-overview-two">
-                  <h4>Job Description</h4>
+                  <h4>İş Tanımı</h4>
                   <JobOverView2 />
                 </div>
                 {/* <!-- job-overview-two --> */}
@@ -106,7 +107,7 @@ const JobSingleDynamicV3 = () => {
 
                 <div className="other-options">
                   <div className="social-share">
-                    <h5>Share this job</h5>
+                    <h5>Bu İlanı Paylaş!</h5>
                     <SocialTwo />
                   </div>
                 </div>
@@ -123,7 +124,7 @@ const JobSingleDynamicV3 = () => {
                       data-bs-toggle="modal"
                       data-bs-target="#applyJobModal"
                     >
-                      Apply For Job
+                      Başvur
                     </a>
                     <button className="bookmark-btn">
                       <i className="flaticon-bookmark"></i>
@@ -141,7 +142,7 @@ const JobSingleDynamicV3 = () => {
                     <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                       <div className="apply-modal-content modal-content">
                         <div className="text-center">
-                          <h3 className="title">Apply for this job</h3>
+                          <h3 className="title">Başvur</h3>
                           <button
                             type="button"
                             className="closed-modal"
@@ -167,7 +168,7 @@ const JobSingleDynamicV3 = () => {
                         </div>
                         <h5 className="company-name">{company.company}</h5>
                         <a href="#" className="profile-link">
-                          View company profile
+                          Şirket profilini görüntüle
                         </a>
                       </div>
                       {/* End company title */}
@@ -190,7 +191,7 @@ const JobSingleDynamicV3 = () => {
                   {/* End .company-widget */}
 
                   <div className="sidebar-widget contact-widget">
-                    <h4 className="widget-title">Contact Us</h4>
+                    <h4 className="widget-title">Bize Ulaşın</h4>
                     <div className="widget-content">
                       <div className="default-form">
                         <Contact />
@@ -208,7 +209,7 @@ const JobSingleDynamicV3 = () => {
 
             <div className="related-jobs">
               <div className="title-box">
-                <h3>Related Jobs</h3>
+                <h3>Benzer İlanlar</h3>
                 <div className="text">2020 jobs live - 293 added today.</div>
               </div>
               {/* End title box */}

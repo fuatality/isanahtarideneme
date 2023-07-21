@@ -4,7 +4,7 @@ import jobFeatured from "../../data/job-featured";
 const JobFeatured8 = () => {
   return (
     <>
-      {jobFeatured.slice(1, 13).map((item) => (
+      {jobFeatured.slice(0, 8).map((item) => (
         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12" key={item.id}>
           <div className="job-block -type-2">
             <div className="inner-box">

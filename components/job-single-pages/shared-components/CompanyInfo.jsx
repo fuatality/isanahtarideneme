@@ -4,25 +4,25 @@ const CompanyInfo = () => {
   return (
     <ul className="company-info">
       <li>
-        Primary industry: <span>Software</span>
+        Endüstri: <span>Software</span>
       </li>
       <li>
-        Company size: <span>501-1,000</span>
+        Şirket Çalışan Sayısı: <span>501-1,000</span>
       </li>
       <li>
-        Founded in: <span>2011</span>
+        Kuruluş Tarihi: <span>2011</span>
       </li>
       <li>
-        Phone: <span>123 456 7890</span>
+        Telefon: <span>123 456 7890</span>
       </li>
       <li>
-        Email: <span>info@joio.com</span>
+        E-mail: <span>info@joio.com</span>
       </li>
       <li>
-        Location: <span>London, UK</span>
+        Konum: <span>London, UK</span>
       </li>
       <li>
-        Social media:
+        Sosyal Medya:
         <Social />
       </li>
     </ul>

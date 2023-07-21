@@ -117,7 +117,7 @@ const FilterJobBox = () => {
                             <img src={item.logo} alt="item brand" />
                         </span>
                         <h4>
-                            <Link href={`/job-single-v4/${item.id}`}>
+                            <Link href={`/job-single-v3/${item.id}`}>
                                 {item.jobTitle}
                             </Link>
                         </h4>
@@ -211,7 +211,7 @@ const FilterJobBox = () => {
                             className="btn btn-danger text-nowrap me-2"
                             style={{ minHeight: "45px", marginBottom: "15px" }}
                         >
-                            Clear All
+                            Temizle
                         </button>
                     ) : undefined}
 
@@ -220,9 +220,9 @@ const FilterJobBox = () => {
                         className="chosen-single form-select"
                         onChange={sortHandler}
                     >
-                        <option value="">Sort by (default)</option>
-                        <option value="asc">Newest</option>
-                        <option value="des">Oldest</option>
+                        <option value="">Sırala</option>
+                        <option value="asc">En Yeni</option>
+                        <option value="des">En Eski</option>
                     </select>
                     {/* End select */}
 
@@ -237,7 +237,7 @@ const FilterJobBox = () => {
                                 end: 0,
                             })}
                         >
-                            All
+                            Hepsi
                         </option>
                         <option
                             value={JSON.stringify({
@@ -245,7 +245,7 @@ const FilterJobBox = () => {
                                 end: 10,
                             })}
                         >
-                            10 per page
+                            10 İlan
                         </option>
                         <option
                             value={JSON.stringify({
@@ -253,7 +253,7 @@ const FilterJobBox = () => {
                                 end: 20,
                             })}
                         >
-                            20 per page
+                            20 İlan
                         </option>
                         <option
                             value={JSON.stringify({
@@ -261,7 +261,7 @@ const FilterJobBox = () => {
                                 end: 30,
                             })}
                         >
-                            30 per page
+                            30 İlan
                         </option>
                     </select>
                     {/* End select */}

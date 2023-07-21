@@ -3,13 +3,13 @@ import jobFeatured from "../../data/job-featured";
 import { useState } from "react";
 
 const JobFilterTab2 = () => {
-    const [tabId, setTabId] = useState(2);
+    const [tabId, setTabId] = useState(1);
     const [tabs, setTab] = useState([
-        { id: 1, name: "All", isActive: false },
-        { id: 2, name: "Trending", isActive: true },
-        { id: 3, name: "Design", isActive: false },
-        { id: 4, name: "Marketing", isActive: false },
-        { id: 5, name: "Health", isActive: false },
+        { id: 1, name: "Hepsi", isActive: true },
+        { id: 2, name: "Popüler", isActive: false },
+        { id: 3, name: "Dizayn", isActive: false },
+        { id: 4, name: "Pazarlama", isActive: false },
+        { id: 5, name: "Sağlık", isActive: false },
     ]);
     // tab handler
     const tabHandler = (id) => {
@@ -51,7 +51,7 @@ const JobFilterTab2 = () => {
                     {/* all tab */}
                     {tabId === 1 ? (
                         <>
-                            {jobFeatured.slice(11, 20).map((item) => (
+                            {jobFeatured.slice(11, 26).map((item) => (
                                 <div
                                     className="job-block-three col-lg-4 col-md-6 col-sm-12"
                                     key={item.id}
@@ -66,7 +66,7 @@ const JobFilterTab2 = () => {
                                             </span>
                                             <h4>
                                                 <Link
-                                                    href={`/job-single-v1/${item.id}`}
+                                                    href={`/job-single-v3/${item.id}`}
                                                 >
                                                     {item.jobTitle}
                                                 </Link>
@@ -126,7 +126,7 @@ const JobFilterTab2 = () => {
                                             </span>
                                             <h4>
                                                 <Link
-                                                    href={`/job-single-v1/${item.id}`}
+                                                    href={`/job-single-v3/${item.id}`}
                                                 >
                                                     {item.jobTitle}
                                                 </Link>
@@ -186,7 +186,7 @@ const JobFilterTab2 = () => {
                                             </span>
                                             <h4>
                                                 <Link
-                                                    href={`/job-single-v1/${item.id}`}
+                                                    href={`/job-single-v3/${item.id}`}
                                                 >
                                                     {item.jobTitle}
                                                 </Link>
@@ -246,7 +246,7 @@ const JobFilterTab2 = () => {
                                             </span>
                                             <h4>
                                                 <Link
-                                                    href={`/job-single-v1/${item.id}`}
+                                                    href={`/job-single-v3/${item.id}`}
                                                 >
                                                     {item.jobTitle}
                                                 </Link>
@@ -306,7 +306,7 @@ const JobFilterTab2 = () => {
                                             </span>
                                             <h4>
                                                 <Link
-                                                    href={`/job-single-v1/${item.id}`}
+                                                    href={`/job-single-v3/${item.id}`}
                                                 >
                                                     {item.jobTitle}
                                                 </Link>

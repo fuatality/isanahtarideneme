@@ -40,8 +40,8 @@ const DashboardCandidatesHeader = () => {
                                 <Link href="/">
                                     <Image
                                         alt="brand"
-                                        src="/images/logo.svg"
-                                        width={154}
+                                        src="/images/logo.png"
+                                        width={50}
                                         height={50}
                                         priority
                                     />

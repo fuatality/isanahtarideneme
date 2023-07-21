@@ -24,7 +24,7 @@ const Categories = () => {
                 value={jobList.category}
                 onChange={categoryHandler}
             >
-                <option value="">Choose a category</option>
+                <option value="">Departmanlar</option>
                 <option value="residential">Residential</option>
                 <option value="commercial">Commercial</option>
                 <option value="industrial">Industrial</option>

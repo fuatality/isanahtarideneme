@@ -12,6 +12,9 @@ import LoginPopup from "../common/form/login/LoginPopup";
 import MobileMenu from "../header/MobileMenu";
 import Link from "next/link";
 import FooterDefault from "../footer/common-footer";
+import RegBanner2 from "../block/RegBanner2";
+import JobFilterTab2 from "../job-featured/JobFilterTab2";
+
 
 const index = () => {
   return (
@@ -49,6 +52,14 @@ const index = () => {
         </div>
       </section>*/}
       {/* <!-- End Work Section --> */}
+      <section className="registeration-banners">
+        <div className="auto-container">
+          <div className="row" data-aos="fade-up">
+            <RegBanner2 />
+          </div>
+        </div>
+      </section>
+      {/* <!-- End Registeration Banners --> */}
 
       <section className="layout-pt-60 layout-pb-120">
         <div className="auto-container">
@@ -62,6 +73,21 @@ const index = () => {
         </div>
       </section>
       {/* End Job Featured Section */}
+      <section className="job-section bg-light-blue layout-pt-120 layout-pb-120">
+        <div className="bg-shape -top -left js-rellax">
+          <img src="images/index-11/shapes/2.png" alt="image" />
+        </div>
+        <div className="auto-container">
+          <div className="sec-title text-center">
+            <h2>Vitrin İlanları</h2>
+          </div>
+          {/* End .sec-title */}
+
+          <div className="row" data-aos="fade-up">
+            <JobFilterTab2 />
+          </div>
+        </div>
+      </section>
 
       {/*<CallToAction9 />*/}
       {/* <!-- End Call To Action --> */}

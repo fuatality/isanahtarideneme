@@ -6,20 +6,20 @@ import Link from "next/link";
 const Register = () => {
   return (
     <div className="form-inner">
-      <h3>Create a Free Superio Account</h3>
+      <h3>Hesabını Yarat</h3>
 
       <Tabs>
         <div className="form-group register-dual">
           <TabList className="btn-box row">
             <Tab className="col-lg-6 col-md-12">
               <button className="theme-btn btn-style-four">
-                <i className="la la-user"></i> Candidate
+                <i className="la la-user"></i> İş Arayan
               </button>
             </Tab>
 
             <Tab className="col-lg-6 col-md-12">
               <button className="theme-btn btn-style-four">
-                <i className="la la-briefcase"></i> Employer
+                <i className="la la-briefcase"></i> Şirket
               </button>
             </Tab>
           </TabList>
@@ -40,7 +40,7 @@ const Register = () => {
 
       <div className="bottom-box">
         <div className="text">
-          Already have an account?{" "}
+          Zaten Üye Misin?{" "}
           <Link
             href="#"
             className="call-modal login"
@@ -48,11 +48,11 @@ const Register = () => {
             data-bs-dismiss="modal"
             data-bs-target="#loginPopupModal"
           >
-            LogIn
+            Giriş Yap
           </Link>
         </div>
         <div className="divider">
-          <span>or</span>
+          <span>veya</span>
         </div>
         <LoginWithSocial />
       </div>

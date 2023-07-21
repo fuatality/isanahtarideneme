@@ -3,20 +3,20 @@ const AppSection4 = () => {
     {
       id: 1,
       icon: "icon-case",
-      title: "Job Search",
-      text: `Search through millions of jobs and find the right fit. Simply swipe right to apply.`,
+      title: "İş Arama",
+      text: `Binlerce ilan arasında sana uygun olanı bul.`,
     },
     {
       id: 2,
       icon: "icon-contact",
-      title: "Search on the go",
-      text: `Search through millions of jobs and find the right fit. Simply swipe right to apply.`,
+      title: "Hareket Halindeyken Başvur",
+      text: `Mobil uygulamamız sayesinde takside, otobüste, vapurda iş ilanlarını gez.`,
     },
     {
       id: 3,
       icon: "icon-doc",
-      title: "Instant Notifications",
-      text: `Search through millions of jobs and find the right fit. Simply swipe right to apply.`,
+      title: "Anlık Bildirimler",
+      text: `Seni ilgilendiren her şey hakkında bildirim al.`,
     },
   ];
 

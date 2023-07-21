@@ -2,25 +2,25 @@ const FormContent = () => {
   return (
     <form method="post" action="add-parcel.html">
       <div className="form-group">
-        <label>Email Address</label>
-        <input type="email" name="username" placeholder="Username" required />
+        <label>E-mail Adresi</label>
+        <input type="email" name="username" placeholder="E-mail" required />
       </div>
       {/* name */}
 
       <div className="form-group">
-        <label>Password</label>
+        <label>Şifre</label>
         <input
           id="password-field"
           type="password"
           name="password"
-          placeholder="Password"
+          placeholder="****"
         />
       </div>
       {/* password */}
 
       <div className="form-group">
         <button className="theme-btn btn-style-one" type="submit">
-          Register
+          Üye Ol
         </button>
       </div>
       {/* login */}

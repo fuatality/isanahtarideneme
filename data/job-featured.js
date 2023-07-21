@@ -1,8 +1,9 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default [
     {
         id: 1,
         logo: "/images/resource/company-logo/1-1.png",
-        jobTitle: "Software Engineer (Android), Libraries",
+        jobTitle: "Software Engineer (Android), Library",
         company: "Segment",
         location: "London, UK",
         time: "11 hours ago",
@@ -146,7 +147,7 @@ export default [
     {
         id: 5,
         logo: "/images/resource/company-logo/1-5.png",
-        jobTitle: "Senior Full Stack Engineer, Creator Success",
+        jobTitle: "Senior Full Stack Engineer",
         company: "Medium",
         location: "London, UK",
         time: "11 hours ago",
@@ -183,7 +184,7 @@ export default [
     {
         id: 6,
         logo: "/images/resource/company-logo/1-6.png",
-        jobTitle: "Software Engineer (Android), Libraries",
+        jobTitle: "Software Engineer (Android)",
         company: "Figma",
         location: "London, UK",
         time: "11 hours ago",
@@ -220,7 +221,7 @@ export default [
     {
         id: 7,
         logo: "/images/resource/company-logo/1-1.png",
-        jobTitle: "Software Engineer (Android), Libraries",
+        jobTitle: "Software Engineer (Android)",
         company: "Segment",
         location: "London, UK",
         time: "11 hours ago",

@@ -4,17 +4,15 @@ const RegBanner2 = () => {
   const regBannerContent = [
     {
       id: 1,
-      name: "Employers",
-      text: ` Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt. Labore et dolore nostrud exercitation.`,
+      name: "Şirketler",
+      text: ` Aradığınız adayı bulmak için:`,
       avatar: "images/resource/employ.png",
       bannerClass: "banner-style-one",
     },
     {
       id: 2,
-      name: "Candidate",
-      text: ` Sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt. Labore et dolore nostrud exercitation.`,
+      name: "İş Arayanlar",
+      text: ` Kariyerinizde yeni bir sayfa açmak için:`,
       avatar: "images/resource/candidate.png",
       bannerClass: "banner-style-two",
     },
@@ -31,7 +29,7 @@ const RegBanner2 = () => {
               <h3>{item.name}</h3>
               <p>{item.text}</p>
               <Link href="/register" className="theme-btn btn-style-five">
-                Register Account
+                Üye Ol
               </Link>
             </div>
             <figure className="image">
