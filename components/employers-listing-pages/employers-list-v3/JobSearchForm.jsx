@@ -38,7 +38,7 @@ const JobSearchForm = () => {
                             type="submit"
                             className="theme-btn btn-style-one"
                         >
-                            Find Jobs
+                            Şirketi Ara
                         </button>
                     </div>
                     {/* <!-- Form Group --> */}
@@ -58,7 +58,7 @@ const JobSearchForm = () => {
                                 max: 2028,
                             })}
                         >
-                            Founded Date
+                            Kuruluş Tarihi
                         </option>
                         <option
                             value={JSON.stringify({

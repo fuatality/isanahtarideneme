@@ -48,7 +48,7 @@ export const options = {
   },
 };
 
-const labels = ["January", "February", "March", "April", "May", "June"];
+const labels = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran"];
 
 export const data = {
   labels,
@@ -68,15 +68,15 @@ const ProfileChart = () => {
   return (
     <div className="tabs-box">
       <div className="widget-title">
-        <h4>Your Profile Views</h4>
+        <h4>Şirket Görüntülenmeleri</h4>
         <div className="chosen-outer">
           {/* <!--Tabs Box--> */}
           <select className="chosen-single form-select">
-            <option>Last 6 Months</option>
-            <option>Last 12 Months</option>
-            <option>Last 16 Months</option>
-            <option>Last 24 Months</option>
-            <option>Last 5 year</option>
+            <option>Son 6 Ay</option>
+            <option>Son 12 Ay</option>
+            <option>Son 18 Ay</option>
+            <option>Son 24 Ay</option>
+            <option>Son 5 Yıl</option>
           </select>
         </div>
       </div>

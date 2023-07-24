@@ -76,7 +76,7 @@ const FilterTopBox = () => {
                     </button>
 
                     <div className="content-inner">
-                        <span className="featured">Featured</span>
+                        <span className="featured">Öne Çıkarılan</span>
                         <span className="company-logo">
                             <img src={company.img} alt="company brand" />
                         </span>
@@ -98,7 +98,7 @@ const FilterTopBox = () => {
                     </div>
 
                     <div className="job-type me-0">
-                        Open Jobs – {company.jobNumber}
+                        İlan Sayısı – {company.jobNumber}
                     </div>
                 </div>
             </div>
@@ -130,7 +130,7 @@ const FilterTopBox = () => {
             <div className="ls-switcher">
                 <div className="showing-result">
                     <div className="text">
-                        <strong>{content?.length}</strong> jobs
+                        <strong>{content?.length}</strong> ilan
                     </div>
                 </div>
                 {/* End showing-result */}
@@ -153,7 +153,7 @@ const FilterTopBox = () => {
                                 marginBottom: "15px",
                             }}
                         >
-                            Clear All
+                            Hepsini Temizle
                         </button>
                     ) : undefined}
 
@@ -162,9 +162,9 @@ const FilterTopBox = () => {
                         className="chosen-single form-select"
                         onChange={sortHandler}
                     >
-                        <option value="">Sort by (default)</option>
-                        <option value="asc">Newest</option>
-                        <option value="des">Oldest</option>
+                        <option value="">Sırala</option>
+                        <option value="asc">En Yeni</option>
+                        <option value="des">En Eski</option>
                     </select>
                     {/* End select */}
 
@@ -179,7 +179,7 @@ const FilterTopBox = () => {
                                 end: 0,
                             })}
                         >
-                            All
+                            Tümü
                         </option>
                         <option
                             value={JSON.stringify({
@@ -187,7 +187,7 @@ const FilterTopBox = () => {
                                 end: 10,
                             })}
                         >
-                            10 per page
+                            10 ilan
                         </option>
                         <option
                             value={JSON.stringify({
@@ -195,7 +195,7 @@ const FilterTopBox = () => {
                                 end: 20,
                             })}
                         >
-                            20 per page
+                            20 ilan
                         </option>
                         <option
                             value={JSON.stringify({
@@ -203,7 +203,7 @@ const FilterTopBox = () => {
                                 end: 24,
                             })}
                         >
-                            24 per page
+                            24 ilan
                         </option>
                     </select>
                     {/* End select */}

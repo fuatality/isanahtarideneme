@@ -6,19 +6,19 @@ const Coupon = () => {
                     type="text"
                     name="coupon-code"
                     className="input"
-                    placeholder="Coupon Code"
+                    placeholder="Kupon Kodu"
                 />
             </div>
 
             <div className="form-group">
                 <button type="button" className="theme-btn btn-style-one">
-                    Apply Coupon
+                    Kuponu Uygula
                 </button>
             </div>
 
             <div className="form-group pull-right">
                 <button type="button" className="theme-btn btn-style-three">
-                    update cart
+                    sepeti güncelle
                 </button>
             </div>
         </div>

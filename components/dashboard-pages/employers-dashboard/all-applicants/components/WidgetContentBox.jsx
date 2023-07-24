@@ -11,9 +11,9 @@ const WidgetContentBox = () => {
             <h6>Senior Product Designer</h6>
 
             <TabList className="aplicantion-status tab-buttons clearfix">
-              <Tab className="tab-btn totals"> Total(s): 6</Tab>
-              <Tab className="tab-btn approved"> Approved: 2</Tab>
-              <Tab className="tab-btn rejected"> Rejected(s): 4</Tab>
+              <Tab className="tab-btn totals"> Toplam: 6</Tab>
+              <Tab className="tab-btn approved"> Onaylanan: 2</Tab>
+              <Tab className="tab-btn rejected"> Reddedilen: 4</Tab>
             </TabList>
           </div>
 
@@ -46,7 +46,7 @@ const WidgetContentBox = () => {
                           </li>
                           <li>
                             <span className="icon flaticon-money"></span> $
-                            {candidate.hourlyRate} / hour
+                            {candidate.hourlyRate} / saat
                           </li>
                         </ul>
                         {/* End candidate-info */}
@@ -121,7 +121,7 @@ const WidgetContentBox = () => {
                           </li>
                           <li>
                             <span className="icon flaticon-money"></span> $
-                            {candidate.hourlyRate} / hour
+                            {candidate.hourlyRate} / saat
                           </li>
                         </ul>
                         {/* End candidate-info */}
@@ -196,7 +196,7 @@ const WidgetContentBox = () => {
                           </li>
                           <li>
                             <span className="icon flaticon-money"></span> $
-                            {candidate.hourlyRate} / hour
+                            {candidate.hourlyRate} / saat
                           </li>
                         </ul>
                         {/* End candidate-info */}

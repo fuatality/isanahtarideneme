@@ -6,7 +6,7 @@ const ContactInfoBox = () => {
             <div className="row">
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-6 col-md-12">
-                    <label>Country</label>
+                    <label>Ülke</label>
                     <select className="chosen-single form-select" required>
                         <option>Australia</option>
                         <option>Pakistan</option>
@@ -18,7 +18,7 @@ const ContactInfoBox = () => {
 
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-6 col-md-12">
-                    <label>City</label>
+                    <label>Şehir</label>
                     <select className="chosen-single form-select" required>
                         <option>Melbourne</option>
                         <option>Pakistan</option>
@@ -30,7 +30,7 @@ const ContactInfoBox = () => {
 
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-12 col-md-12">
-                    <label>Complete Address</label>
+                    <label>Açık Adres</label>
                     <input
                         type="text"
                         name="name"
@@ -41,7 +41,7 @@ const ContactInfoBox = () => {
 
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-6 col-md-12">
-                    <label>Find On Map</label>
+                    <label>Haritada Bul</label>
                     <input
                         type="text"
                         name="name"
@@ -52,7 +52,7 @@ const ContactInfoBox = () => {
 
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-3 col-md-12">
-                    <label>Latitude</label>
+                    <label>Enlem</label>
                     <input
                         type="text"
                         name="name"
@@ -63,7 +63,7 @@ const ContactInfoBox = () => {
 
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-3 col-md-12">
-                    <label>Longitude</label>
+                    <label>Boylam</label>
                     <input
                         type="text"
                         name="name"
@@ -75,7 +75,7 @@ const ContactInfoBox = () => {
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-12 col-md-12">
                     <button className="theme-btn btn-style-three">
-                        Search Location
+                        Konumu Ara
                     </button>
                 </div>
 
@@ -91,7 +91,7 @@ const ContactInfoBox = () => {
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-12 col-md-12">
                     <button type="submit" className="theme-btn btn-style-one">
-                        Save
+                        Kaydet
                     </button>
                 </div>
             </div>

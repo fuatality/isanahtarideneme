@@ -5,29 +5,29 @@ const BillingDetails = () => {
         {/* <!--Form Group--> */}
         <div className="form-group col-lg-6 col-md-12 col-sm-12">
           <div className="field-label">
-            First name <sup>*</sup>
+            Adınız <sup>*</sup>
           </div>
-          <input type="text" name="field-name" placeholder="" />
+          <input type="text" name="field-name" placeholder="Ad" />
         </div>
 
         {/* <!--Form Group--> */}
         <div className="form-group col-lg-6 col-md-12 col-sm-12">
           <div className="field-label">
-            Last name <sup>*</sup>
+            Soyadınız <sup>*</sup>
           </div>
-          <input type="text" name="field-name" placeholder="" />
+          <input type="text" name="field-name" placeholder="Soyad" />
         </div>
 
         {/* <!--Form Group--> */}
         <div className="form-group col-lg-12 col-md-12 col-sm-12">
-          <div className="field-label">Company name (optional)</div>
-          <input type="text" name="field-name" placeholder="" />
+          <div className="field-label">Şirket Adı</div>
+          <input type="text" name="field-name" placeholder="Şirket" />
         </div>
 
         {/* <!--Form Group--> */}
         <div className="form-group col-lg-12 col-md-12 col-sm-12">
           <div className="field-label">
-            Country <sup>*</sup>
+            Ülke <sup>*</sup>
           </div>
           <select
             name="billing_country"
@@ -52,63 +52,63 @@ const BillingDetails = () => {
         {/* <!--Form Group--> */}
         <div className="form-group col-lg-12 col-md-12 col-sm-12">
           <div className="field-label">
-            Street address <sup>*</sup>
+            Adres <sup>*</sup>
           </div>
           <input
             type="text"
             name="field-name"
-            placeholder="House number and street name"
+            placeholder="Mahalle, Sokak, Apartman Adı..."
           />
           <input
             type="text"
             name="field-name"
-            placeholder="Apartment,suite,unit etc. (optional)"
+            placeholder="(optional)"
           />
         </div>
 
         {/* <!--Form Group--> */}
         <div className="form-group col-lg-6 col-md-12 col-sm-12">
           <div className="field-label">
-            Town / City <sup>*</sup>
+            İlçe <sup>*</sup>
           </div>
-          <input type="text" name="field-name" placeholder="" required="" />
+          <input type="text" name="field-name" placeholder="İlçe" required="" />
         </div>
 
         {/* <!--Form Group--> */}
         <div className="form-group col-lg-6 col-md-12 col-sm-12">
           <div className="field-label">
-            State / County <sup>*</sup>
+            İl <sup>*</sup>
           </div>
-          <input type="text" name="field-name" placeholder="" required="" />
+          <input type="text" name="field-name" placeholder="İl" required="" />
         </div>
 
         {/* <!--Form Group--> */}
         <div className="form-group col-lg-6 col-md-12 col-sm-12">
           <div className="field-label">
-            Postcode/ ZIP <sup>*</sup>
+            Posta Kodu <sup>*</sup>
           </div>
-          <input type="text" name="field-name" placeholder="" required="" />
+          <input type="text" name="field-name" placeholder="Posta Kodu" required="" />
         </div>
 
         {/* <!--Form Group--> */}
         <div className="form-group col-lg-6 col-md-12 col-sm-12">
-          <div className="field-label">Phone</div>
-          <input type="text" name="field-name" placeholder="" />
+          <div className="field-label">Telefon Numarası</div>
+          <input type="text" name="field-name" placeholder="+123456789" />
         </div>
 
         {/* <!--Form Group--> */}
         <div className="form-group col-lg-12 col-md-12 col-sm-12">
-          <div className="field-label">Email Address</div>
-          <input type="text" name="field-name" placeholder="" />
+          <div className="field-label">E-mail Adresi</div>
+          <input type="text" name="field-name" placeholder="E-mail" />
         </div>
 
         {/* <!--Form Group--> */}
         <div className="form-group col-lg-12 col-md-12 col-sm-12">
-          <h3 className="title">Additional information</h3>
-          <div className="field-label">Order notes (optional)</div>
+          <h3 className="title">Ek Bilgiler</h3>
+          <div className="field-label">Sipariş Notu (optional)</div>
           <textarea
             className=""
-            placeholder="Notes about your order, e.g. special notes for delivery."
+            placeholder="Ek Bilgileri Yaz"
           ></textarea>
         </div>
       </div>

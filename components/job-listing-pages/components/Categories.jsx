@@ -25,10 +25,10 @@ const Categories = () => {
                 onChange={categoryHandler}
             >
                 <option value="">Departmanlar</option>
-                <option value="residential">Residential</option>
-                <option value="commercial">Commercial</option>
-                <option value="industrial">Industrial</option>
-                <option value="apartments">Apartments</option>
+                <option value="residential">Yazılım</option>
+                <option value="commercial">Reklamcılık</option>
+                <option value="industrial">İnsan Kaynakları</option>
+                <option value="apartments">FMCG</option>
             </select>
             <span className="icon flaticon-briefcase"></span>
         </>

@@ -131,10 +131,10 @@ const FilterTopBox = () => {
                                 <span className="icon flaticon-map-locator"></span>{" "}
                                 {candidate.location}
                             </li>
-                            <li>
+                            {/*<li>
                                 <span className="icon flaticon-money"></span> $
                                 {candidate.hourlyRate} / hour
-                            </li>
+                            </li>*/}
                         </ul>
                         {/* End candidate-info */}
 
@@ -158,7 +158,7 @@ const FilterTopBox = () => {
                             href={`/candidates-single-v1/${candidate.id}`}
                             className="theme-btn btn-style-three"
                         >
-                            <span className="btn-title">View Profile</span>
+                            <span className="btn-title">Profili Görüntüle</span>
                         </Link>
                     </div>
                     {/* End btn-box */}
@@ -205,13 +205,13 @@ const FilterTopBox = () => {
                             data-bs-toggle="offcanvas"
                             data-bs-target="#filter-sidebar"
                         >
-                            <span className="icon icon-filter"></span> Filter
+                            <span className="icon icon-filter"></span> Filtrele
                         </button>
                     </div>
                     {/* Collapsible sidebar button */}
 
                     <div className="text">
-                        <strong>{content?.length}</strong> jobs
+                        <strong>{content?.length}</strong> ilan
                     </div>
                 </div>
                 {/* End showing-result */}
@@ -234,7 +234,7 @@ const FilterTopBox = () => {
                             style={{ minHeight: "45px", marginBottom: "15px" }}
                             onClick={clearHandler}
                         >
-                            Clear All
+                            Hepsini Temizle
                         </button>
                     ) : undefined}
 
@@ -243,9 +243,9 @@ const FilterTopBox = () => {
                         className="chosen-single form-select"
                         value={sort}
                     >
-                        <option value="">Sort by (default)</option>
-                        <option value="asc">Newest</option>
-                        <option value="des">Oldest</option>
+                        <option value="">Sırala</option>
+                        <option value="asc">En Yeni</option>
+                        <option value="des">En Eski</option>
                     </select>
                     {/* End select */}
 
@@ -260,7 +260,7 @@ const FilterTopBox = () => {
                                 end: 0,
                             })}
                         >
-                            All
+                            Tümü
                         </option>
                         <option
                             value={JSON.stringify({
@@ -268,7 +268,7 @@ const FilterTopBox = () => {
                                 end: 15,
                             })}
                         >
-                            15 per page
+                            15 kişi
                         </option>
                         <option
                             value={JSON.stringify({
@@ -276,7 +276,7 @@ const FilterTopBox = () => {
                                 end: 20,
                             })}
                         >
-                            20 per page
+                            20 kişi
                         </option>
                         <option
                             value={JSON.stringify({
@@ -284,7 +284,7 @@ const FilterTopBox = () => {
                                 end: 25,
                             })}
                         >
-                            25 per page
+                            25 kişi
                         </option>
                     </select>
                     {/* End select */}

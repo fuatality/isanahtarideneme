@@ -31,13 +31,12 @@ const LogoCoverUploader = () => {
                         className="uploadButton-button ripple-effect"
                         htmlFor="upload"
                     >
-                        {logoImg !== "" ? logoImg?.name : " Browse Logo"}
+                        {logoImg !== "" ? logoImg?.name : "Logo Yükle"}
                     </label>
                     <span className="uploadButton-file-name"></span>
                 </div>
                 <div className="text">
-                    Max file size is 1MB, Minimum dimension: 330x300 And
-                    Suitable files are .jpg & .png
+                    Maksimum görsel büyüklüğü 1MB. .jpg veya .png yükleyiniz.
                 </div>
             </div>
 
@@ -55,13 +54,12 @@ const LogoCoverUploader = () => {
                         className="uploadButton-button ripple-effect"
                         htmlFor="upload_cover"
                     >
-                        {converImg !== "" ? converImg?.name : "Browse Cover"}
+                        {converImg !== "" ? converImg?.name : "Banner Yükle"}
                     </label>
                     <span className="uploadButton-file-name"></span>
                 </div>
                 <div className="text">
-                    Max file size is 1MB, Minimum dimension: 330x300 And
-                    Suitable files are .jpg & .png
+                    Maksimum görsel büyüklüğü 1MB. .jpg veya .png yükleyiniz.
                 </div>
             </div>
         </>

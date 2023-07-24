@@ -17,19 +17,19 @@ const FormInfoBox = () => {
       <div className="row">
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Full Name</label>
-          <input type="text" name="name" placeholder="Jerome" required />
+          <label>Adınız Soyadınız</label>
+          <input type="text" name="name" placeholder="Ad Soyad" required />
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Job Title</label>
+          <label>İş Ünvanınız</label>
           <input type="text" name="name" placeholder="UI Designer" required />
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Phone</label>
+          <label>Telefon Numarası</label>
           <input
             type="text"
             name="name"
@@ -40,29 +40,29 @@ const FormInfoBox = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Email address</label>
+          <label>E-mail Adresiniz</label>
           <input
             type="text"
             name="name"
-            placeholder="creativelayers"
+            placeholder="@mail.com"
             required
           />
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Website</label>
+          <label>Websiteniz (Varsa)</label>
           <input
             type="text"
             name="name"
-            placeholder="www.jerome.com"
+            placeholder="www.website.com"
             required
           />
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-3 col-md-12">
-          <label>Current Salary($)</label>
+          <label>Kazandığınız Maaş Aralığı</label>
           <select className="chosen-single form-select" required>
             <option>40-70 K</option>
             <option>50-80 K</option>
@@ -74,7 +74,7 @@ const FormInfoBox = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-3 col-md-12">
-          <label>Expected Salary($)</label>
+          <label>Beklediğiniz Maaş Aralığı</label>
           <select className="chosen-single form-select" required>
             <option>120-350 K</option>
             <option>40-70 K</option>
@@ -87,41 +87,41 @@ const FormInfoBox = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Experience</label>
-          <input type="text" name="name" placeholder="5-10 Years" required />
+          <label>Deneyim</label>
+          <input type="text" name="name" placeholder="" required />
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Age</label>
+          <label>Yaş</label>
           <select className="chosen-single form-select" required>
-            <option>23 - 27 Years</option>
-            <option>24 - 28 Years</option>
-            <option>25 - 29 Years</option>
-            <option>26 - 30 Years</option>
+            <option>18-24</option>
+            <option>24-30</option>
+            <option>30-40</option>
+            <option>40-</option>
           </select>
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Education Levels</label>
-          <input type="text" name="name" placeholder="Certificate" required />
+          <label>Eğitim Seviyesi</label>
+          <input type="text" name="name" placeholder="" required />
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Languages</label>
+          <label>Diller</label>
           <input
             type="text"
             name="name"
-            placeholder="English, Turkish"
+            placeholder="English, Türkçe"
             required
           />
         </div>
 
         {/* <!-- Search Select --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Categories </label>
+          <label>Kategoriler</label>
           <Select
             defaultValue={[catOptions[1]]}
             isMulti
@@ -135,23 +135,23 @@ const FormInfoBox = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Allow In Search & Listing</label>
+          <label>Hesabımı İşverenlere Göster</label>
           <select className="chosen-single form-select" required>
-            <option>Yes</option>
-            <option>No</option>
+            <option>Evet</option>
+            <option>Hayır</option>
           </select>
         </div>
 
         {/* <!-- About Company --> */}
         <div className="form-group col-lg-12 col-md-12">
-          <label>Description</label>
-          <textarea placeholder="Spent several years working on sheep on Wall Street. Had moderate success investing in Yugo's on Wall Street. Managed a small team buying and selling Pogo sticks for farmers. Spent several years licensing licorice in West Palm Beach, FL. Developed several new methods for working it banjos in the aftermarket. Spent a weekend importing banjos in West Palm Beach, FL.In this position, the Software Engineer collaborates with Evention's Development team to continuously enhance our current software solutions as well as create new solutions to eliminate the back-office operations and management challenges present"></textarea>
+          <label>Kısa Yazı</label>
+          <textarea placeholder=""></textarea>
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
           <button type="submit" className="theme-btn btn-style-one">
-            Save
+            Kaydet
           </button>
         </div>
       </div>

@@ -5,7 +5,7 @@ import BlogListV1 from "../components/blog-meu-pages/blog-list-v1";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Blog List V1" />
+      <Seo pageTitle="Blog" />
       <BlogListV1 />
     </>
   );

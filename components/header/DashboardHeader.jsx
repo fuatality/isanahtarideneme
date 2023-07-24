@@ -37,7 +37,7 @@ const DashboardHeader = () => {
                     <div className="nav-outer">
                         <div className="logo-box">
                             <div className="logo">
-                                <Link href="/">
+                                <Link href="/home-15">
                                     <Image
                                         alt="brand"
                                         src="/images/logo.png"
@@ -82,7 +82,7 @@ const DashboardHeader = () => {
                                     width={50}
                                     height={50}
                                 />
-                                <span className="name">My Account</span>
+                                <span className="name">Şirket Hesabı</span>
                             </a>
 
                             <ul className="dropdown-menu">

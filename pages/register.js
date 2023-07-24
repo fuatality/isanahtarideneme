@@ -5,7 +5,7 @@ import Register from "../components/pages-menu/register";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Register" />
+      <Seo pageTitle="Kayıt Ol" />
       <Register />
     </>
   );

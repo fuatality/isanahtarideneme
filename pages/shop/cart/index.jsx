@@ -5,7 +5,7 @@ import Cart from "../../../components/shop/cart";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Cart" />
+      <Seo pageTitle="Sepet" />
       <Cart />
     </>
   );

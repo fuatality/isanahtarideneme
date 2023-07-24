@@ -10,7 +10,7 @@ const CopyrightFooter = () => {
         >
           CGD ve İnsan Kaynakları
         </a>
-        . All Right Reserved.
+        . Bütün Hakları Saklıdır.
       </p>
     </div>
   );

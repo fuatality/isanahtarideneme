@@ -1,7 +1,7 @@
 import Blog6 from "../../blog/Blog6";
 import LoginPopup from "../../common/form/login/LoginPopup";
 import FooterDefault from "../../footer/common-footer";
-import DefaulHeader from "../../header/DefaulHeader";
+import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import BlogPagination from "../blog-sidebar/BlogPagination";
 import BlogSidebar from "../blog-sidebar";
@@ -16,13 +16,13 @@ const index = () => {
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <DefaulHeader2 />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <Breadcrumb title="Blog" meta="Blog" />
+      <Breadcrumb title="Blog Merkezi" meta="Blog" />
       {/* <!--End Page Title--> */}
 
       <div className="sidebar-page-container">

@@ -20,7 +20,7 @@ const index = () => {
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <Breadcrumb title="Checkout" meta="Checkout" />
+      <Breadcrumb title="Ödeme Sayfası" meta="Ödeme Sayfası" />
       {/* <!--End Page Title--> */}
 
       {/* <!--CheckOut Page--> */}

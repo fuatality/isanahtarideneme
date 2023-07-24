@@ -3,7 +3,7 @@ const PrivateMessageBox = () => {
     <form className="default-form ">
       <div className="row">
         <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-          <input type="text" name="username" placeholder="Your Name" required />
+          <input type="text" name="username" placeholder="Ad Soyad" required />
         </div>
         {/* End .col */}
 
@@ -11,7 +11,7 @@ const PrivateMessageBox = () => {
           <textarea
             className="darma"
             name="message"
-            placeholder="Message"
+            placeholder="Mesaj"
             required
           ></textarea>
         </div>
@@ -23,7 +23,7 @@ const PrivateMessageBox = () => {
             type="submit"
             name="submit-form"
           >
-            Send Message
+            Gönder
           </button>
         </div>
         {/* End .col */}

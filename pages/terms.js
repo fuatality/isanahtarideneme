@@ -5,7 +5,7 @@ import Terms from "../components/pages-menu/terms";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Terms" />
+      <Seo pageTitle="Koşullar" />
       <Terms />
     </>
   );

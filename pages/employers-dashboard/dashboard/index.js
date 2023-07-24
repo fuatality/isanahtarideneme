@@ -5,7 +5,7 @@ import DashboadHome from "../../../components/dashboard-pages/employers-dashboar
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Employeers Dashboard" />
+      <Seo pageTitle="Şirket Paneli" />
       <DashboadHome />
     </>
   );

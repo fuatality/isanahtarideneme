@@ -18,16 +18,16 @@ export const shopSlice = createSlice({
                     ...payload.product,
                     qty: payload?.qty ? payload.qty : 1,
                 });
-                toast.success("This item added to cart.");
+                toast.success("Ürün sepete eklendi.");
             } else {
-                toast.error("This item is already in the cart.");
+                toast.error("Bu ürün sepette var!.");
             }
             localStorage.setItem("local-cart", JSON.stringify(state.cart));
         },
         deleteCart: (state, { payload }) => {
             state.cart = state.cart.filter((item) => item.id !== payload);
             localStorage.setItem("local-cart", JSON.stringify(state.cart));
-            toast.error(`Item ${payload} has been deleted.`);
+            toast.error(`${payload} sepetten silindi.`);
         },
         addQty: (state, { payload }) => {
             state.cart = state.cart.filter((item) => {

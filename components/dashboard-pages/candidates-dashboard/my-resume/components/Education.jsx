@@ -2,9 +2,9 @@ const Education = () => {
   return (
     <div className="resume-outer">
       <div className="upper-title">
-        <h4>Education</h4>
+        <h4>Eğitim</h4>
         <button className="add-info-btn">
-          <span className="icon flaticon-plus"></span> Add Aducation
+          <span className="icon flaticon-plus"></span> Eğitim Ekle
         </button>
       </div>
       {/* <!-- Resume BLock --> */}

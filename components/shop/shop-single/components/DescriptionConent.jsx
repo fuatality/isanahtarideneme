@@ -1,7 +1,7 @@
 const DescriptionConent = () => {
   return (
     <div className="content">
-      <h4>Details</h4>
+      <h4>Ayrıntılar</h4>
       <p>
         Do you want to become a UI/UX designer but you don&apos;t know where to
         start? This course will allow you to develop your user interface design

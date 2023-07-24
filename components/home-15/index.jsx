@@ -14,6 +14,8 @@ import Link from "next/link";
 import FooterDefault from "../footer/common-footer";
 import RegBanner2 from "../block/RegBanner2";
 import JobFilterTab2 from "../job-featured/JobFilterTab2";
+import Blog from "../blog/Blog";
+
 
 
 const index = () => {
@@ -112,7 +114,7 @@ const index = () => {
                 href="/employers-list-v3"
                 className="button -arrow text-dark-blue"
               >
-                Browse
+                Göz At
                 <span className="fa fa-angle-right ms-1"></span>
               </Link>
             </div>
@@ -127,6 +129,21 @@ const index = () => {
         </div>
       </section>
       {/* <!-- End Top Companies --> */}
+      <section className="news-section">
+        <div className="auto-container">
+          <div className="sec-title text-center">
+            <h2>Son Eklenen <Link href={'blog-list-v1'}>Blog Yazıları</Link></h2>
+              <div className="text">
+                Kariyerinizde yükselmek için göz atmanızı tavsiye ederiz.
+              </div>
+          </div>
+          {/* End ."sec-title */}
+          <div className="row" data-aos="fade-up">
+            <Blog />
+          </div>
+        </div>
+      </section>
+      {/* <!-- End News Section --> */}
 
       {/*<section className="layout-pt-60 layout-pb-60">
         <div className="auto-container">

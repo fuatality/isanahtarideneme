@@ -8,46 +8,46 @@ const Form = () => {
         {/* End .col */}
 
         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-          <label>Your Name</label>
+          <label>Ad Soyad</label>
           <input
             type="text"
             name="username"
             className="username"
-            placeholder="Your Name*"
+            placeholder="Ad ve Soyadınızı Giriniz"
             required
           />
         </div>
         {/* End .col */}
 
         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-          <label>Your Email</label>
+          <label>E-mail</label>
           <input
             type="email"
             name="email"
             className="email"
-            placeholder="Your Email*"
+            placeholder="E-mailinizi Giriniz"
             required
           />
         </div>
         {/* End .col */}
 
         <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-          <label>Subject</label>
+          <label>Konu</label>
           <input
             type="text"
             name="subject"
             className="subject"
-            placeholder="Subject *"
+            placeholder="Konu"
             required
           />
         </div>
         {/* End .col */}
 
         <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-          <label>Your Message</label>
+          <label>Mesaj</label>
           <textarea
             name="message"
-            placeholder="Write your message..."
+            placeholder="Mesajınız"
             required=""
           ></textarea>
         </div>
@@ -60,7 +60,7 @@ const Form = () => {
             id="submit"
             name="submit-form"
           >
-            Send Massage
+            Gönder
           </button>
         </div>
         {/* End .col */}

@@ -3,7 +3,7 @@ import candidates from "../../data/candidates";
 import candidateResume from "../../data/candidateResume";
 import LoginPopup from "../../components/common/form/login/LoginPopup";
 import FooterDefault from "../../components/footer/common-footer";
-import DefaulHeader from "../../components/header/DefaulHeader";
+import DefaulHeader2 from "../../components/header/DefaulHeader2";
 import MobileMenu from "../../components/header/MobileMenu";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -28,7 +28,7 @@ const CandidateSingleDynamicV1 = () => {
 
   return (
     <>
-      <Seo pageTitle="Candidate Single Dyanmic V1" />
+      <Seo pageTitle="Aday" />
 
       {/* <!-- Header Span --> */}
       <span className="header-span"></span>
@@ -36,7 +36,7 @@ const CandidateSingleDynamicV1 = () => {
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <DefaulHeader2 />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
@@ -60,13 +60,12 @@ const CandidateSingleDynamicV1 = () => {
                       <span className="icon flaticon-map-locator"></span>
                       {candidate?.location}
                     </li>
-                    <li>
+                    {/*<li>
                       <span className="icon flaticon-money"></span> $
                       {candidate?.hourlyRate} / hour
-                    </li>
+                    </li>*/}
                     <li>
-                      <span className="icon flaticon-clock"></span> Member
-                      Since,Aug 19, 2020
+                      <span className="icon flaticon-clock"></span> 19 Ağustos 2020&apos;den beri üye.
                     </li>
                   </ul>
 
@@ -83,7 +82,7 @@ const CandidateSingleDynamicV1 = () => {
                     href="/images/sample.pdf"
                     download
                   >
-                    Download CV
+                    CV&apos;yi indir
                   </a>
                   <button className="bookmark-btn">
                     <i className="flaticon-bookmark"></i>
@@ -102,7 +101,7 @@ const CandidateSingleDynamicV1 = () => {
               <div className="content-column col-lg-8 col-md-12 col-sm-12">
                 <div className="job-detail">
                   <div className="video-outer">
-                    <h4>Candidates About</h4>
+                    <h4>Aday Hakkında</h4>
                     <AboutVideo />
                   </div>
                   {/* <!-- About Video Box --> */}
@@ -177,43 +176,43 @@ const CandidateSingleDynamicV1 = () => {
                       <ul className="job-overview">
                         <li>
                           <i className="icon icon-calendar"></i>
-                          <h5>Experience:</h5>
-                          <span>0-2 Years</span>
+                          <h5>Deneyim:</h5>
+                          <span>3 sene</span>
                         </li>
 
                         <li>
                           <i className="icon icon-expiry"></i>
-                          <h5>Age:</h5>
-                          <span>28-33 Years</span>
+                          <h5>Yaş:</h5>
+                          <span>32</span>
                         </li>
 
                         <li>
                           <i className="icon icon-rate"></i>
-                          <h5>Current Salary:</h5>
+                          <h5>Şu An Aldığı Maaş:</h5>
                           <span>11K - 15K</span>
                         </li>
 
                         <li>
                           <i className="icon icon-salary"></i>
-                          <h5>Expected Salary:</h5>
+                          <h5>Beklediği Maaş Aralığı:</h5>
                           <span>26K - 30K</span>
                         </li>
 
                         <li>
                           <i className="icon icon-user-2"></i>
-                          <h5>Gender:</h5>
-                          <span>Female</span>
+                          <h5>Cinsiyet:</h5>
+                          <span>Kadın</span>
                         </li>
 
                         <li>
                           <i className="icon icon-language"></i>
-                          <h5>Language:</h5>
+                          <h5>Diler:</h5>
                           <span>English, German, Spanish</span>
                         </li>
 
                         <li>
                           <i className="icon icon-degree"></i>
-                          <h5>Education Level:</h5>
+                          <h5>Eğitim Seviyesi:</h5>
                           <span>Master Degree</span>
                         </li>
                       </ul>
@@ -222,7 +221,7 @@ const CandidateSingleDynamicV1 = () => {
                   {/* End .sidebar-widget conadidate overview */}
 
                   <div className="sidebar-widget social-media-widget">
-                    <h4 className="widget-title">Social media</h4>
+                    <h4 className="widget-title">Sosyal Medya</h4>
                     <div className="widget-content">
                       <div className="social-links">
                         <Social />
@@ -232,7 +231,7 @@ const CandidateSingleDynamicV1 = () => {
                   {/* End .sidebar-widget social-media-widget */}
 
                   <div className="sidebar-widget">
-                    <h4 className="widget-title">Professional Skills</h4>
+                    <h4 className="widget-title">Yetenekler</h4>
                     <div className="widget-content">
                       <ul className="job-skills">
                         <JobSkills />
@@ -241,14 +240,14 @@ const CandidateSingleDynamicV1 = () => {
                   </div>
                   {/* End .sidebar-widget skill widget */}
 
-                  <div className="sidebar-widget contact-widget">
+                  {/*<div className="sidebar-widget contact-widget">
                     <h4 className="widget-title">Contact Us</h4>
                     <div className="widget-content">
                       <div className="default-form">
                         <Contact />
                       </div>
                     </div>
-                  </div>
+                      </div>*/}
                   {/* End .sidebar-widget contact-widget */}
                 </aside>
                 {/* End .sidebar */}

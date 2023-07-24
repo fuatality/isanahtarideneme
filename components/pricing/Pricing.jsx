@@ -4,38 +4,38 @@ const Pricing = () => {
   const pricingCotent = [
     {
       id: 1,
-      packageType: "Basic",
+      packageType: "Basit",
       price: "199",
       tag: "",
       features: [
-        "30 job posting",
-        "3 featured job",
-        "Job displayed for 15 days",
-        "Premium Support 24/7",
+        "30 iş ilanı",
+        "3 öne çıkarılan ilan",
+        "15 gün gösterim",
+        "7/24 Destek",
       ],
     },
     {
       id: 2,
-      packageType: "Standard",
+      packageType: "Standart",
       price: "499",
       tag: "tagged",
       features: [
-        "40 job posting",
-        "5 featured job",
-        "Job displayed for 20 days",
-        "Premium Support 24/7",
+        "40 iş ilanı",
+        "5 öne çıkarılan ilan",
+        "20 gün gösterim",
+        "7/24 Destek",
       ],
     },
     {
       id: 3,
-      packageType: "Extended",
+      packageType: "Gold",
       price: "799",
       tag: "",
       features: [
-        "50 job posting",
-        "10 featured job",
-        "Job displayed for 60 days",
-        "Premium Support 24/7",
+        "50 iş ilanı",
+        "10 öne çıkarılan ilan",
+        "60 gün gösterim",
+        "7/24 Destek",
       ],
     },
   ];
@@ -52,7 +52,7 @@ const Pricing = () => {
             <div className="inner-box">
               {item.tag ? (
                 <>
-                  <span className="tag">Recommended</span>
+                  <span className="tag">Önerilen</span>
                 </>
               ) : (
                 ""
@@ -60,7 +60,7 @@ const Pricing = () => {
 
               <div className="title">{item.packageType}</div>
               <div className="price">
-                ${item.price} <span className="duration">/ monthly</span>
+                ${item.price} <span className="duration">/ Aylık</span>
               </div>
               <div className="table-content">
                 <ul>
@@ -73,7 +73,7 @@ const Pricing = () => {
               </div>
               <div className="table-footer">
                 <Link href="/shop/cart" className="theme-btn btn-style-three">
-                  Add to Cart
+                  Sepete Ekle
                 </Link>
               </div>
             </div>

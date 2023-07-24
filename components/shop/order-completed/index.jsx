@@ -1,6 +1,6 @@
 import LoginPopup from "../../common/form/login/LoginPopup";
 import FooterDefault from "../../footer/common-footer";
-import DefaulHeader from "../../header/DefaulHeader";
+import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import Breadcrumb from "../Breadcrumb";
 import CompleteOrder from "./components";
@@ -14,13 +14,13 @@ const index = () => {
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <DefaulHeader2 />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <Breadcrumb title="Order Completed" meta="Order Completed" />
+      <Breadcrumb title="Sipariş Tamamlandı" meta="Sipariş Tamamlandıı" />
       {/* <!--End Page Title--> */}
 
       {/* <!-- Order Confirmation --> */}

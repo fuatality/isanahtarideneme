@@ -5,7 +5,7 @@ import DashboadHome from "../../../components/dashboard-pages/candidates-dashboa
 const index = () => {
     return (
         <>
-            <Seo pageTitle="Candidates Dashboard" />
+            <Seo pageTitle="Aday Paneli" />
             <DashboadHome />
         </>
     );

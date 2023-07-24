@@ -11,7 +11,7 @@ const ShopHeader = () => {
   const dispatch = useDispatch();
 
   const changeBackground = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY >= 0) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -31,7 +31,7 @@ const ShopHeader = () => {
     // <!-- Main Header-->
     <header
       className={`main-header  ${
-        navbar ? "fixed-header animated slideInDown" : ""
+        navbar ? "fixed-header" : ""
       }`}
     >
       {/* <!-- Main box --> */}
@@ -40,8 +40,8 @@ const ShopHeader = () => {
         <div className="nav-outer">
           <div className="logo-box">
             <div className="logo">
-              <Link href="/">
-                <img src="/images/logo.svg" alt="brand" />
+              <Link href="/home-15">
+                <img src="/images/logo.png" alt="brand" width="50px" height="50px"/>
               </Link>
             </div>
           </div>
@@ -67,7 +67,7 @@ const ShopHeader = () => {
               data-bs-toggle="modal"
               data-bs-target="#loginPopupModal"
             >
-              Login / Register
+              Giriş Yap / Üye Ol
             </a>
           </div>
         </div>

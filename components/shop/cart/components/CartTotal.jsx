@@ -11,26 +11,26 @@ const CartTotal = () => {
     });
 
     // tax
-    const tax = (total * 5) / 100;
+    const tax = (total * 20) / 100;
 
     return (
         <div className="totals-table-outer">
             <ul className="totals-table">
                 <li>
-                    <h3>Cart Totals</h3>
+                    <h3>Sepet Toplamı</h3>
                 </li>
 
                 <li>
-                    <span className="col">Subtotal</span>
+                    <span className="col">Vergi Öncesi Fiyat</span>
                     <span className="col price">${total.toFixed(2)}</span>
                 </li>
                 <li>
-                    <span className="col">tax (5%)</span>
+                    <span className="col">KDV (20%)</span>
                     <span className="col price">${tax.toFixed(2)}</span>
                 </li>
 
                 <li>
-                    <span className="col">Total</span>
+                    <span className="col">Toplam:</span>
                     <span className="col price">
                         ${(total + tax).toFixed(2)}
                     </span>
@@ -42,7 +42,7 @@ const CartTotal = () => {
                 className="theme-btn btn-style-one proceed-btn"
                 onClick={() => Router.push("/shop/checkout")}
             >
-                Proceed to Checkout
+                Ödemeye İlerle
             </button>
         </div>
     );

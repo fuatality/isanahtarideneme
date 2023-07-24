@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import employersInfo from "../../data/topCompany";
 import LoginPopup from "../../components/common/form/login/LoginPopup";
 import FooterDefault from "../../components/footer/common-footer";
-import DefaulHeader from "../../components/header/DefaulHeader";
+import DefaultHeader2 from "../../components/header/DefaulHeader2";
 import MobileMenu from "../../components/header/MobileMenu";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -27,7 +27,7 @@ const EmployersSingleV2 = () => {
 
   return (
     <>
-      <Seo pageTitle="Employers Single Dyanmic V1" />
+      <Seo pageTitle="Şirket Sayfası"/>
 
       {/* <!-- Header Span --> */}
       <span className="header-span"></span>
@@ -35,7 +35,7 @@ const EmployersSingleV2 = () => {
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <DefaultHeader2 />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
@@ -55,9 +55,9 @@ const EmployersSingleV2 = () => {
                 {/* <!-- Related Jobs --> */}
                 <div className="related-jobs">
                   <div className="title-box">
-                    <h3>3 Others jobs available</h3>
+                    <h3>Bakmanız Gereken Diğer İlanlar</h3>
                     <div className="text">
-                      2020 jobs live - 293 added today.
+                      2020 ilan - 293&apos;ü bugün eklendi.
                     </div>
                   </div>
                   {/* End .title-box */}
@@ -77,7 +77,7 @@ const EmployersSingleV2 = () => {
                       data-bs-toggle="modal"
                       data-bs-target="#privateMessage"
                     >
-                      Private Message
+                      Şirkete Mesaj Gönder
                     </button>
                     <button className="bookmark-btn">
                       <i className="flaticon-bookmark"></i>
@@ -96,7 +96,7 @@ const EmployersSingleV2 = () => {
                       <div className="apply-modal-content modal-content">
                         <div className="text-center">
                           <h3 className="title">
-                            Send message to {employer.name}
+                            Mesajını gönder : {employer.name}
                           </h3>
                           <button
                             type="button"
@@ -124,7 +124,7 @@ const EmployersSingleV2 = () => {
                         <h4 className="mb-1">{employer?.name}</h4>
                         <a href="#" className="company-link">
                           {" "}
-                          Open Jobs – {employer.jobNumber}
+                          İş İlanı – {employer.jobNumber}
                         </a>
                       </div>
                       {/* End company-title */}
@@ -132,25 +132,25 @@ const EmployersSingleV2 = () => {
                       {/*  compnay-info */}
                       <ul className="company-info">
                         <li>
-                          Primary industry: <span>Software</span>
+                          Endüstri: <span>Software</span>
                         </li>
                         <li>
-                          Company size: <span>501-1,000</span>
+                          Şirket Çalışan Sayısı: <span>501-1,000</span>
                         </li>
                         <li>
-                          Founded in: <span>2011</span>
+                          Kuruluş Tarihi: <span>2011</span>
                         </li>
                         <li>
-                          Phone: <span>{employer?.phone}</span>
+                          Telefon: <span>{employer?.phone}</span>
                         </li>
                         <li>
-                          Email: <span>{employer?.email}</span>
+                          E-mail: <span>{employer?.email}</span>
                         </li>
                         <li>
-                          Location: <span>{employer?.location}</span>
+                          Lokasyon: <span>{employer?.location}</span>
                         </li>
                         <li>
-                          Social media:
+                          Sosyal medya:
                           <Social />
                         </li>
                       </ul>
@@ -172,7 +172,7 @@ const EmployersSingleV2 = () => {
 
                   <div className="sidebar-widget">
                     {/* <!-- Map Widget --> */}
-                    <h4 className="widget-title">Job Location</h4>
+                    <h4 className="widget-title">İlanın Konumu</h4>
                     <div className="widget-content">
                       <div style={{ height: "300px", width: "100%" }}>
                         <MapJobFinder />

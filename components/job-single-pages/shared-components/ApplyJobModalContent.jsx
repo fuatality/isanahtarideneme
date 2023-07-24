@@ -20,7 +20,7 @@ const ApplyJobModalContent = () => {
                 className="uploadButton-button ripple-effect"
                 htmlFor="upload"
               >
-                Upload CV (doc, docx, pdf)
+                CV Yükle (doc, docx, pdf)
               </label>
             </div>
           </div>
@@ -31,7 +31,7 @@ const ApplyJobModalContent = () => {
           <textarea
             className="darma"
             name="message"
-            placeholder="Message"
+            placeholder="Mesaj"
             required
           ></textarea>
         </div>
@@ -41,12 +41,12 @@ const ApplyJobModalContent = () => {
           <div className="input-group checkboxes square">
             <input type="checkbox" name="remember-me" id="rememberMe" />
             <label htmlFor="rememberMe" className="remember">
-              <span className="custom-checkbox"></span> You accept our{" "}
-              <span data-bs-dismiss="modal">
+            <span data-bs-dismiss="modal">
                 <Link href="/terms">
-                  Terms and Conditions and Privacy Policy
+                  Şartlar ve Koşullar
                 </Link>
               </span>
+              <span className="custom-checkbox"></span>&apos;ı okudum ve kabul ediyorum.{" "}    
             </label>
           </div>
         </div>
@@ -58,7 +58,7 @@ const ApplyJobModalContent = () => {
             type="submit"
             name="submit-form"
           >
-            Apply Job
+            Başvur
           </button>
         </div>
         {/* End .col */}

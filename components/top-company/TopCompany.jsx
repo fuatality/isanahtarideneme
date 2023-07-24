@@ -46,7 +46,7 @@ const TopCompany = () => {
               <img src={company.img} alt="top company" />
             </figure>
             <h4 className="name">
-              <Link href={`employers-single-v1/${company.id}`}>
+              <Link href={`employers-single-v2/${company.id}`}>
                 {company.name}
               </Link>
             </h4>
@@ -54,10 +54,10 @@ const TopCompany = () => {
               <i className="flaticon-map-locator"></i> {company.location}
             </div>
             <Link
-              href={`employers-single-v1/${company.id}`}
+              href={`employers-single-v2/${company.id}`}
               className="theme-btn btn-style-three"
             >
-              {company.jobNumber} Open Position
+              {company.jobNumber} İş İlanı
             </Link>
           </div>
         </div>

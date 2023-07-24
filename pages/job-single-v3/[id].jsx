@@ -7,7 +7,7 @@ import MobileMenu from "../../components/header/MobileMenu";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Seo from "../../components/common/Seo";
-import CompnayInfo from "../../components/job-single-pages/shared-components/CompanyInfo";
+import CompanyInfo from "../../components/job-single-pages/shared-components/CompanyInfo";
 import SocialTwo from "../../components/job-single-pages/social/SocialTwo";
 import Contact from "../../components/job-single-pages/shared-components/Contact";
 import JobDetailsDescriptions from "../../components/job-single-pages/shared-components/JobDetailsDescriptions";
@@ -15,6 +15,7 @@ import RelatedJobs2 from "../../components/job-single-pages/related-jobs/Related
 import JobOverView2 from "../../components/job-single-pages/job-overview/JobOverView2";
 import ApplyJobModalContent from "../../components/job-single-pages/shared-components/ApplyJobModalContent";
 import DefaulHeader2 from "../../components/header/DefaulHeader2";
+import Link from "next/link";
 
 const JobSingleDynamicV3 = () => {
   const router = useRouter();
@@ -30,7 +31,7 @@ const JobSingleDynamicV3 = () => {
 
   return (
     <>
-      <Seo pageTitle="Job Single Dyanmic V3" />
+      <Seo pageTitle="İş İlanı" />
 
       {/* <!-- Header Span --> */}
       <span className="header-span"></span>
@@ -167,13 +168,13 @@ const JobSingleDynamicV3 = () => {
                           <img src={company.logo} alt="resource" />
                         </div>
                         <h5 className="company-name">{company.company}</h5>
-                        <a href="#" className="profile-link">
+                        <Link href={`/employers-single-v2/${company.id}`}>
                           Şirket profilini görüntüle
-                        </a>
+                        </Link>
                       </div>
                       {/* End company title */}
 
-                      <CompnayInfo />
+                      <CompanyInfo />
 
                       <div className="btn-box">
                         <a
@@ -210,7 +211,7 @@ const JobSingleDynamicV3 = () => {
             <div className="related-jobs">
               <div className="title-box">
                 <h3>Benzer İlanlar</h3>
-                <div className="text">2020 jobs live - 293 added today.</div>
+                <div className="text">Toplam 2020 ilan, 293&apos;ü bugün eklendi.</div>
               </div>
               {/* End title box */}
 

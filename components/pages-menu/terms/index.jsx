@@ -1,6 +1,6 @@
 import LoginPopup from "../../common/form/login/LoginPopup";
 import FooterDefault from "../../footer/common-footer";
-import DefaulHeader from "../../header/DefaulHeader";
+import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import TermsText from "./TermsText";
 
@@ -13,7 +13,7 @@ const index = () => {
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <DefaulHeader2 />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
@@ -22,8 +22,8 @@ const index = () => {
       <section className="tnc-section">
         <div className="auto-container">
           <div className="sec-title text-center">
-            <h2>Terms and Conditions</h2>
-            <div className="text">Home / Terms and Conditions</div>
+            <h2>Şartlar ve Koşullar</h2>
+            <div className="text">Anasayfa / Şartlar ve Koşullar</div>
           </div>
           {/* End sec-title */}
           <TermsText />

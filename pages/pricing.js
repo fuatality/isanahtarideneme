@@ -5,7 +5,7 @@ import Pricing from "../components/pages-menu/pricing";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Pricing" />
+      <Seo pageTitle="Ücretler" />
       <Pricing />
     </>
   );

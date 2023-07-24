@@ -19,9 +19,9 @@ const CandidatesGender = () => {
                 value={candidateGender}
                 onChange={genderHandler}
             >
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Others</option>
+                <option value="male">Erkek</option>
+                <option value="female">Kadın</option>
+                <option value="other">Diğer</option>
             </select>
             <span className="icon flaticon-briefcase"></span>
         </>

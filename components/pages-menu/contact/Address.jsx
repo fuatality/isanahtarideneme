@@ -3,7 +3,7 @@ const Address = () => {
     {
       id: 1,
       iconName: "placeholder",
-      title: "Address",
+      title: "Adres",
       text: (
         <>
           Atatürk Mahallesi, Ataşehir Bulvarı
@@ -14,7 +14,7 @@ const Address = () => {
     {
       id: 2,
       iconName: "smartphone",
-      title: "Call Us",
+      title: "Bizi Arayın",
       text: (
         <>
           <a href="tel:+4733378901" className="phone">
@@ -26,11 +26,11 @@ const Address = () => {
     {
       id: 3,
       iconName: "letter",
-      title: "Email",
+      title: "E-mail",
       text: (
         <>
           {" "}
-          <a href="#">contact.london@example.com</a>
+          <a href="#">cgd@yandex.com</a>
         </>
       ),
     },

@@ -51,7 +51,7 @@ const JobFilterTab2 = () => {
                     {/* all tab */}
                     {tabId === 1 ? (
                         <>
-                            {jobFeatured.slice(11, 26).map((item) => (
+                            {jobFeatured.slice(0, 15).map((item) => (
                                 <div
                                     className="job-block-three col-lg-4 col-md-6 col-sm-12"
                                     key={item.id}

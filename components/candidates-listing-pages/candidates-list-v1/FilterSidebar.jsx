@@ -20,7 +20,7 @@ const FilterSidebar = () => {
                 {/* End .close filter */}
 
                 <div className="filter-block">
-                    <h4>Search by Keywords</h4>
+                    <h4>Anahtar Kelime ile Ara</h4>
                     <div className="form-group">
                         <SearchBox />
                     </div>
@@ -28,18 +28,18 @@ const FilterSidebar = () => {
                 {/* <!-- Filter Block --> */}
 
                 <div className="filter-block">
-                    <h4>Location</h4>
+                    <h4>Konum</h4>
                     <div className="form-group">
                         <LocationBox />
                     </div>
 
-                    <p>Radius around selected destination</p>
+                    <p>Mesaje Ayarı</p>
                     <DestinationRangeSlider />
                 </div>
                 {/* <!-- Filter Block --> */}
 
                 <div className="filter-block">
-                    <h4>Category</h4>
+                    <h4>Kategori</h4>
                     <div className="form-group">
                         <Categories />
                     </div>
@@ -47,27 +47,27 @@ const FilterSidebar = () => {
                 {/* <!-- Filter Block --> */}
 
                 <div className="filter-block">
-                    <h4>Candidate Gender</h4>
+                    <h4>Aday Cinsiyet</h4>
                     <div className="form-group">
                         <CandidatesGender />
                     </div>
                 </div>
                 {/* <!-- Filter Block --> */}
 
-                <div className="checkbox-outer">
+                {/*<div className="checkbox-outer">
                     <h4>Date Posted</h4>
                     <DatePosted />
                 </div>
                 {/* <!-- Filter Block --> */}
 
                 <div className="checkbox-outer">
-                    <h4>Experience</h4>
+                    <h4>Deneyim</h4>
                     <Experience />
                 </div>
                 {/* <!-- Filter Block --> */}
 
                 <div className=" checkbox-outer">
-                    <h4>Qualification</h4>
+                    <h4>Eğitim Düzeyi</h4>
                     <Qualification />
                 </div>
                 {/* <!-- Filter Block --> */}

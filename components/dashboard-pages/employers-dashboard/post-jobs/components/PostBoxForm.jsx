@@ -18,31 +18,31 @@ const PostBoxForm = () => {
       <div className="row">
         {/* <!-- Input --> */}
         <div className="form-group col-lg-12 col-md-12">
-          <label>Job Title</label>
-          <input type="text" name="name" placeholder="Title" />
+          <label>İlan Başlığı</label>
+          <input type="text" name="name" placeholder="Başlık" />
         </div>
 
         {/* <!-- About Company --> */}
         <div className="form-group col-lg-12 col-md-12">
-          <label>Job Description</label>
-          <textarea placeholder="Spent several years working on sheep on Wall Street. Had moderate success investing in Yugo's on Wall Street. Managed a small team buying and selling Pogo sticks for farmers. Spent several years licensing licorice in West Palm Beach, FL. Developed several new methods for working it banjos in the aftermarket. Spent a weekend importing banjos in West Palm Beach, FL.In this position, the Software Engineer collaborates with Evention's Development team to continuously enhance our current software solutions as well as create new solutions to eliminate the back-office operations and management challenges present"></textarea>
+          <label>İş Tanımı</label>
+          <textarea placeholder=""></textarea>
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Email Address</label>
+          <label>E-mail Adresi</label>
           <input type="text" name="name" placeholder="" />
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Username</label>
+          <label>İlan Açan Kişi</label>
           <input type="text" name="name" placeholder="" />
         </div>
 
         {/* <!-- Search Select --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Specialisms </label>
+          <label>Aranılan Yetenek </label>
           <Select
             defaultValue={[specialisms[2]]}
             isMulti
@@ -54,9 +54,9 @@ const PostBoxForm = () => {
         </div>
 
         <div className="form-group col-lg-6 col-md-12">
-          <label>Job Type</label>
+          <label>İş Türü</label>
           <select className="chosen-single form-select">
-            <option>Select</option>
+            <option>Seç</option>
             <option>Banking</option>
             <option>Digital & Creative</option>
             <option>Retail</option>
@@ -67,9 +67,9 @@ const PostBoxForm = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Offered Salary</label>
+          <label>Yaklaşık Maaş</label>
           <select className="chosen-single form-select">
-            <option>Select</option>
+            <option>Seç</option>
             <option>$1500</option>
             <option>$2000</option>
             <option>$2500</option>
@@ -80,9 +80,9 @@ const PostBoxForm = () => {
         </div>
 
         <div className="form-group col-lg-6 col-md-12">
-          <label>Career Level</label>
+          <label>Kariyer Düzeyi</label>
           <select className="chosen-single form-select">
-            <option>Select</option>
+            <option>Seç</option>
             <option>Banking</option>
             <option>Digital & Creative</option>
             <option>Retail</option>
@@ -92,9 +92,9 @@ const PostBoxForm = () => {
         </div>
 
         <div className="form-group col-lg-6 col-md-12">
-          <label>Experience</label>
+          <label>Deneyim</label>
           <select className="chosen-single form-select">
-            <option>Select</option>
+            <option>Seç</option>
             <option>Banking</option>
             <option>Digital & Creative</option>
             <option>Retail</option>
@@ -104,9 +104,9 @@ const PostBoxForm = () => {
         </div>
 
         <div className="form-group col-lg-6 col-md-12">
-          <label>Gender</label>
+          <label>Cinsiyet</label>
           <select className="chosen-single form-select">
-            <option>Select</option>
+            <option>Seç</option>
             <option>Male</option>
             <option>Female</option>
             <option>Other</option>
@@ -114,9 +114,9 @@ const PostBoxForm = () => {
         </div>
 
         <div className="form-group col-lg-6 col-md-12">
-          <label>Industry</label>
+          <label>Endüstri</label>
           <select className="chosen-single form-select">
-            <option>Select</option>
+            <option>Seç</option>
             <option>Banking</option>
             <option>Digital & Creative</option>
             <option>Retail</option>
@@ -125,27 +125,16 @@ const PostBoxForm = () => {
           </select>
         </div>
 
-        <div className="form-group col-lg-6 col-md-12">
-          <label>Qualification</label>
-          <select className="chosen-single form-select">
-            <option>Select</option>
-            <option>Banking</option>
-            <option>Digital & Creative</option>
-            <option>Retail</option>
-            <option>Human Resources</option>
-            <option>Management</option>
-          </select>
-        </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-12 col-md-12">
-          <label>Application Deadline Date</label>
+          <label>Son Başvuru Tarihi</label>
           <input type="text" name="name" placeholder="06.04.2020" />
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Country</label>
+          <label>Ülke</label>
           <select className="chosen-single form-select">
             <option>Australia</option>
             <option>Pakistan</option>
@@ -157,7 +146,7 @@ const PostBoxForm = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>City</label>
+          <label>Şehir</label>
           <select className="chosen-single form-select">
             <option>Melbourne</option>
             <option>Pakistan</option>
@@ -169,7 +158,7 @@ const PostBoxForm = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-12 col-md-12">
-          <label>Complete Address</label>
+          <label>Adres</label>
           <input
             type="text"
             name="name"
@@ -179,7 +168,7 @@ const PostBoxForm = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Find On Map</label>
+          <label>Haritada Bul</label>
           <input
             type="text"
             name="name"
@@ -189,19 +178,19 @@ const PostBoxForm = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-3 col-md-12">
-          <label>Latitude</label>
+          <label>Enlem</label>
           <input type="text" name="name" placeholder="İstanbul" />
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-3 col-md-12">
-          <label>Longitude</label>
+          <label>Boylam</label>
           <input type="text" name="name" placeholder="İstanbul" />
         </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-12 col-md-12">
-          <button className="theme-btn btn-style-three">Search Location</button>
+          <button className="theme-btn btn-style-three">Konumu Ara</button>
         </div>
 
         <div className="form-group col-lg-12 col-md-12">
@@ -214,7 +203,7 @@ const PostBoxForm = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-12 col-md-12 text-right">
-          <button className="theme-btn btn-style-one">Next</button>
+          <button className="theme-btn btn-style-one">Yayınla!</button>
         </div>
       </div>
     </form>

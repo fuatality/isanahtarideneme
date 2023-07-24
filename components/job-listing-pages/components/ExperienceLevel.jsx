@@ -30,7 +30,7 @@ const ExperienceLevel = () => {
             ))}
             <li>
                 <button className="view-more">
-                    <span className="icon flaticon-plus"></span> View More
+                    <span className="icon flaticon-plus"></span> Daha Fazla Görüntüle
                 </button>
             </li>
         </ul>

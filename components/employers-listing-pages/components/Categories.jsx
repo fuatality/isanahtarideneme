@@ -18,7 +18,7 @@ const Categories = () => {
                 onChange={categoryHandler}
                 value={getCategory}
             >
-                <option value="">Choose a category</option>
+                <option value="">Endüstri Seç</option>
                 {category?.map((item) => (
                     <option value={item.value} key={item.id}>
                         {item.name}

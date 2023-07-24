@@ -6,7 +6,7 @@ const ContactInfoBox = () => {
       <div className="row">
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Country</label>
+          <label>Ülke</label>
           <select className="chosen-single form-select" required>
             <option>Australia</option>
             <option>Pakistan</option>
@@ -18,7 +18,7 @@ const ContactInfoBox = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>City</label>
+          <label>Şehir</label>
           <select className="chosen-single form-select" required>
             <option>Melbourne</option>
             <option>Pakistan</option>
@@ -30,7 +30,7 @@ const ContactInfoBox = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-12 col-md-12">
-          <label>Complete Address</label>
+          <label>Adres</label>
           <input
             type="text"
             name="name"
@@ -39,7 +39,7 @@ const ContactInfoBox = () => {
           />
         </div>
 
-        {/* <!-- Input --> */}
+        {/* <!-- Input --> 
         <div className="form-group col-lg-6 col-md-12">
           <label>Find On Map</label>
           <input
@@ -48,21 +48,21 @@ const ContactInfoBox = () => {
             placeholder="Ataşehir Bulvarı, Ataşehir, İstanbul/Türkiye."
             required
           />
-        </div>
+        </div>*/}
 
-        {/* <!-- Input --> */}
+        {/* <!-- Input -->
         <div className="form-group col-lg-3 col-md-12">
           <label>Latitude</label>
           <input type="text" name="name" placeholder="İstanbul" required />
-        </div>
+        </div> */}
 
-        {/* <!-- Input --> */}
+        {/* <!-- Input --> 
         <div className="form-group col-lg-3 col-md-12">
           <label>Longitude</label>
           <input type="text" name="name" placeholder="İstanbul" required />
-        </div>
+        </div>*/}
 
-        {/* <!-- Input --> */}
+        {/* <!-- Input --> 
         <div className="form-group col-lg-12 col-md-12">
           <button className="theme-btn btn-style-three">Search Location</button>
         </div>
@@ -73,13 +73,13 @@ const ContactInfoBox = () => {
               <Map />
             </div>
           </div>
-        </div>
+        </div>*/}
         {/* End MapBox */}
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-12 col-md-12">
           <button type="submit" className="theme-btn btn-style-one">
-            Save
+            Kaydet
           </button>
         </div>
       </div>

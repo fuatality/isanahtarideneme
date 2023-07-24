@@ -9,7 +9,7 @@ const WidgetToFilterBox = () => {
             <input
               type="search"
               name="search-field"
-              placeholder="Search"
+              placeholder="Ara"
               required
             />
           </div>
@@ -19,11 +19,11 @@ const WidgetToFilterBox = () => {
 
       {/* <!--Tabs Box--> */}
       <select className="chosen-single form-select chosen-container">
-        <option>Newest</option>
-        <option>Last 12 Months</option>
-        <option>Last 16 Months</option>
-        <option>Last 24 Months</option>
-        <option>Last 5 year</option>
+        <option>En Yeni</option>
+        <option>Son 12 Ay</option>
+        <option>Son 18 Ay</option>
+        <option>Son 24 Ay</option>
+        <option>Son 5 Yıl</option>
       </select>
     </div>
   );

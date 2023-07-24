@@ -1,29 +1,19 @@
 module.exports = [
   {
     id: 1,
-    title: "For Candidates",
+    title: "Adaylar İçin",
     menuList: [
-      { name: "Browse Jobs", route: "/job-list-v11" },
-      { name: "Browse Categories", route: "/job-list-v3" },
-      { name: "Candidate Dashboard", route: "/candidates-dashboard/dashboard" },
-      { name: "Job Alerts", route: "/candidates-dashboard/job-alerts" },
-      {
-        name: "My Bookmarks",
-        route: "/candidates-dashboard/short-listed-jobs",
-      },
+      { name: "İş İlanlarına Göz At", route: "/job-list-v5" },
     ],
   },
   {
     id: 2,
-    title: "For Employers",
+    title: "Şirketler İçin",
     menuList: [
-      { name: "Browse Candidates", route: "/candidates-list-v1" },
-      { name: "Employer Dashboard", route: "/employers-dashboard/dashboard" },
-      { name: "Add Job", route: "/employers-dashboard/post-jobs" },
-      { name: "Job Packages", route: "/employers-dashboard/packages" },
+      { name: "Adaylara Göz At", route: "/candidates-list-v1" },
     ],
   },
-  {
+  /*{
     id: 3,
     title: "About Us",
     menuList: [
@@ -44,5 +34,5 @@ module.exports = [
       { name: "Security Center", route: "/" },
       { name: "Accessibility Center", route: "/" },
     ],
-  },
+  },*/
 ];

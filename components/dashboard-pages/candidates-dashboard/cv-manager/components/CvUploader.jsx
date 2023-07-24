@@ -58,13 +58,12 @@ const CvUploader = () => {
                         onChange={cvManagerHandler}
                     />
                     <label className="cv-uploadButton" htmlFor="upload">
-                        <span className="title">Drop files here to upload</span>
+                        <span className="title">CV&apos;ni buraya sürükle!</span>
                         <span className="text">
-                            To upload file size is (Max 5Mb) and allowed file
-                            types are (.doc, .docx, .pdf)
+                            Dosya büyüklüğü (Max 5Mb) ve kabul edilen dosya uzantıları (.doc, .docx, .pdf)
                         </span>
                         <span className="theme-btn btn-style-one">
-                            Upload Resume
+                            Yükle
                         </span>
                         {getError !== "" ? (
                             <p className="ui-danger mb-0">{getError}</p>

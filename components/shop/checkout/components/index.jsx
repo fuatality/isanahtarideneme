@@ -8,7 +8,7 @@ const index = () => {
       <div className="column col-lg-8 col-md-12 col-sm-12">
         {/* <!--Checkout Details--> */}
         <div className="checkout-form">
-          <h3 className="title">Billing Details</h3>
+          <h3 className="title">Fatura Detayları</h3>
           <BillingDetails />
         </div>
         {/* <!--End Billing Details--> */}

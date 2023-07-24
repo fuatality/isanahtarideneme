@@ -3,7 +3,7 @@ const CommentBox = () => {
     <>
       {/* <!-- Comment Box --> */}
       <div className="comment-box">
-        <h4>Comment</h4>
+        <h4>Yorumlar</h4>
         {/* <!-- Comment --> */}
         <div className="comment">
           <div className="user-thumb">

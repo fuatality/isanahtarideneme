@@ -5,21 +5,21 @@ export default [
         logo: "/images/resource/company-logo/1-1.png",
         jobTitle: "Software Engineer (Android), Library",
         company: "Segment",
-        location: "London, UK",
-        time: "11 hours ago",
+        location: "İstanbul, Türkiye",
+        time: "11 saat önce",
         salary: "$35k - $45k",
         jobType: [
             {
                 styleClass: "time",
-                type: "Full Time",
+                type: "Tam Zamanlı",
             },
             {
                 styleClass: "privacy",
-                type: "Private",
+                type: "Özel",
             },
             {
                 styleClass: "required",
-                type: "Urgent",
+                type: "Acil",
             },
         ],
         link: "https://segment.com",

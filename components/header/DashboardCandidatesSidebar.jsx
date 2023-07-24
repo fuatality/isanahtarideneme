@@ -47,10 +47,9 @@ const DashboardCandidatesSidebar = () => {
         {/* End navigation */}
 
         <div className="skills-percentage">
-          <h4>Skills Percentage</h4>
+          <h4>Profilinin Doluluk Oranı</h4>
           <p>
-            `Put value for <strong>Cover Image</strong> field to increase your
-            skill up to <strong>85%</strong>`
+            `Profilinin <strong>dikkat çekmesi</strong> için daha fazla <strong>bilgilerini doldur</strong>.`
           </p>
           <div style={{ width: 200, height: 200, margin: "auto" }}>
             <CircularProgressbar

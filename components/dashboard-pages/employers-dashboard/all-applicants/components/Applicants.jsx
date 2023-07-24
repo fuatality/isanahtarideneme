@@ -28,7 +28,7 @@ const Applicants = () => {
                 </li>
                 <li>
                   <span className="icon flaticon-money"></span> $
-                  {candidate.hourlyRate} / hour
+                  {candidate.hourlyRate} / saat
                 </li>
               </ul>
               {/* End candidate-info */}

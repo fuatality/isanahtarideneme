@@ -2,10 +2,10 @@ module.exports = [
   {
     id: 1,
     img: "/images/resource/blog/1.jpg",
-    title: "Attract Sales And Profits ",
+    title: "ChatGPT ile Mülakat Hazırlığı",
     blogSingleTitle:
-      "Attract Sales And Profits toward the sunshine - and shadows will fall behind you.",
-    blogText: `A job ravenously while Far much that one rank beheld after outside....`,
+      "ChatGPT ile Mülakat Hazırlığı: Kariyer Hedeflerinizi Gerçekleştirmenin Yeni Yolu",
+    blogText: `ChatGPT, OpenAI tarafından geliştirilen bir dil modeli olarak...`,
   },
   {
     id: 2,

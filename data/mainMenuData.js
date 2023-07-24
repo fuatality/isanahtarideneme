@@ -1,5 +1,5 @@
 export const homeItems = [
-    {
+   /* {
         id: 1,
         items: [
             {
@@ -23,8 +23,8 @@ export const homeItems = [
                 routePath: "/home-5",
             },
         ],
-    },
-    {
+    },*/
+    /*{
         id: 2,
         items: [
             {
@@ -48,11 +48,11 @@ export const homeItems = [
                 routePath: "/home-10",
             },
         ],
-    },
+    },*/
     {
         id: 3,
         items: [
-            {
+            /*{
                 name: "Home Page 11",
                 routePath: "/home-11",
             },
@@ -67,14 +67,14 @@ export const homeItems = [
             {
                 name: "Home Page 14",
                 routePath: "/home-14",
-            },
+            },*/
             {
-                name: "Home Page 15",
+                name: "Ana Sayfa",
                 routePath: "/home-15",
             },
         ],
     },
-    {
+    /*{
         id: 4,
         items: [
             {
@@ -86,15 +86,15 @@ export const homeItems = [
                 routePath: "/home-17",
             },
         ],
-    },
+    },*/
 ];
 
 export const findJobItems = [
     {
         id: 1,
-        title: "Jobs Listing",
+        title: "İş İlanları",
         items: [
-            {
+           /* {
                 name: "Job List V1",
                 routePath: "/job-list-v1",
             },
@@ -109,16 +109,16 @@ export const findJobItems = [
             {
                 name: "Job List V4",
                 routePath: "/job-list-v4",
-            },
+            },*/
             {
-                name: "Job List V5",
+                name: "İş İlanları",
                 routePath: "/job-list-v5",
             },
         ],
     },
-    {
+    /*{
         id: 2,
-        title: "Jobs Listing",
+        title: "İş İlanları",
         items: [
             {
                 name: "Job List V6",
@@ -141,10 +141,10 @@ export const findJobItems = [
                 routePath: "/job-list-v10",
             },
         ],
-    },
-    {
+    },*/
+   /* {
         id: 3,
-        title: "Jobs Listing",
+        title: "İş İlanları",
         items: [
             {
                 name: "Job List V11",
@@ -163,31 +163,31 @@ export const findJobItems = [
                 routePath: "/job-list-v14",
             },
         ],
-    },
+    },*/
     {
         id: 4,
-        title: "Jobs Single",
+        title: "İş İlanı",
         items: [
-            {
+            /*{
                 name: "Job Single V1",
                 routePath: "/job-single-v1/1",
             },
             {
                 name: "Job Single V2",
                 routePath: "/job-single-v2/2",
-            },
+            },*/
             {
-                name: "Job Single V3",
+                name: "İş İlanı",
                 routePath: "/job-single-v3/3",
             },
-            {
+            /*{
                 name: "Job Single V4",
                 routePath: "/job-single-v4/4",
             },
             {
                 name: "Job Single V5",
                 routePath: "/job-single-v5/5",
-            },
+            },*/
         ],
     },
 ];
@@ -195,42 +195,42 @@ export const findJobItems = [
 export const employerItems = [
     {
         id: 1,
-        title: "Employers List",
+        title: "Şirketler",
         items: [
-            {
+           /* {
                 name: "Employers List V1",
                 routePath: "/employers-list-v1",
             },
             {
                 name: "Employers List V2",
                 routePath: "/employers-list-v2",
-            },
+            },*/
             {
-                name: "Employers List V3",
+                name: "Şirketler",
                 routePath: "/employers-list-v3",
             },
-            {
+           /* {
                 name: "Employers List V4",
                 routePath: "/employers-list-v4",
-            },
+            },*/
         ],
     },
     {
         id: 2,
-        title: "Employers Single",
+        title: "Şirket",
         items: [
-            {
+            /*{
                 name: "Employers Single V1",
                 routePath: "/employers-single-v1/1",
-            },
+            },*/
             {
-                name: "Employers Single V2",
+                name: "Şirket",
                 routePath: "/employers-single-v2/2",
             },
-            {
+            /*{
                 name: "Employers Single V3",
                 routePath: "/employers-single-v3/3",
-            },
+            },*/
         ],
     },
 ];
@@ -238,13 +238,13 @@ export const employerItems = [
 export const candidateItems = [
     {
         id: 1,
-        title: "Candidates List",
+        title: "Adaylar",
         items: [
             {
-                name: "Candidates List V1",
+                name: "Aday Listesi",
                 routePath: "/candidates-list-v1",
             },
-            {
+            /*{
                 name: "Candidates List V2",
                 routePath: "/candidates-list-v2",
             },
@@ -259,42 +259,42 @@ export const candidateItems = [
             {
                 name: "Candidates List V5",
                 routePath: "/candidates-list-v5",
-            },
+            },*/
         ],
     },
     {
         id: 2,
-        title: "Candidates Single",
+        title: "Aday",
         items: [
             {
-                name: "Candidates Single V1",
+                name: "Aday",
                 routePath: "/candidates-single-v1/1",
             },
-            {
+           /* {
                 name: "Candidates Single V2",
                 routePath: "/candidates-single-v2/2",
             },
             {
                 name: "Candidates Single V3",
                 routePath: "/candidates-single-v3/3",
-            },
+            },*/
         ],
     },
 ];
 
 export const blogItems = [
     {
-        name: "Blog List V1",
+        name: "Blog List",
         routePath: "/blog-list-v1",
     },
-    {
+   /* {
         name: "Blog List V2",
         routePath: "/blog-list-v2",
     },
     {
         name: "Blog List V3",
         routePath: "/blog-list-v3",
-    },
+    },*/
     {
         name: "Blog Details",
         routePath: "/blog-details/1",
@@ -303,27 +303,27 @@ export const blogItems = [
 
 export const pageItems = [
     {
-        name: "About",
+        name: "Hakkımızda",
         routePath: "/about",
     },
     {
-        name: "Pricing",
+        name: "Ücretler",
         routePath: "/pricing",
     },
     {
-        name: "FAQ's",
+        name: "SSS",
         routePath: "/faq",
     },
     {
-        name: "Terms",
+        name: "Koşullar",
         routePath: "/terms",
     },
     {
-        name: "Invoice",
+        name: "Fatura",
         routePath: "/invoice",
     },
     {
-        name: "Contact",
+        name: "İletişim",
         routePath: "/contact",
     },
     {
@@ -335,34 +335,34 @@ export const pageItems = [
 export const shopItems = [
     {
         id: 1,
-        title: "Shop",
+        title: "Ekstra Sayfalar",
         items: [
             {
-                name: "Shop List",
+                name: "Satılan Paketler",
                 routePath: "/shop/shop-list",
             },
             {
-                name: "Shop Single",
+                name: "Satılan Paket",
                 routePath: "/shop/shop-single/1",
             },
             {
-                name: "Cart",
+                name: "Sepetim",
                 routePath: "/shop/cart",
             },
             {
-                name: "Checkout",
+                name: "Satın Alma Ekranı",
                 routePath: "/shop/checkout",
             },
             {
-                name: "Order Completed",
+                name: "Sipariş Tamamlandı",
                 routePath: "/shop/order-completed",
             },
             {
-                name: "Login",
+                name: "Giriş Ekranı",
                 routePath: "/login",
             },
             {
-                name: "Register",
+                name: "Kayıt Ekranı",
                 routePath: "/register",
             },
         ],

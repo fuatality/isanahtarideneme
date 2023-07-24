@@ -9,10 +9,10 @@ const index = () => {
       <section className="invoice-section">
         <div className="auto-container">
           <div className="upper-box btn-box">
-            <Link href="/" className="theme-btn btn-style-three">
-              Back Home
+            <Link href="/home-15" className="theme-btn btn-style-three">
+              Anasayfa
             </Link>
-            <button className="theme-btn btn-style-one ms-3">Print</button>
+            <button className="theme-btn btn-style-one ms-3">Yazdır</button>
           </div>
         </div>
         {/* End auto-container */}
@@ -23,11 +23,11 @@ const index = () => {
               <div className="logo-box">
                 <div className="logo">
                   <Link href="/">
-                    <img src="images/logo.svg" alt="logo" />
+                    <img src="images/logo.png" alt="logo" />
                   </Link>
                 </div>
                 <div className="invoice-id">
-                  Invoice # <span>0043128641</span>
+                  Fatura # <span>0043128641</span>
                 </div>
               </div>
               {/* End logobox */}

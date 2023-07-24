@@ -5,16 +5,16 @@ const JobListingsTable = () => {
   return (
     <div className="tabs-box">
       <div className="widget-title">
-        <h4>My Job Listings</h4>
+        <h4>Açtığım İş İlanlarım</h4>
 
         <div className="chosen-outer">
           {/* <!--Tabs Box--> */}
           <select className="chosen-single form-select">
-            <option>Last 6 Months</option>
-            <option>Last 12 Months</option>
-            <option>Last 16 Months</option>
-            <option>Last 24 Months</option>
-            <option>Last 5 year</option>
+            <option>Son 6 Ay</option>
+            <option>Son 12 ay</option>
+            <option>Son 18 Ay</option>
+            <option>Son 24 Ay</option>
+            <option>Son 5 Yıl</option>
           </select>
         </div>
       </div>
@@ -26,11 +26,11 @@ const JobListingsTable = () => {
           <table className="default-table manage-job-table">
             <thead>
               <tr>
-                <th>Title</th>
-                <th>Applications</th>
-                <th>Created & Expired</th>
-                <th>Status</th>
-                <th>Action</th>
+                <th>Başlık</th>
+                <th>Başvurular</th>
+                <th>Oluşturma ve Bitiş Tarihi</th>
+                <th>Durum</th>
+                <th>Düzenle</th>
               </tr>
             </thead>
 
@@ -57,7 +57,7 @@ const JobListingsTable = () => {
                             </li>
                             <li>
                               <span className="icon flaticon-map-locator"></span>
-                              London, UK
+                              İstanbul, Türkiye
                             </li>
                           </ul>
                         </div>
@@ -65,13 +65,13 @@ const JobListingsTable = () => {
                     </div>
                   </td>
                   <td className="applied">
-                    <a href="#">3+ Applied</a>
+                    <a href="#">3+ Başvuru</a>
                   </td>
                   <td>
-                    October 27, 2017 <br />
-                    April 25, 2011
+                    27/09/2017 <br />
+                    27/10/2017
                   </td>
-                  <td className="status">Active</td>
+                  <td className="status">Yayında</td>
                   <td>
                     <div className="option-box">
                       <ul className="option-list">

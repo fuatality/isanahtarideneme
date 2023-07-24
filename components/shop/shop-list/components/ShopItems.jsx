@@ -41,7 +41,7 @@ const ShopItems = () => {
                                 className="theme-btn btn-style-one"
                             >
                                 <i className="flaticon-shopping-bag"></i>
-                                Add to Cart
+                                Sepete Ekle
                             </button>
                         </div>
                     </div>

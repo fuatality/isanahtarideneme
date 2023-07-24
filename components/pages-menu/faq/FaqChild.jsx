@@ -11,7 +11,7 @@ const FaqChild = () => {
               data-bs-target="#collapseOne"
               aria-expanded="true"
             >
-              Why won&apos;t my payment go through?
+              Neden ödemelerim ulaşmıyor?
             </button>
           </h2>
           <div
@@ -47,7 +47,7 @@ const FaqChild = () => {
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              How do I get a refund?
+              Nasıl ücret iadesi alabilirim?
             </button>
           </h2>
           <div
@@ -83,7 +83,7 @@ const FaqChild = () => {
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              How do I redeem a coupon?
+              Nasıl kupon kullanabilirim?
             </button>
           </h2>
           <div
@@ -119,7 +119,7 @@ const FaqChild = () => {
               aria-expanded="false"
               aria-controls="collapseFour"
             >
-              Changing account name
+              Hesap ismini nasıl değiştirebilirim?
             </button>
           </h2>
           <div

@@ -28,7 +28,7 @@ const HeaderNavContent = () => {
               isActiveParent(homeItems, router.asPath) ? "current" : ""
             } dropdown`}
           >
-            <span>Home</span>
+            <span>Ana Sayfa</span>
             <div className="mega-menu">
               <div className="mega-menu-bar row pt-0">
                 {homeItems.map((item) => (
@@ -63,7 +63,7 @@ const HeaderNavContent = () => {
             } dropdown has-mega-menu`}
             id="has-mega-menu"
           >
-            <span>Find Jobs</span>
+            <span>İlan Ara</span>
             <div className="mega-menu">
               <div className="mega-menu-bar row">
                 {findJobItems.map((item) => (
@@ -101,7 +101,7 @@ const HeaderNavContent = () => {
                 : ""
             } dropdown`}
           >
-            <span>Employers</span>
+            <span>Şirketler</span>
             <ul>
               {employerItems.map((item) => (
                 <li className="dropdown" key={item.id}>
@@ -138,7 +138,7 @@ const HeaderNavContent = () => {
                 }
               >
                 <Link href="/employers-dashboard/dashboard">
-                  Employers Dashboard
+                  Şirket Paneli
                 </Link>
               </li>
             </ul>
@@ -155,7 +155,7 @@ const HeaderNavContent = () => {
                 : ""
             } dropdown`}
           >
-            <span>Candidates</span>
+            <span>Adaylar</span>
             <ul>
               {candidateItems.map((item) => (
                 <li className="dropdown" key={item.id}>
@@ -192,7 +192,7 @@ const HeaderNavContent = () => {
                 }
               >
                 <Link href="/candidates-dashboard/dashboard">
-                  Candidates Dashboard
+                  Aday Paneli
                 </Link>
               </li>
             </ul>
@@ -228,7 +228,7 @@ const HeaderNavContent = () => {
                 : ""
             } dropdown`}
           >
-            <span>Pages</span>
+            <span>Sayfalar</span>
             <ul>
               {shopItems.map((item) => (
                 <li className="dropdown" key={item.id}>

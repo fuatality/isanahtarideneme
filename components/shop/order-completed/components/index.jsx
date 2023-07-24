@@ -6,8 +6,8 @@ const index = () => {
     <>
       <div className="upper-box">
         <span className="icon fa fa-check"></span>
-        <h4>Your order is completed!</h4>
-        <div className="text">Thank you. Your order has been received.</div>
+        <h4>Siparişiniz tamamlandı!</h4>
+        <div className="text">Siparişiniz tarafımıza ulaşmıştır. Teşekkür ederiz.</div>
       </div>
       {/* End upper-box */}
 
@@ -15,7 +15,7 @@ const index = () => {
       {/* <!--Order Box--> */}
 
       <div className="order-box">
-        <h3>Order details</h3>
+        <h3>Sipariş Detayları</h3>
         <OrderTable />
       </div>
 

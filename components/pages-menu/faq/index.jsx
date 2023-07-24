@@ -1,7 +1,7 @@
 import Breadcrumb from "../../common/Breadcrumb";
 import LoginPopup from "../../common/form/login/LoginPopup";
 import FooterDefault from "../../footer/common-footer";
-import DefaulHeader from "../../header/DefaulHeader";
+import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import FaqChild from "./FaqChild";
 
@@ -14,29 +14,29 @@ const index = () => {
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <DefaulHeader2 />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <Breadcrumb title="Faq's" meta="Faq's" />
+      <Breadcrumb title="SSS" meta="SSS" />
       {/* <!--End Page Title--> */}
 
       <section className="faqs-section">
         <div className="auto-container">
           <div className="sec-title text-center">
-            <h2>Frequently Asked Questions</h2>
-            <div className="text">Home / Faq</div>
+            <h2>Sık Sorulan Sorular</h2>
+            <div className="text">Anasayfa / SSS</div>
           </div>
 
-          <h3>Payments</h3>
+          <h3>Ödemeler</h3>
           {/* <!--Accordian Box--> */}
           <ul className="accordion-box">
             <FaqChild />
           </ul>
 
-          <h3>Suggestions</h3>
+          <h3>Öneriler</h3>
           {/* <!--Accordian Box--> */}
           <ul className="accordion-box mb-0">
             <FaqChild />

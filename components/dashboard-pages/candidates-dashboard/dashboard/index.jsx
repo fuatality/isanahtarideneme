@@ -31,7 +31,7 @@ const Index = () => {
       {/* <!-- Dashboard --> */}
       <section className="user-dashboard">
         <div className="dashboard-outer">
-          <BreadCrumb title="Howdy, Jerome!!" />
+          <BreadCrumb title="Hoşgeldin!" />
           {/* breadCrumb */}
 
           <MenuToggler />
@@ -56,7 +56,7 @@ const Index = () => {
               {/* <!-- Notification Widget --> */}
               <div className="notification-widget ls-widget">
                 <div className="widget-title">
-                  <h4>Notifications</h4>
+                  <h4>Bildirimler</h4>
                 </div>
                 <div className="widget-content">
                   <Notification />
@@ -69,7 +69,7 @@ const Index = () => {
               {/* <!-- applicants Widget --> */}
               <div className="applicants-widget ls-widget">
                 <div className="widget-title">
-                  <h4>Jobs Applied Recently</h4>
+                  <h4>Başvurduğun İlanlar</h4>
                 </div>
                 <div className="widget-content">
                   <div className="row">

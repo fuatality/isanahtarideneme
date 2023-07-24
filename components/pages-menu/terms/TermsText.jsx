@@ -2,7 +2,7 @@ const TermsText = () => {
   return (
     <>
       <div className="text-box">
-        <h3>1. Terms</h3>
+        <h3>1. Koşullar</h3>
         <p>
           Pharetra nulla ullamcorper sit lectus. Fermentum mauris pellentesque
           nec nibh sed et, vel diam, massa. Placerat quis vel fames interdum
@@ -19,7 +19,7 @@ const TermsText = () => {
       </div>
 
       <div className="text-box">
-        <h3>2. Limitations</h3>
+        <h3>2. Sınırlamalar</h3>
         <p>
           Pharetra nulla ullamcorper sit lectus. Fermentum mauris pellentesque
           nec nibh sed et, vel diam, massa. Placerat quis vel fames interdum
@@ -36,7 +36,7 @@ const TermsText = () => {
       </div>
 
       <div className="text-box">
-        <h3>3. Revisions and Errata</h3>
+        <h3>3. Düzeltmeler</h3>
         <p>
           Pharetra nulla ullamcorper sit lectus. Fermentum mauris pellentesque
           nec nibh sed et, vel diam, massa. Placerat quis vel fames interdum
@@ -53,7 +53,7 @@ const TermsText = () => {
       </div>
 
       <div className="text-box">
-        <h3>4. Site Terms of Use Modifications</h3>
+        <h3>4. Site Kullanım Koşulları Değişiklikleri</h3>
         <p>
           Pharetra nulla ullamcorper sit lectus. Fermentum mauris pellentesque
           nec nibh sed et, vel diam, massa. Placerat quis vel fames interdum

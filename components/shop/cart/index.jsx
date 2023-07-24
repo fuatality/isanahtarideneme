@@ -22,7 +22,7 @@ const index = () => {
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <Breadcrumb title="Cart" meta="Cart" />
+      <Breadcrumb title="Sepet" meta="Sepet" />
       {/* <!--End Page Title--> */}
 
       {/* <!--Cart Section--> */}

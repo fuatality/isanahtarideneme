@@ -24,15 +24,15 @@ const JobFeatured8 = () => {
                 <ul className="job-other-info">
                   <li className="privacy">
                     <span className="icon fa fa-map-marker-alt pe-1"></span>
-                    London, UK
+                    İstanbul, Türkiye
                   </li>
-                  <li className="time">Full Time</li>
+                  <li className="time">Tam Zamanlı</li>
                 </ul>
               </div>
 
               <div className="inner-footer">
                 <div className="content">
-                  <div className="days">3 days ago</div>
+                  <div className="days">3 gün önce</div>
                   <div className="company-name">{item.company}</div>
                 </div>
                 <span className="company-logo">

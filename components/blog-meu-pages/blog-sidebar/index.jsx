@@ -9,7 +9,7 @@ const index = () => {
       {/* <!-- Recent Post --> */}
       <div className="sidebar-widget search-widget">
         <div className="sidebar-title">
-          <h4>Search by Keywords</h4>
+          <h4>Ara</h4>
         </div>
 
         {/* <!--search box--> */}
@@ -21,7 +21,7 @@ const index = () => {
       {/* <!-- Shop Widget --> */}
       <div className="sidebar-widget catagory-widget">
         <div className="sidebar-title">
-          <h4>Categories</h4>
+          <h4>Kategoriler</h4>
         </div>
         <ul className="catagory-list">
           <Categories />
@@ -31,7 +31,7 @@ const index = () => {
       {/* <!-- Recent Post --> */}
       <div className="sidebar-widget recent-post">
         <div className="sidebar-title">
-          <h4>Recent Posts</h4>
+          <h4>Son Eklenenler</h4>
         </div>
 
         <div className="widget-content">

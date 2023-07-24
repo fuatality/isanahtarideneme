@@ -45,7 +45,7 @@ export default function JobSelect() {
                             className="chosen-single form-select"
                             value={jobList?.jobTypeSelect}
                         >
-                            <option value="">İş Türü</option>
+                            <option value="">Çalışma Şekli</option>
                             {jobTypeList?.map((item) => (
                                 <option value={item.value} key={item.id}>
                                     {item.name}

@@ -5,16 +5,16 @@ const JobListingsTable = () => {
   return (
     <div className="tabs-box">
       <div className="widget-title">
-        <h4>My Applied Jobs</h4>
+        <h4>Başvurduğum İlanlar</h4>
 
         <div className="chosen-outer">
           {/* <!--Tabs Box--> */}
           <select className="chosen-single form-select">
-            <option>Last 6 Months</option>
-            <option>Last 12 Months</option>
-            <option>Last 16 Months</option>
-            <option>Last 24 Months</option>
-            <option>Last 5 year</option>
+            <option>Son 6 Ay</option>
+            <option>Son 12 Ay</option>
+            <option>Son 18 Ay</option>
+            <option>Son 24 Ay</option>
+            <option>Son 5 Yıl</option>
           </select>
         </div>
       </div>
@@ -27,10 +27,10 @@ const JobListingsTable = () => {
             <table className="default-table manage-job-table">
               <thead>
                 <tr>
-                  <th>Job Title</th>
-                  <th>Date Applied</th>
-                  <th>Status</th>
-                  <th>Action</th>
+                  <th>İlan Başlığı</th>
+                  <th>Başvurulan Tairh</th>
+                  <th>Durum</th>
+                  <th>Seçenekler</th>
                 </tr>
               </thead>
 
@@ -57,15 +57,15 @@ const JobListingsTable = () => {
                               </li>
                               <li>
                                 <span className="icon flaticon-map-locator"></span>
-                                London, UK
+                                İstanbul, Türkiye
                               </li>
                             </ul>
                           </div>
                         </div>
                       </div>
                     </td>
-                    <td>Dec 5, 2020</td>
-                    <td className="status">Active</td>
+                    <td>5 Aralık 2020</td>
+                    <td className="status">Aktif</td>
                     <td>
                       <div className="option-box">
                         <ul className="option-list">

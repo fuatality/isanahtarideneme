@@ -10,7 +10,7 @@ const SearchBox = () => {
         <input
           type="search"
           name="search-field"
-          placeholder="keywords"
+          placeholder="anahtar kelime"
           required
         />
       </div>

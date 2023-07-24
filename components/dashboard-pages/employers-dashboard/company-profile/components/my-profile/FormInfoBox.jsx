@@ -17,7 +17,7 @@ const FormInfoBox = () => {
             <div className="row">
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-6 col-md-12">
-                    <label>Company name (optional)</label>
+                    <label>Şirket Adı</label>
                     <input
                         type="text"
                         name="name"
@@ -28,7 +28,7 @@ const FormInfoBox = () => {
 
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-6 col-md-12">
-                    <label>Email address</label>
+                    <label>E-mail Adresi</label>
                     <input
                         type="text"
                         name="name"
@@ -39,7 +39,7 @@ const FormInfoBox = () => {
 
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-6 col-md-12">
-                    <label>Phone</label>
+                    <label>Telefon Numarası</label>
                     <input
                         type="text"
                         name="name"
@@ -50,7 +50,7 @@ const FormInfoBox = () => {
 
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-6 col-md-12">
-                    <label>Website</label>
+                    <label>Websitesi</label>
                     <input
                         type="text"
                         name="name"
@@ -61,7 +61,7 @@ const FormInfoBox = () => {
 
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-6 col-md-12">
-                    <label>Est. Since</label>
+                    <label>Kuruluş Tarihi</label>
                     <input
                         type="text"
                         name="name"
@@ -72,7 +72,7 @@ const FormInfoBox = () => {
 
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-6 col-md-12">
-                    <label>Team Size</label>
+                    <label>Şirket Çalışan Sayısı</label>
                     <select className="chosen-single form-select" required>
                         <option>50 - 100</option>
                         <option>100 - 150</option>
@@ -84,7 +84,7 @@ const FormInfoBox = () => {
 
                 {/* <!-- Search Select --> */}
                 <div className="form-group col-lg-6 col-md-12">
-                    <label>Multiple Select boxes </label>
+                    <label>Şirket Endüstri</label>
                     <Select
                         defaultValue={[catOptions[2]]}
                         isMulti
@@ -97,22 +97,22 @@ const FormInfoBox = () => {
 
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-6 col-md-12">
-                    <label>Allow In Search & Listing</label>
+                    <label>Akışta Şirketi Göster</label>
                     <select className="chosen-single form-select">
-                        <option>Yes</option>
-                        <option>No</option>
+                        <option>Evet</option>
+                        <option>Hayır</option>
                     </select>
                 </div>
 
                 {/* <!-- About Company --> */}
                 <div className="form-group col-lg-12 col-md-12">
-                    <label>About Company</label>
-                    <textarea placeholder="Spent several years working on sheep on Wall Street. Had moderate success investing in Yugo's on Wall Street. Managed a small team buying and selling Pogo sticks for farmers. Spent several years licensing licorice in West Palm Beach, FL. Developed several new methods for working it banjos in the aftermarket. Spent a weekend importing banjos in West Palm Beach, FL.In this position, the Software Engineer collaborates with Evention's Development team to continuously enhance our current software solutions as well as create new solutions to eliminate the back-office operations and management challenges present"></textarea>
+                    <label>Şirket Hakkında</label>
+                    <textarea placeholder=""></textarea>
                 </div>
 
                 {/* <!-- Input --> */}
                 <div className="form-group col-lg-6 col-md-12">
-                    <button className="theme-btn btn-style-one">Save</button>
+                    <button className="theme-btn btn-style-one">Kaydet</button>
                 </div>
             </div>
         </form>

@@ -5,7 +5,7 @@ import OrderCompleted from "../../../components/shop/order-completed";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Order Completed" />
+      <Seo pageTitle="Sipariş Tamamlandı!" />
       <OrderCompleted />
     </>
   );

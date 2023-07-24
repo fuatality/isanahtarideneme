@@ -5,7 +5,7 @@ import ShopList from "../../../components/shop/shop-list";
 const index = () => {
     return (
         <>
-            <Seo pageTitle="Shop List" />
+            <Seo pageTitle="Paket Listesi" />
             <ShopList />
         </>
     );

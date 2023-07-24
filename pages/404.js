@@ -5,7 +5,7 @@ import Seo from "../components/common/Seo";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Page Not Found" />
+      <Seo pageTitle="Sayfa Bulunamadı" />
       <div
         className="error-page-wrapper "
         style={{
@@ -16,16 +16,16 @@ const index = () => {
         <div className="content">
           <div className="logo">
             <Link href="/">
-              <img src="/images/logo.svg" alt="brand" />
+              <img src="/images/logo.png" alt="brand" />
             </Link>
           </div>
           {/* End logo */}
 
           <h1>404!</h1>
-          <p>The page you are looking for could not be found.</p>
+          <p>Galiba bir şeyler ters gitti, anasayfamıza dönerek kaldığınız yerden devam edebilirsiniz.</p>
 
-          <Link className="theme-btn btn-style-three call-modal" href="/">
-            BACK TO HOME
+          <Link className="theme-btn btn-style-three call-modal" href="/home-15">
+            ANASAYFA
           </Link>
         </div>
         {/* End .content */}

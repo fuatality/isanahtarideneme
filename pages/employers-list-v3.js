@@ -5,7 +5,7 @@ import EmployersListV3 from "../components/employers-listing-pages/employers-lis
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Employers List V3" />
+      <Seo pageTitle="Şirketler" />
       <EmployersListV3 />
     </>
   );

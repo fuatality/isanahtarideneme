@@ -5,7 +5,7 @@ import Contact from "../components/pages-menu/contact";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Contact" />
+      <Seo pageTitle="İletişim" />
       <Contact />
     </>
   );

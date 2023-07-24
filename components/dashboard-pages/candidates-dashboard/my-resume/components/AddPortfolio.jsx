@@ -11,7 +11,7 @@ const AddPortfolio = () => {
           multiple
         />
         <label className="uploadButton-button ripple-effect" htmlFor="upload">
-          Add Portfolio
+          Portfolio&apos;nu Ekle
         </label>
         <span className="uploadButton-file-name"></span>
       </div>

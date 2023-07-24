@@ -30,7 +30,7 @@ const index = () => {
             {/* <!-- Dashboard --> */}
             <section className="user-dashboard">
                 <div className="dashboard-outer">
-                    <BreadCrumb title="Company Profile!" />
+                    <BreadCrumb title="Şirket Profili!" />
                     {/* breadCrumb */}
 
                     <MenuToggler />
@@ -41,7 +41,7 @@ const index = () => {
                             <div className="ls-widget">
                                 <div className="tabs-box">
                                     <div className="widget-title">
-                                        <h4>My Profile</h4>
+                                        <h4>Şirket Profili</h4>
                                     </div>
                                     <MyProfile />
                                 </div>
@@ -51,7 +51,7 @@ const index = () => {
                             <div className="ls-widget">
                                 <div className="tabs-box">
                                     <div className="widget-title">
-                                        <h4>Social Network</h4>
+                                        <h4>Sosyal Medya</h4>
                                     </div>
                                     {/* End .widget-title */}
                                     <div className="widget-content">
@@ -64,7 +64,7 @@ const index = () => {
                             <div className="ls-widget">
                                 <div className="tabs-box">
                                     <div className="widget-title">
-                                        <h4>Contact Information</h4>
+                                        <h4>İletişim Bilgileri</h4>
                                     </div>
                                     {/* End .widget-title */}
 

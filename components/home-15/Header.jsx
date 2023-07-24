@@ -30,9 +30,10 @@ const Header = () => {
         <div className="nav-outer">
           <div className="logo-box">
             <div className="logo">
-              <Link href="/">
+              <Link href="/home-15">
                 <img src="/images/logo.png" alt="brand" height="100px" width="100px"/>
               </Link>
+              <text>İş Anahtarı</text>
             </div>
           </div>
           {/* End .logo-box */}

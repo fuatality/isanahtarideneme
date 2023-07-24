@@ -5,11 +5,11 @@ const CartTable = () => {
         <table className="default-table ">
             <thead className="cart-header">
                 <tr>
-                    <th className="product-name">Product</th>
+                    <th className="product-name">Ürün</th>
                     <th className="product-thumbnail">&nbsp;</th>
-                    <th className="product-price">Price</th>
-                    <th className="product-quantity">Quantity</th>
-                    <th className="product-subtotal">Subtotal</th>
+                    <th className="product-price">Fiyat</th>
+                    <th className="product-quantity">Miktar</th>
+                    <th className="product-subtotal">Toplam</th>
                     <th className="product-remove">&nbsp;</th>
                 </tr>
             </thead>

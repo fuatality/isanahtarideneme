@@ -7,24 +7,30 @@ import Tag from "./Tag";
 const index = () => {
   return (
     <div className="auto-container">
-      <h4>Course Description</h4>
+      <h4>Kariyer Hedeflerinizi Gerçekleştirmenin Yeni Yolu</h4>
 
       <p>
-        Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec.
-        Quisque bibendum orci ac nibh facilisis, at malesuada orci congue.
-        Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this
-        is a text link libero tempus congue.
+        ChatGPT, OpenAI tarafından geliştirilen bir dil modeli olarak, 
+        kullanıcıların ilgisini çekmeyi başardı. Fizik sorularını çözme yeteneğinden, 
+        kişiye özel şiirler yazmaya kadar geniş bir yelpazede hizmet sunan ChatGPT, 
+        kariyer hedeflerinizi gerçekleştirmenize yardımcı olacak bir yol arkadaşı 
+        olarak da kullanılabilir. Peki, ChatGPT ile mülakat hazırlığı nasıl yapılır? 
+        İşte detaylar:
       </p>
 
+      <h4><strong>ChatGPT ile Mülakat Sorularını Gözden Geçirin</strong></h4>
+
       <p>
-        Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin
-        sagittis dolor sed mi elementum pretium. Donec et justo ante. Vivamus
-        egestas sodales est, eu rhoncus urna semper eu. Cum sociis natoque
-        penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-        Integer tristique elit lobortis purus bibendum, quis dictum metus
-        mattis. Phasellus posuere felis sed eros porttitor mattis. Curabitur
-        massa magna, tempor in blandit id, porta in ligula. Aliquam laoreet nisl
-        massa, at interdum mauris sollicitudin et.
+        &quto;Sık sorulan mülakat soruları nelerdir?&quot; gibi basit bir soruyla
+        başlayarak, ChatGPT&apos;nin geniş veri tabanından mülakat sorularına 
+        ulaşabilirsiniz. Bu soruları gözden geçirerek, güçlü ve zayıf yönlerinizi 
+        belirleyebilirsiniz. Eğer verdiğiniz bir cevabın daha iyi bir versiyonu 
+        olabileceğini düşünüyorsanız, ChatGPT&apos;den farklı ifade şekilleri talep 
+        edebilirsiniz. Ancak unutmayın, her mülakat ve sorular, mülakata gireceğiniz 
+        şirkete göre değişecektir.
+
+        <strong>Prompt Örneği:</strong>&quto;Sık sorulan mülakat soruları nelerdir?&quot; 
+        veya &quot;Bu cevabımı nasıl daha iyi ifade edebilirim?&quot;
       </p>
 
       <blockquote className="blockquote-style-one mb-5 mt-5">

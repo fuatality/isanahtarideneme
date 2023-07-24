@@ -5,16 +5,16 @@ const JobAlertsTable = () => {
   return (
     <div className="tabs-box">
       <div className="widget-title">
-        <h4>My Applied Jobs</h4>
+        <h4>İş İlanı Bildirim Kayıt Listesi</h4>
 
         <div className="chosen-outer">
           {/* <!--Tabs Box--> */}
           <select className="chosen-single form-select">
-            <option>Last 6 Months</option>
-            <option>Last 12 Months</option>
-            <option>Last 16 Months</option>
-            <option>Last 24 Months</option>
-            <option>Last 5 year</option>
+            <option>Son 6 Ay</option>
+            <option>Son 12 Ay</option>
+            <option>Son 18 Ay</option>
+            <option>Son 24 Ay</option>
+            <option>Son 5 Yıl</option>
           </select>
         </div>
       </div>
@@ -27,10 +27,10 @@ const JobAlertsTable = () => {
             <table className="default-table manage-job-table">
               <thead>
                 <tr>
-                  <th>Title</th>
-                  <th>Criteria</th>
-                  <th>Created</th>
-                  <th>Action</th>
+                  <th>Başlık</th>
+                  <th>Kayıt</th>
+                  <th>Oluşturulma Tarihi</th>
+                  <th>Seçenekler</th>
                 </tr>
               </thead>
 
@@ -57,15 +57,15 @@ const JobAlertsTable = () => {
                               </li>
                               <li>
                                 <span className="icon flaticon-map-locator"></span>
-                                London, UK
+                                İstanbul, Türkiye
                               </li>
                             </ul>
                           </div>
                         </div>
                       </div>
                     </td>
-                    <td>Human Resources, Junior</td>
-                    <td>Nov 12, 2021 </td>
+                    <td>Kayıt Olundu</td>
+                    <td>12 Kasım 2021 </td>
                     <td>
                       <div className="option-box">
                         <ul className="option-list">

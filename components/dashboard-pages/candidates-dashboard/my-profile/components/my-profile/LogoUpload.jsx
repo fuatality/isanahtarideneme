@@ -22,13 +22,12 @@ const LogoUpload = () => {
                         className="uploadButton-button ripple-effect"
                         htmlFor="upload"
                     >
-                        {logImg !== "" ? logImg.name : "Browse Logo"}
+                        {logImg !== "" ? logImg.name : "Fotoğrafınızı Yükleyin"}
                     </label>
                     <span className="uploadButton-file-name"></span>
                 </div>
                 <div className="text">
-                    Max file size is 1MB, Minimum dimension: 330x300 And
-                    Suitable files are .jpg & .png
+                    Maksimum dosya boyutu: 1MB, Kabul edilen dosya uzantısı: .jpg & .png
                 </div>
             </div>
         </>

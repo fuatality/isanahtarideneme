@@ -1,6 +1,6 @@
 import LoginPopup from "../../common/form/login/LoginPopup";
 import FooterDefault from "../../footer/common-footer";
-import DefaulHeader from "../../header/DefaulHeader";
+import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import Address from "./Address";
 import ContactForm from "./ContactForm";
@@ -15,7 +15,7 @@ const index = () => {
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <DefaulHeader2 />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
@@ -40,7 +40,7 @@ const index = () => {
 
           {/* <!-- Contact Form --> */}
           <div className="contact-form default-form">
-            <h3>Leave A Message</h3>
+            <h3>Mesajınızı Yazın</h3>
             <ContactForm />
             {/* <!--Contact Form--> */}
           </div>

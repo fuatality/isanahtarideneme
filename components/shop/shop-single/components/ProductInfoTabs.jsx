@@ -15,7 +15,7 @@ const ProductInfoTabs = () => {
               data-bs-toggle="tab"
               href="#description"
             >
-              Description
+              Açıklama
             </a>
           </li>
           <li>

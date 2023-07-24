@@ -8,34 +8,34 @@ const Form = () => {
         {/* End .col */}
 
         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-          <label>Your Name</label>
+          <label>Adınız Soyadınız</label>
           <input
             type="text"
             name="username"
             className="username"
-            placeholder="Your Name*"
+            placeholder="Ad Soyad"
             required
           />
         </div>
         {/* End .col */}
 
         <div className="col-lg-6 col-md-12 col-sm-12 form-group">
-          <label>Your Email</label>
+          <label>E-mail Adresiniz</label>
           <input
             type="email"
             name="email"
             className="email"
-            placeholder="Your Email*"
+            placeholder="E-mail"
             required
           />
         </div>
         {/* End .col */}
 
         <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-          <label>Your Message</label>
+          <label>Mesajınız</label>
           <textarea
             name="message"
-            placeholder="Write your message..."
+            placeholder="Mesaj"
             required=""
           ></textarea>
         </div>
@@ -48,7 +48,7 @@ const Form = () => {
             id="submit"
             name="submit-form"
           >
-            Send Review
+            İncelemeyi Gönder
           </button>
         </div>
         {/* End .col */}

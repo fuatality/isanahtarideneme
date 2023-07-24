@@ -43,7 +43,7 @@ const ShopSingleDyanmic = () => {
     <>
       <span className="header-span"></span>
 
-      <Seo pageTitle="Shop Single Dynamic" />
+      <Seo pageTitle="Paket" />
       {/* <!-- Header Span --> */}
 
       <LoginPopup />
@@ -55,7 +55,7 @@ const ShopSingleDyanmic = () => {
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <Breadcrumb title="Shop Single" meta={product?.title} />
+      <Breadcrumb title="Paket" meta={product?.title} />
       {/* <!--End Page Title--> */}
 
       {/* <!-- Start Shop Single --> */}
@@ -119,9 +119,7 @@ const ShopSingleDyanmic = () => {
                           min={1}
                           onChange={(e) => qtyHandler(e.target.value)}
                         />
-                        <span className="in-stock">
-                          {product?.inStock} in stock
-                        </span>
+                      
                       </div>
                       {/* End item-quantity */}
 
@@ -131,8 +129,7 @@ const ShopSingleDyanmic = () => {
                           type="button"
                           className="theme-btn btn-style-one"
                         >
-                          <span className="flaticon-shopping-bag"></span> Add to
-                          Cart
+                          <span className="flaticon-shopping-bag"></span> Sepete Ekle
                         </button>
                         <button
                           type="button"
@@ -146,11 +143,9 @@ const ShopSingleDyanmic = () => {
                     {/* End others-options */}
 
                     <ul className="product-meta">
+                      
                       <li>
-                        <span>Sku:</span> RTA-0058
-                      </li>
-                      <li>
-                        <span>Category:</span> {product?.category}
+                        <span>Kategori:</span> {product?.category}
                       </li>
                       <li>
                         <span>Tags:</span> Business / Seo

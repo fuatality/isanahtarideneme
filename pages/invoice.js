@@ -5,7 +5,7 @@ import Invoice from "../components/pages-menu/invoice";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Invoice" />
+      <Seo pageTitle="Fatura" />
       <Invoice />
     </>
   );

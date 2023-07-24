@@ -1,7 +1,7 @@
 import LoginPopup from "../../common/form/login/LoginPopup";
 import Partner from "../../common/partner/Partner";
 import FooterDefault from "../../footer/common-footer";
-import DefaulHeader from "../../header/DefaulHeader";
+import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import Funfact from "../../fun-fact-counter/Funfact";
 import ImgBox from "./ImgBox";
@@ -20,13 +20,13 @@ const index = () => {
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <DefaulHeader2 />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <Breadcrumb title="About Us" meta="About Us" />
+      <Breadcrumb title="Hakkımızda" meta="Hakkımızda" />
       {/* <!--End Page Title--> */}
 
       <section className="about-section-three">
@@ -65,7 +65,7 @@ const index = () => {
           {/* End right img group */}
 
           <div className="sec-title text-center">
-            <h2>Testimonials From Our Customers</h2>
+            <h2>Referanslarımız</h2>
             <div className="text">
               Lorem ipsum dolor sit amet elit, sed do eiusmod tempor
             </div>
@@ -85,8 +85,8 @@ const index = () => {
       <section className="work-section style-two">
         <div className="auto-container">
           <div className="sec-title text-center">
-            <h2>How It Works?</h2>
-            <div className="text">Job for anyone, anywhere</div>
+            <h2>Nasıl Çalışıyoruz?</h2>
+            <div className="text">Her yerde, herkese iş!</div>
           </div>
           {/* End sec-title */}
 

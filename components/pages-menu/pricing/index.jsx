@@ -1,7 +1,7 @@
 import Breadcrumb from "../../common/Breadcrumb";
 import LoginPopup from "../../common/form/login/LoginPopup";
 import FooterDefault from "../../footer/common-footer";
-import DefaulHeader from "../../header/DefaulHeader";
+import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import Pricing from "../../pricing/Pricing";
 
@@ -14,21 +14,21 @@ const index = () => {
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <DefaulHeader2 />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <Breadcrumb title="Pricing" meta="Pricing" />
+      <Breadcrumb title="Ücretler" meta="Ücretler" />
       {/* <!--End Page Title--> */}
 
       <section className="pricing-section">
         <div className="auto-container">
           <div className="sec-title text-center">
-            <h2>Pricing Packages</h2>
+            <h2>Ücret Paketler</h2>
             <div className="text">
-              Lorem ipsum dolor sit amet elit, sed do eiusmod tempor.
+              Size en uygun olan paketi seçin.
             </div>
           </div>
           {/* End title */}

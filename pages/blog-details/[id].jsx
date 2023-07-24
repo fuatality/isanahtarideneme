@@ -1,13 +1,13 @@
 import dynamic from "next/dynamic";
 import LoginPopup from "../../components/common/form/login/LoginPopup";
 import FooterDefault from "../../components/footer/common-footer";
-import DefaulHeader from "../../components/header/DefaulHeader";
 import MobileMenu from "../../components/header/MobileMenu";
 import DetailsContent from "../../components/blog-meu-pages/blog-details/details-content";
 import blogs from "../../data/blogs";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Seo from "../../components/common/Seo";
+import DefaulHeader2 from "../../components/header/DefaulHeader2";
 
 const BlogDetailsDynamic = () => {
   const router = useRouter();
@@ -23,7 +23,7 @@ const BlogDetailsDynamic = () => {
 
   return (
     <>
-      <Seo pageTitle="Blog Details Dyanmic V1" />
+      <Seo pageTitle="Blog Yazısı" />
 
       {/* <!-- Header Span --> */}
       <span className="header-span"></span>
@@ -31,7 +31,7 @@ const BlogDetailsDynamic = () => {
       <LoginPopup />
       {/* End Login Popup Modal */}
 
-      <DefaulHeader />
+      <DefaulHeader2 />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
@@ -48,10 +48,10 @@ const BlogDetailsDynamic = () => {
                 <span className="thumb">
                   <img src={"/images/resource/thumb-1.png"} alt="resource" />
                 </span>
-                Alison Dawn
+                Bahar Özus
               </li>
-              <li>August 31, 2021</li>
-              <li>12 Comment</li>
+              <li>31 Ağustos 2021</li>
+              <li>12 Yorum</li>
             </ul>
             {/* End post info */}
           </div>

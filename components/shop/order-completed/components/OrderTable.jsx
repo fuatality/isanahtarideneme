@@ -4,10 +4,10 @@ const OrderTable = () => {
       <thead>
         <tr>
           <th>
-            <strong>Product</strong>
+            <strong>Ürün</strong>
           </th>
           <th>
-            <strong>Subtotal</strong>
+            <strong>Ara Toplam</strong>
           </th>
         </tr>
       </thead>
@@ -24,19 +24,19 @@ const OrderTable = () => {
       </tbody>
       <tfoot>
         <tr className="cart-subtotal">
-          <td>Subtotal</td>
+          <td>Ara Toplam</td>
           <td>
             <span className="amount">$178.00</span>
           </td>
         </tr>
         <tr className="cart-subtotal">
-          <td>Shipping</td>
+          <td>Kargo</td>
           <td>
             <span className="amount">$178.00</span>
           </td>
         </tr>
         <tr className="order-total">
-          <td>Total</td>
+          <td>Toplam</td>
           <td>
             <span className="amount">$9,218.00</span>
           </td>

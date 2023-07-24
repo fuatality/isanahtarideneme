@@ -5,7 +5,7 @@ import Checkout from "../../../components/shop/checkout";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Checkout" />
+      <Seo pageTitle="Ödeme Ekranı" />
       <Checkout />
     </>
   );

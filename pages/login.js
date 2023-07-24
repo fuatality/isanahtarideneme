@@ -5,7 +5,7 @@ import LogIn from "../components/pages-menu/login";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Login" />
+      <Seo pageTitle="Giriş Yap" />
       <LogIn />
     </>
   );
