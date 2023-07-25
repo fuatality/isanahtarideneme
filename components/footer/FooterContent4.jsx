@@ -31,7 +31,6 @@ const FooterContent4 = () => {
       title: "Sayfalar",
       colClass: "col-lg-2",
       menuList: [
-        { name: "Hakkımızda", route: "/about" },
         { name: "SSS", route: "/faq" },
         { name: "Şartlar ve Koşullar", route: "/terms" },
         { name: "İletişim", route: "/contact" },
