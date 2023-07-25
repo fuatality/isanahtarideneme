@@ -24,7 +24,7 @@ const HeaderNavContent = () => {
           <li className={`${
             isActiveParent(homeItems, router.asPath) ? "current" : ""
           }`}>
-          <Link href="/home-15">Ana Sayfa</Link>
+          <Link href="/">Ana Sayfa</Link>
           </li>
           {/* End homepage menu items */}
 

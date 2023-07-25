@@ -80,7 +80,7 @@ module.exports = [
     id: 12,
     name: "Profilimi Sil",
     icon: "la-trash",
-    routePath: "/home-15",
+    routePath: "/",
     active: "",
   },
 ];

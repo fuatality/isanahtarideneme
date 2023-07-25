@@ -15,7 +15,7 @@ const index = () => {
       >
         <div className="content">
           <div className="logo">
-            <Link href="/home-15">
+            <Link href="/">
               <img src="/images/logo.png" alt="brand" />
             </Link>
           </div>
@@ -24,7 +24,7 @@ const index = () => {
           <h1>404!</h1>
           <p>Galiba bir şeyler ters gitti, anasayfamıza dönerek kaldığınız yerden devam edebilirsiniz.</p>
 
-          <Link className="theme-btn btn-style-three call-modal" href="/home-15">
+          <Link className="theme-btn btn-style-three call-modal" href="/">
             ANASAYFA
           </Link>
         </div>

@@ -11,7 +11,7 @@ const MobileMenu = () => {
           <div className="nav-outer">
             <div className="logo-box">
               <div className="logo">
-                <Link href="/home-15">
+                <Link href="/">
                   <img src="/images/logo.png" alt="brand" />
                   <text>İş Anahtarı</text>
                 </Link>

@@ -70,7 +70,7 @@ export const homeItems = [
             },*/
             {
                 name: "Ana Sayfa",
-                routePath: "/home-15",
+                routePath: "/",
             },
         ],
     },

@@ -43,7 +43,7 @@ const DashboardHeader = () => {
                     <div className="nav-outer">
                         <div className="logo-box">
                             <div className="logo">
-                                <Link href="/home-15">
+                                <Link href="/">
                                     <Image
                                         alt="brand"
                                         src="/images/logo.png"

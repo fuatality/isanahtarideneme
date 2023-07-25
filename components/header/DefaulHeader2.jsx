@@ -30,7 +30,7 @@ const DefaulHeader2 = () => {
         <div className="nav-outer">
           <div className="logo-box">
             <div className="logo">
-              <Link href="/home-15">
+              <Link href="/">
                 <img src="/images/logo.png" alt="brand" height="50px" width="50px"/>
               </Link>
               <text>İş Anahtarı</text>

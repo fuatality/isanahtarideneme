@@ -9,7 +9,7 @@ const index = () => {
       <section className="invoice-section">
         <div className="auto-container">
           <div className="upper-box btn-box">
-            <Link href="/home-15" className="theme-btn btn-style-three">
+            <Link href="/" className="theme-btn btn-style-three">
               Anasayfa
             </Link>
             <button className="theme-btn btn-style-one ms-3">Yazdır</button>

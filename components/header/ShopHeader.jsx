@@ -40,7 +40,7 @@ const ShopHeader = () => {
         <div className="nav-outer">
           <div className="logo-box">
             <div className="logo">
-              <Link href="/home-15">
+              <Link href="/">
                 <img src="/images/logo.png" alt="brand" width="50px" height="50px"/>
               </Link>
             </div>
