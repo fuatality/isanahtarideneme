@@ -73,10 +73,6 @@ const JobSingleDynamicV3 = () => {
                             {company?.time}
                           </li>
                           {/* time info */}
-                          <li>
-                            <span className="icon flaticon-money"></span>{" "}
-                            {company?.salary}
-                          </li>
                           {/* salary info */}
                         </ul>
                         {/* End .job-info */}
@@ -191,16 +187,15 @@ const JobSingleDynamicV3 = () => {
                   </div>
                   {/* End .company-widget */}
 
-                  <div className="sidebar-widget contact-widget">
+                 {/* <div className="sidebar-widget contact-widget">
                     <h4 className="widget-title">Bize Ulaşın</h4>
                     <div className="widget-content">
                       <div className="default-form">
                         <Contact />
                       </div>
-                      {/* End .default-form */}
                     </div>
                   </div>
-                  {/* End contact-widget */}
+                   End contact-widget */}
                 </aside>
                 {/* End .sidebar */}
               </div>

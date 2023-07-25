@@ -22,7 +22,7 @@ const index = () => {
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <Breadcrumb title="Blog Merkezi" meta="Blog" />
+      <Breadcrumb title="Kariyer Fuarı" meta="Kariyer Fuarı" />
       {/* <!--End Page Title--> */}
 
       <div className="sidebar-page-container">

@@ -1,17 +1,18 @@
 import CopyrightFooter from "./CopyrightFooter";
-import FooterContent from "./FooterContent";
+import FooterContent4 from "../FooterContent4";
+import { bottom, left, right } from "@popperjs/core";
 
 const index = ({ footerStyle = "" }) => {
   return (
-    <footer className={`main-footer ${footerStyle}`}>
+    <footer className={`main-footer ${footerStyle}`} style={{ backgroundImage: "url(images/index-15/header/14.svg)" ,backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: right}} >
       <div className="auto-container">
         {/* <!--Widgets Section--> */}
         <div className="widgets-section" data-aos="fade-up">
           <div className="row">
-            <div className="big-column col-xl-4 col-lg-3 col-md-12">
-              <div className="footer-column about-widget">
+            {/*<div className="big-column col-xl-4 col-lg-3 col-md-12" >
+              <div className="footer-column about-widget" >
                 <div className="logo">
-                  <a href="#">
+                  <a href="#" >
                     <img src="/images/logo.png" alt="brand" />
                   </a>
                 </div>
@@ -26,13 +27,13 @@ const index = ({ footerStyle = "" }) => {
                     help@isanahtari.com
                   </a>
                 </p>*/}
-              </div>
+            {/*  </div>
             </div>
             {/* End footer left widget */}
 
-            <div className="big-column col-xl-8 col-lg-9 col-md-12">
+            <div className="big-column col-xl-16 col-lg-12 col-md-12">
               <div className="row">
-                <FooterContent />
+                <FooterContent4 />
               </div>
             </div>
             {/* End col-xl-8 */}

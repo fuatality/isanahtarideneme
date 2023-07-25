@@ -187,18 +187,6 @@ const CandidateSingleDynamicV1 = () => {
                         </li>
 
                         <li>
-                          <i className="icon icon-rate"></i>
-                          <h5>Şu An Aldığı Maaş:</h5>
-                          <span>11K - 15K</span>
-                        </li>
-
-                        <li>
-                          <i className="icon icon-salary"></i>
-                          <h5>Beklediği Maaş Aralığı:</h5>
-                          <span>26K - 30K</span>
-                        </li>
-
-                        <li>
                           <i className="icon icon-user-2"></i>
                           <h5>Cinsiyet:</h5>
                           <span>Kadın</span>

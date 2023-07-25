@@ -26,10 +26,7 @@ const Applicants = () => {
                   <span className="icon flaticon-map-locator"></span>{" "}
                   {candidate.location}
                 </li>
-                <li>
-                  <span className="icon flaticon-money"></span> $
-                  {candidate.hourlyRate} / saat
-                </li>
+
               </ul>
               {/* End candidate-info */}
 
@@ -48,21 +45,6 @@ const Applicants = () => {
                 <li>
                   <button data-text="View Aplication">
                     <span className="la la-eye"></span>
-                  </button>
-                </li>
-                <li>
-                  <button data-text="Approve Aplication">
-                    <span className="la la-check"></span>
-                  </button>
-                </li>
-                <li>
-                  <button data-text="Reject Aplication">
-                    <span className="la la-times-circle"></span>
-                  </button>
-                </li>
-                <li>
-                  <button data-text="Delete Aplication">
-                    <span className="la la-trash"></span>
                   </button>
                 </li>
               </ul>

@@ -71,13 +71,20 @@ module.exports = [
   },
   {
     id: 11,
+    name: "Fatura",
+    icon: "la-file-invoice",
+    routePath: "/invoice",
+    active: "",
+  },
+  {
+    id: 12,
     name: "Çıkış Yap",
     icon: "la-sign-out",
     routePath: "/login",
     active: "",
   },
   {
-    id: 12,
+    id: 13,
     name: "Şirket Profilini Sil",
     icon: "la-trash",
     routePath: "/home-15",

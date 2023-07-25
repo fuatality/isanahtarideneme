@@ -3,7 +3,7 @@ const Contact = () => {
     <form>
       <div className="row clearfix">
         <div className="col-lg-12 col-md-12 col-sm-12 form-group">
-          <input type="text" name="username" placeholder="Your Name" required />
+          <input type="text" name="username" placeholder="Ad Soyad" required />
         </div>
         {/* End .col */}
 
@@ -11,7 +11,7 @@ const Contact = () => {
           <input
             type="email"
             name="email"
-            placeholder="Email Address"
+            placeholder="E-mail Adresi"
             required
           />
         </div>
@@ -21,7 +21,7 @@ const Contact = () => {
           <textarea
             className="darma"
             name="message"
-            placeholder="Message"
+            placeholder="Mesaj"
           ></textarea>
         </div>
         {/* End .col */}
@@ -32,7 +32,7 @@ const Contact = () => {
             type="submit"
             name="submit-form"
           >
-            Send Message
+            Mesajı Gönder
           </button>
         </div>
         {/* End .col */}

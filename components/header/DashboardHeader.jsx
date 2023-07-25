@@ -5,11 +5,14 @@ import employerMenuData from "../../data/employerMenuData";
 import HeaderNavContent from "./HeaderNavContent";
 import { isActiveLink } from "../../utils/linkActiveChecker";
 import { useRouter } from "next/router";
+import { reloadCart } from "../../features/shop/shopSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const DashboardHeader = () => {
     const [navbar, setNavbar] = useState(false);
-
+    const { cart } = useSelector((state) => state.shop) || {};
     const router = useRouter();
+    const dispatch = useDispatch();
 
     const changeBackground = () => {
         if (window.scrollY >= 0) {
@@ -22,6 +25,9 @@ const DashboardHeader = () => {
     useEffect(() => {
         window.addEventListener("scroll", changeBackground);
     }, []);
+    useEffect(() => {
+        dispatch(reloadCart());
+      }, [dispatch, reloadCart]);
 
     return (
         // <!-- Main Header-->
@@ -56,12 +62,17 @@ const DashboardHeader = () => {
                     {/* End .nav-outer */}
 
                     <div className="outer-box">
-                        <button className="menu-btn">
+                        {/*<button className="menu-btn">
                             <span className="count">1</span>
                             <span className="icon la la-heart-o"></span>
-                        </button>
+                         </button>*/}
                         {/* wishlisted menu */}
-
+                        <Link href="/shop/cart">
+                            <button className="menu-btn me-3">
+                            <span className="count">{cart?.length}</span>
+                            <span className="icon flaticon-shopping-cart" />
+                            </button>
+                        </Link>
                         <button className="menu-btn">
                             <span className="icon la la-bell"></span>
                         </button>

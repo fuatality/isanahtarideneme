@@ -87,54 +87,6 @@ export default function JobSelect() {
                     </div>
                     {/* End ecperience level filter */}
 
-                    <div className="form-group">
-                        <select
-                            onChange={salaryHandler}
-                            className="chosen-single form-select"
-                            value={JSON.stringify(jobList.salary)}
-                        >
-                            <option
-                                value={JSON.stringify({
-                                    min: 0,
-                                    max: 20000,
-                                })}
-                            >
-                                Maaş Aralığı
-                            </option>
-                            <option
-                                value={JSON.stringify({
-                                    min: 0,
-                                    max: 5000,
-                                })}
-                            >
-                                0 - 5000
-                            </option>
-                            <option
-                                value={JSON.stringify({
-                                    min: 5000,
-                                    max: 10000,
-                                })}
-                            >
-                                5000 - 10000
-                            </option>
-                            <option
-                                value={JSON.stringify({
-                                    min: 10000,
-                                    max: 15000,
-                                })}
-                            >
-                                10000 - 15000
-                            </option>
-                            <option
-                                value={JSON.stringify({
-                                    min: 15000,
-                                    max: 20000,
-                                })}
-                            >
-                                15000 - 20000
-                            </option>
-                        </select>
-                    </div>
                     {/* End salary estimate filter */}
                 </div>
             </div>

@@ -5,8 +5,6 @@ import {
   employerItems,
   findJobItems,
   homeItems,
-  pageItems,
-  shopItems,
 } from "../../data/mainMenuData";
 import {
   isActiveParent,
@@ -23,74 +21,20 @@ const HeaderNavContent = () => {
       <nav className="nav main-menu">
         <ul className="navigation" id="navbar">
           {/* current dropdown */}
-          <li
-            className={`${
-              isActiveParent(homeItems, router.asPath) ? "current" : ""
-            } dropdown`}
-          >
-            <span>Ana Sayfa</span>
-            <div className="mega-menu">
-              <div className="mega-menu-bar row pt-0">
-                {homeItems.map((item) => (
-                  <div
-                    className="column col-lg-3 col-md-3 col-sm-12"
-                    key={item.id}
-                  >
-                    <ul>
-                      {item.items.map((menu, i) => (
-                        <li
-                          className={
-                            isActiveLink(menu.routePath, router.asPath)
-                              ? "current"
-                              : ""
-                          }
-                          key={i}
-                        >
-                          <Link href={menu.routePath}>{menu.name}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <li className={`${
+            isActiveParent(homeItems, router.asPath) ? "current" : ""
+          }`}>
+          <Link href="/home-15">Ana Sayfa</Link>
           </li>
           {/* End homepage menu items */}
 
-          <li
-            className={`${
-              isActiveParent(findJobItems, router.asPath) ? "current" : ""
-            } dropdown has-mega-menu`}
-            id="has-mega-menu"
-          >
-            <span>İlan Ara</span>
-            <div className="mega-menu">
-              <div className="mega-menu-bar row">
-                {findJobItems.map((item) => (
-                  <div
-                    className="column col-lg-3 col-md-3 col-sm-12"
-                    key={item.id}
-                  >
-                    <h3>{item.title}</h3>
-                    <ul>
-                      {item.items.map((menu, i) => (
-                        <li
-                          className={
-                            isActiveLink(menu.routePath, router.asPath)
-                              ? "current"
-                              : ""
-                          }
-                          key={i}
-                        >
-                          <Link href={menu.routePath}>{menu.name}</Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </li>
+          <li className={`${
+    isActiveParent(findJobItems, router.asPath) ? "current" : ""
+}`}>
+    <Link href="/job-list-v5">İş İlanları</Link>
+</li>
+
+          {/* End homepage menu items */}
           {/* End findjobs menu items */}
 
           <li
@@ -199,30 +143,16 @@ const HeaderNavContent = () => {
           </li>
           {/* End Candidates menu items */}
 
-          <li
-            className={`${
-              isActiveParentChaild(blogItems, router.asPath) ? "current" : ""
-            } dropdown`}
-          >
-            <span>Blog</span>
-            <ul>
-              {blogItems.map((item, i) => (
-                <li
-                  className={
-                    isActiveLink(item.routePath, router.asPath) ? "current" : ""
-                  }
-                  key={i}
-                >
-                  <Link href={item.routePath}>{item.name}</Link>
-                </li>
-              ))}
-            </ul>
-          </li>
+          <li className={`${
+    isActiveParent(blogItems, router.asPath) ? "current" : ""
+}`}>
+    <Link href="/blog-list-v1">Kariyer Fuarı</Link>
+</li>
           {/* End Blog menu items */}
 
-          <li
+         {/* <li
             className={`${
-              isActiveParentChaild(pageItems, router.asPath) ||
+            
               isActiveParentChaild(shopItems[0].items, router.asPath)
                 ? "current "
                 : ""
@@ -257,18 +187,9 @@ const HeaderNavContent = () => {
                   </ul>
                 </li>
               ))}
-              {pageItems.map((item, i) => (
-                <li
-                  className={
-                    isActiveLink(item.routePath, router.asPath) ? "current" : ""
-                  }
-                  key={i}
-                >
-                  <Link href={item.routePath}>{item.name}</Link>
-                </li>
-              ))}
+              
             </ul>
-          </li>
+          </li>*/}
           {/* End Pages menu items */}
         </ul>
       </nav>

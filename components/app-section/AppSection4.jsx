@@ -1,3 +1,5 @@
+import { left, right } from "@popperjs/core";
+
 const AppSection4 = () => {
   const featureList = [
     {
@@ -21,7 +23,7 @@ const AppSection4 = () => {
   ];
 
   return (
-    <section className="layout-pt-120 layout-pb-120">
+    <section className="layout-pt-120 layout-pb-120" style={{ backgroundImage: "url(images/index-15/header/4.svg)" ,backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: right, backgroundPositionX: right}}>
       <div className="auto-container">
         <div className="row justify-content-between align-items-center">
           {/* <!-- Image Column --> */}

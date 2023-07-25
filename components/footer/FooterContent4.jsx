@@ -5,37 +5,46 @@ const FooterContent4 = () => {
   const footerContent = [
     {
       id: 1,
-      title: "For Candidates",
-      colClass: "col-lg-3",
+      title: "Adaylar İçin",
+      colClass: "col-lg-2",
       menuList: [
-        { name: "Browse Jobs", route: "/" },
-        { name: "Browse Categories", route: "/" },
-        { name: "Candidate Dashboard", route: "/" },
+        { name: "İş İlanları", route: "/job-list-v5" },
+        { name: "Şirketler", route: "/employers-list-v3" },
+       /* { name: "Candidate Dashboard", route: "/" },
         { name: "Job Alerts", route: "/" },
-        { name: "My Bookmarks", route: "/" },
+        { name: "My Bookmarks", route: "/" },*/
       ],
     },
     {
       id: 2,
-      title: "For Employers",
-      colClass: "col-lg-3",
+      title: "Firmalar İçin",
+      colClass: "col-lg-2",
       menuList: [
-        { name: "Browse Candidates", route: "/" },
-        { name: "Employer Dashboard", route: "/" },
-        { name: "Add Job", route: "/" },
-        { name: "Job Packages", route: "/" },
+        /*{ name: "Browse Candidates", route: "/" },
+        { name: "Employer Dashboard", route: "/" },*/
+        { name: "İlan Ver", route: "/employers-dashboard/post-jobs" },
+        { name: "Paketler", route: "/pricing" },
       ],
     },
     {
       id: 3,
-      title: "About Us",
+      title: "Sayfalar",
       colClass: "col-lg-2",
       menuList: [
-        { name: "Job Page", route: "/" },
-        { name: "Job Page Alternative", route: "/" },
-        { name: "Resume Page", route: "/" },
-        { name: "Blog", route: "/" },
-        { name: "Contact", route: "/" },
+        { name: "Hakkımızda", route: "/about" },
+        { name: "SSS", route: "/faq" },
+        { name: "Şartlar ve Koşullar", route: "/terms" },
+        { name: "İletişim", route: "/contact" },
+        { name: "404", route: "/404" },    
+      ],
+    },
+    {
+      id: 4,
+      title: "Hoşgeldin",
+      colClass: "col-lg-2",
+      menuList: [
+        { name: "Giriş Yap", route: "/login" },
+        { name: "Aramıza Katıl", route: "/register" },   
       ],
     },
   ];
@@ -63,10 +72,9 @@ const FooterContent4 = () => {
 
       <div className="footer-column col-lg-4 col-md-12 col-sm-12">
         <div className="footer-widget">
-          <h4 className="widget-title">Join Us On</h4>
+          <h4 className="widget-title">E-mail Bültenimize Kayıt Ol</h4>
           <div className="widget-content">
             <div className="newsletter-form">
-              <div className="text">We don’t send spam so don’t worry.</div>
               <SearchForm />
             </div>
           </div>

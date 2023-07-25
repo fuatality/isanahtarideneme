@@ -21,21 +21,6 @@ const JobOverView2 = () => {
         <h5>Ünvan:</h5>
         <span>Designer</span>
       </li>
-      <li>
-        <i className="icon icon-clock"></i>
-        <h5>Çalışma Saati:</h5>
-        <span>50 saat / hafta</span>
-      </li>
-      <li>
-        <i className="icon icon-rate"></i>
-        <h5>Saatlik Ücret:</h5>
-        <span>$15 - $25 / saat</span>
-      </li>
-      <li>
-        <i className="icon icon-salary"></i>
-        <h5>Maaş:</h5>
-        <span>$35k - $45k</span>
-      </li>
     </ul>
   );
 };

@@ -55,7 +55,7 @@ const Candidates = () => {
                 href={`/candidates-single-v1/${candidate.id}`}
                 className="theme-btn btn-style-three"
               >
-                <span className="btn-title">View Profile</span>
+                <span className="btn-title">Profili Görüntüle</span>
               </Link>
             </div>
           </div>

@@ -11,7 +11,6 @@ import {
     addKeyword,
     addLocation,
     addPerPage,
-    addSalary,
     addSort,
 } from "../../../features/filter/filterSlice";
 
@@ -25,7 +24,6 @@ const FilterJobBox = () => {
         datePosted,
         jobTypeSelect,
         experienceSelect,
-        salary,
     } = jobList || {};
 
     const { sort, perPage } = jobSort;
@@ -103,7 +101,6 @@ const FilterJobBox = () => {
         ?.filter(jobTypeFilter)
         ?.filter(datePostedFilter)
         ?.filter(experienceFilter)
-        ?.filter(salaryFilter)
         ?.sort(sortFilter)
         .slice(perPage.start, perPage.end !== 0 ? perPage.end : 16)
         ?.map((item) => (
@@ -138,10 +135,6 @@ const FilterJobBox = () => {
                                 {item.time}
                             </li>
                             {/* time info */}
-                            <li>
-                                <span className="icon flaticon-money"></span>{" "}
-                                {item.salary}
-                            </li>
                             {/* salary info */}
                         </ul>
                         {/* End .job-info */}
@@ -183,7 +176,6 @@ const FilterJobBox = () => {
         dispatch(addJobTypeSelect(""));
         dispatch(addDatePosted(""));
         dispatch(addExperienceSelect(""));
-        dispatch(addSalary({ min: 0, max: 20000 }));
         dispatch(addSort(""));
         dispatch(addPerPage({ start: 0, end: 0 }));
     };
@@ -201,8 +193,6 @@ const FilterJobBox = () => {
                     jobTypeSelect !== "" ||
                     datePosted !== "" ||
                     experienceSelect !== "" ||
-                    salary?.min !== 0 ||
-                    salary?.max !== 20000 ||
                     sort !== "" ||
                     perPage.start !== 0 ||
                     perPage.end !== 0 ? (

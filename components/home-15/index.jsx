@@ -54,7 +54,7 @@ const index = () => {
         </div>
       </section>*/}
       {/* <!-- End Work Section --> */}
-      <section className="registeration-banners">
+      {/*<section className="registeration-banners">
         <div className="auto-container">
           <div className="row" data-aos="fade-up">
             <RegBanner2 />
@@ -90,11 +90,11 @@ const index = () => {
           </div>
         </div>
       </section>
-
+      
       {/*<CallToAction9 />*/}
       {/* <!-- End Call To Action --> */}
 
-      <section className="layout-pt-120 layout-pb-60">
+     {/* <section className="layout-pt-120 layout-pb-60">
         <div className="auto-container">
           <div className="row justify-content-between align-items-end">
             <div className="col-lg-6">
@@ -107,7 +107,7 @@ const index = () => {
                 </div>
               </div>
             </div>
-            {/* End .col */}
+           
 
             <div className="col-auto">
               <Link
@@ -119,7 +119,7 @@ const index = () => {
               </Link>
             </div>
           </div>
-          {/* End .row */}
+       
 
           <div className="carousel-outer pt-50" data-aos="fade-up">
             <div className="companies-carousel">
@@ -128,7 +128,7 @@ const index = () => {
           </div>
         </div>
       </section>
-      {/* <!-- End Top Companies --> */}
+       <!-- End Top Companies --> */}
       <section className="news-section">
         <div className="auto-container">
           <div className="sec-title text-center">

@@ -16,7 +16,7 @@ const SearchForm = () => {
           placeholder="Email"
           required
         />
-        <button type="button" id="subscribe-newslatters" className="theme-btn">
+        <button type="button" id="subscribe-newslatters" className="theme-btn" >
           <i className="flaticon-envelope"></i>
         </button>
       </div>

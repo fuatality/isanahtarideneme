@@ -1,3 +1,4 @@
+import { left, right } from "@popperjs/core";
 import SearchForm3 from "../../common/job-search/SearchForm3";
 import Funfact3 from "../../fun-fact-counter/Funfact3";
 
@@ -5,7 +6,7 @@ const index = () => {
   return (
     <section
       className="banner-section -type-15"
-      style={{ backgroundImage: "url(images/index-15/header/45.png)"
+      style={{ backgroundImage: "url(images/index-15/header/13.svg)", backgroundSize: "contain", backgroundPosition: right
        }}
     >
       <div className="auto-container">
@@ -24,13 +25,13 @@ const index = () => {
           </div>
           {/* <!-- Job Search Form --> */}
 
-          <div className="fun-fact-section">
+          {/*<div className="fun-fact-section">
             <div className="row">
-              {/* <!--Column--> */}
+              
               <Funfact3 />
             </div>
           </div>
-          {/* <!-- Fun Fact Section --> */}
+           <!-- Fun Fact Section --> */}
         </div>
         {/* End content-box */}
       </div>

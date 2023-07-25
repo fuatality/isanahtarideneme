@@ -50,7 +50,7 @@ export const homeItems = [
         ],
     },*/
     {
-        id: 3,
+        id: 1,
         items: [
             /*{
                 name: "Home Page 11",
@@ -284,7 +284,7 @@ export const candidateItems = [
 
 export const blogItems = [
     {
-        name: "Blog List",
+        name: "Kariyer Fuarı",
         routePath: "/blog-list-v1",
     },
    /* {
@@ -296,7 +296,7 @@ export const blogItems = [
         routePath: "/blog-list-v3",
     },*/
     {
-        name: "Blog Details",
+        name: "Blog",
         routePath: "/blog-details/1",
     },
 ];

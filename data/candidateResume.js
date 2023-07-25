@@ -1,7 +1,7 @@
 module.exports = [
   {
     id: 1,
-    title: "Education",
+    title: "Eğitim",
     themeColor: "",
     blockList: [
       {
@@ -26,7 +26,7 @@ module.exports = [
   },
   {
     id: 2,
-    title: "Work & Experience",
+    title: "İş & Deneyim",
     themeColor: "theme-blue",
     blockList: [
       {
@@ -51,7 +51,7 @@ module.exports = [
   },
   {
     id: 3,
-    title: "Awards",
+    title: "Ödüller",
     themeColor: "theme-yellow",
     blockList: [
       {
