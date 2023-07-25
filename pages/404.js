@@ -15,7 +15,7 @@ const index = () => {
       >
         <div className="content">
           <div className="logo">
-            <Link href="/">
+            <Link href="/home-15">
               <img src="/images/logo.png" alt="brand" />
             </Link>
           </div>
