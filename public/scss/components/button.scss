@@ -83,7 +83,7 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
-  color: #e2eaf8;
+  color: #ffffff;
   background-color: var(--primary-color);
   font-size: 16px;
   line-height: 20px;
@@ -102,18 +102,18 @@ Buttons Styles
   position: relative;
   text-align: center;
   white-space: nowrap;
-  color: var(--primary-color);
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: #adadad;
+  font-size: 16px;
   line-height: 20px;
   border-radius: 8px;
   font-weight: 400;
-  padding: 14px 35px;
+  padding: 15px 35px;
 }
 
 .btn-style-five:hover {
   color: #ffffff;
-  background-color: transparent;
+  background-color: var(--primary-hover-bg-color);
 }
 
 /* Btn Style Six */

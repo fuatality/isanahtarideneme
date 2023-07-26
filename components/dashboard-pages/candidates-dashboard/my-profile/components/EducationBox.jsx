@@ -1,6 +1,6 @@
-const SocialNetworkBox = () => {
+const EducationBox = ({ boxId }) => {
   return (
-    <form className="default-form">
+    <form className="default-form" id={boxId}>
       <div className="row">
 
 
@@ -58,14 +58,10 @@ const SocialNetworkBox = () => {
         </div>
 
         {/* <!-- Input --> */}
-        <div className="form-group col-lg-6 col-md-12">
-          <button type="submit" className="theme-btn btn-style-one">
-            +
-          </button>
-        </div>
+      
       </div>
     </form>
   );
 };
 
-export default SocialNetworkBox;
+export default EducationBox;
