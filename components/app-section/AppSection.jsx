@@ -1,6 +1,6 @@
 import { left, right } from "@popperjs/core";
 
-const AppSection4 = () => {
+const AppSection = () => {
   const featureList = [
     {
       id: 1,
@@ -73,4 +73,4 @@ const AppSection4 = () => {
   );
 };
 
-export default AppSection4;
+export default AppSection;

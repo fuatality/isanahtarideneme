@@ -1,12 +1,12 @@
 import dynamic from "next/dynamic";
 import Seo from "../components/common/Seo";
-import EmployersListV3 from "../components/employers-listing-pages/employers-list-v3";
+import EmployersList from "../components/employers-listing-pages/employers-list-v3";
 
 const index = () => {
   return (
     <>
       <Seo pageTitle="Şirketler" />
-      <EmployersListV3 />
+      <EmployersList />
     </>
   );
 };

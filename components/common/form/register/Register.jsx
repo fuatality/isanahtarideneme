@@ -1,6 +1,7 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import LoginWithSocial from "./LoginWithSocial";
-import Form from "./FormContent";
+import FormUser from "./FormContent";
+import FormComp from "./FormContent2"
 import Link from "next/link";
 
 const Register = () => {
@@ -27,12 +28,12 @@ const Register = () => {
         {/* End .form-group */}
 
         <TabPanel>
-          <Form />
+          <FormUser />
         </TabPanel>
         {/* End cadidates Form */}
 
         <TabPanel>
-          <Form />
+          <FormComp />
         </TabPanel>
         {/* End Employer Form */}
       </Tabs>

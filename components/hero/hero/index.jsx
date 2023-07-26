@@ -1,5 +1,5 @@
 import { left, right } from "@popperjs/core";
-import SearchForm3 from "../../common/job-search/SearchForm3";
+import SearchForm from "../../common/job-search/SearchForm";
 import Funfact3 from "../../fun-fact-counter/Funfact3";
 
 const index = () => {
@@ -21,7 +21,7 @@ const index = () => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <SearchForm3 btnStyle="btn-style-two" />
+            <SearchForm btnStyle="btn-style-two" />
           </div>
           {/* <!-- Job Search Form --> */}
 

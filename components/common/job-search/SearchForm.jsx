@@ -1,6 +1,6 @@
 import Router from "next/router";
 
-const SearchForm3 = () => {
+const SearchForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
   };
@@ -55,4 +55,4 @@ const SearchForm3 = () => {
   );
 };
 
-export default SearchForm3;
+export default SearchForm;
