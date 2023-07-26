@@ -4,7 +4,7 @@ import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import FilterJobBox from "./FilterJobBox";
 import JobSearchForm from "./JobSearchForm";
-import SearchForm3 from "../../common/job-search/SearchForm3";
+import SearchForm from "../../common/job-search/SearchForm";
 
 const index = () => {
   return (
@@ -27,7 +27,7 @@ const index = () => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <SearchForm3 btnStyle="btn-style-two" />
+            <SearchForm btnStyle="btn-style-two" />
           </div>
       </section>
       {/* <!--End Page Title--> */}

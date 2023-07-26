@@ -1,12 +1,12 @@
 import dynamic from "next/dynamic";
 import Seo from "../components/common/Seo";
-import BlogListV1 from "../components/blog-meu-pages/blog-list-v1";
+import BlogList from "../components/blog-meu-pages/blog-list-v1";
 
 const index = () => {
   return (
     <>
       <Seo pageTitle="Kariyer Fuarı" />
-      <BlogListV1 />
+      <BlogList />
     </>
   );
 };

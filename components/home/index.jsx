@@ -1,7 +1,7 @@
-import Hero15 from "../hero/hero-15";
+import Hero from "../hero/hero";
 import Header from "./Header";
 import JobFeatured8 from "../job-featured/JobFeatured8";
-import AppSection4 from "../app-section/AppSection4";
+import AppSection from "../app-section/AppSection";
 import LoginPopup from "../common/form/login/LoginPopup";
 import MobileMenu from "../header/MobileMenu";
 import Link from "next/link";
@@ -23,7 +23,7 @@ const index = () => {
       <MobileMenu />
       {/* End MobileMenu */}
 
-      <Hero15 />
+      <Hero />
       {/* End Hero Section */}
 
       {/*<section className="layout-pt-60 layout-pb-60">
@@ -89,7 +89,7 @@ const index = () => {
 
      {/* <section className="layout-pt-120 layout-pb-60">
         <div className="auto-container">
-          <div className="row justify-content-between align-items-end">
+          <div className="row justify- content-between align-items-end">
             <div className="col-lg-6">
               <div className="sec-title mb-0">
                 <h2 className="color-blue-dark fw-700">
@@ -188,7 +188,7 @@ const index = () => {
       {/*<Subscribe2 />*/}
       {/* <!-- End Subscribe Section --> */}
 
-      <AppSection4 />
+      <AppSection />
       {/* <!-- End App Section --> */}
 
       <FooterDefault />

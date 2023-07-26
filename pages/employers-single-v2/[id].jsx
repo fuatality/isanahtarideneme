@@ -13,7 +13,7 @@ import MapJobFinder from "../../components/job-listing-pages/components/MapJobFi
 import Social from "../../components/employer-single-pages/social/Social";
 import PrivateMessageBox from "../../components/employer-single-pages/shared-components/PrivateMessageBox";
 
-const EmployersSingleV2 = () => {
+const EmployersSingle = () => {
   const router = useRouter();
   const [employer, setEmployersInfo] = useState({});
   const id = router.query.id;
@@ -198,6 +198,6 @@ const EmployersSingleV2 = () => {
   );
 };
 
-export default dynamic(() => Promise.resolve(EmployersSingleV2), {
+export default dynamic(() => Promise.resolve(EmployersSingle), {
   ssr: false,
 });

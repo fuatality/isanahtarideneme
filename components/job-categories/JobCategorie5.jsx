@@ -1,7 +1,7 @@
 import Link from "next/link";
 import jobCatContent from "../../data/job-catergories";
 
-const JobCategorie5 = () => {
+const JobCategorie = () => {
   return (
     <>
       {jobCatContent.slice(0, 8).map((item) => (
@@ -15,7 +15,7 @@ const JobCategorie5 = () => {
               <h4>
                 <Link href="/job-list-v5">{item.catTitle}</Link>
               </h4>
-              <p>({item.jobNumber} open positions)</p>
+              <p>({item.jobNumber} açık ilan)</p>
             </div>
           </div>
         </div>
@@ -24,4 +24,4 @@ const JobCategorie5 = () => {
   );
 };
 
-export default JobCategorie5;
+export default JobCategorie;
