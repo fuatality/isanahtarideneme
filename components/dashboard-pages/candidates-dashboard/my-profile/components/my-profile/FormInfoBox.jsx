@@ -2,14 +2,14 @@ import Select from "react-select";
 
 const FormInfoBox = () => {
   const catOptions = [
-    { value: "Banking", label: "Banking" },
-    { value: "Digital & Creative", label: "Digital & Creative" },
-    { value: "Retail", label: "Retail" },
-    { value: "Human Resources", label: "Human Resources" },
-    { value: "Managemnet", label: "Managemnet" },
-    { value: "Accounting & Finance", label: "Accounting & Finance" },
-    { value: "Digital", label: "Digital" },
-    { value: "Creative Art", label: "Creative Art" },
+    { value: "Türkiye", label: "Türkiye" },
+    { value: "İngiltere", label: "İngiltere" },
+    { value: "Almanya", label: "Almanya" },
+    { value: "Fransa", label: "Fransa" },
+    { value: "Rusya", label: "Rusya" },
+    { value: "Çin", label: "Çin" },
+    { value: "Azerbaycan", label: "Azerbaycan" },
+    { value: "Japonya", label: "Japonya" },
   ];
 
   return (
@@ -21,21 +21,32 @@ const FormInfoBox = () => {
           <input type="text" name="name" placeholder="Ad Soyad" required />
         </div>
 
-        {/* <!-- Input --> */}
-        <div className="form-group col-lg-6 col-md-12">
-          <label>İş Ünvanınız</label>
-          <input type="text" name="name" placeholder="UI Designer" required />
+         {/* <!-- Input --> */}
+         <div className="form-group col-lg-6 col-md-12">
+          <label>Cinsiyet</label>
+          <select className="chosen-single form-select" required>
+            <option>Erkek</option>
+            <option>Kadın</option>
+            <option>Diğer</option>
+          </select>
         </div>
 
-        {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Telefon Numarası</label>
-          <input
-            type="text"
-            name="name"
-            placeholder="0 123 456 7890"
-            required
-          />
+          <label>Uyruk</label>
+          <select className="chosen-single form-select" required>
+            <option>Türk</option>
+            <option>Yunan</option>
+            <option>İngiliz</option>
+          </select>
+        </div>
+
+        <div className="form-group col-lg-6 col-md-12">
+          <label>Doğum Tarihi</label>
+          <select className="chosen-single form-select" required>
+            <option>1989</option>
+            <option>1990</option>
+            <option>1991</option>
+          </select>
         </div>
 
         {/* <!-- Input --> */}
@@ -51,56 +62,78 @@ const FormInfoBox = () => {
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Websiteniz (Varsa)</label>
+          <label>Telefon Numarası</label>
           <input
             type="text"
             name="name"
-            placeholder="www.website.com"
+            placeholder="+90 ___ __ __"
             required
           />
         </div>
 
-        
 
-        {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Deneyim</label>
-          <input type="text" name="name" placeholder="" required />
-        </div>
-
-        {/* <!-- Input --> */}
-        <div className="form-group col-lg-6 col-md-12">
-          <label>Yaş</label>
+          <label>Yaşadığı Şehir</label>
           <select className="chosen-single form-select" required>
-            <option>18-24</option>
-            <option>24-30</option>
-            <option>30-40</option>
-            <option>40-</option>
+            <option>İzmir</option>
+            <option>İstanbul</option>
+            <option>Ankara</option>
           </select>
         </div>
 
-        {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Eğitim Seviyesi</label>
-          <input type="text" name="name" placeholder="" required />
+          <label>Yaşadığı İlçe</label>
+          <select className="chosen-single form-select" required>
+            <option>Çekmeköy</option>
+            <option>Ataşehir</option>
+            <option>Levent</option>
+          </select>
         </div>
 
-        {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Diller</label>
-          <input
-            type="text"
-            name="name"
-            placeholder="English, Türkçe"
-            required
-          />
+          <label>Taşınmaya Açıklık</label>
+          <select className="chosen-single form-select" required>
+            <option>Açık</option>
+            <option>Açık Değil</option>
+            <option>Beni İkna Et</option>
+          </select>
         </div>
+
+        <div className="form-group col-lg-6 col-md-12">
+          <label>Taşınmayı Düşündüğü Şehirler</label>
+          <select className="chosen-single form-select" required>
+            <option>İzmir</option>
+            <option>İstanbul</option>
+            <option>Ankara</option>
+          </select>
+        </div>
+
+
+        <div className="form-group col-lg-6 col-md-12">
+          <label>Seyehate Uygunluk</label>
+          <select className="chosen-single form-select" required>
+            <option>Uygun</option>
+            <option>Uygun Değil</option>
+            <option>Beni İkna Et</option>
+          </select>
+        </div>
+
+
+        <div className="form-group col-lg-6 col-md-12">
+          <label>Tercih Edilen Çalışma Şekli</label>
+          <select className="chosen-single form-select" required>
+            <option>Full-Time</option>
+            <option>Part-Time</option>
+            <option>Project Oriented</option>
+          </select>
+        </div>
+
 
         {/* <!-- Search Select --> */}
-        <div className="form-group col-lg-6 col-md-12">
-          <label>Kategoriler</label>
+        <div className="form-group col-lg-12 col-md-12">
+          <label>Daha önce yurtdışı çalışma deneyiminiz olduysa lütfen ülke seçiniz</label>
           <Select
-            defaultValue={[catOptions[1]]}
+            defaultValue={[catOptions[0]]}
             isMulti
             name="colors"
             options={catOptions}
@@ -108,12 +141,6 @@ const FormInfoBox = () => {
             classNamePrefix="select"
             required
           />
-        </div>
-
-        {/* <!-- About Company --> */}
-        <div className="form-group col-lg-12 col-md-12">
-          <label>Kısa Yazı</label>
-          <textarea placeholder=""></textarea>
         </div>
 
         {/* <!-- Input --> */}

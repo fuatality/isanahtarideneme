@@ -3,8 +3,8 @@ import LoginPopup from "../../../common/form/login/LoginPopup";
 import DashboardCandidatesSidebar from "../../../header/DashboardCandidatesSidebar";
 import BreadCrumb from "../../BreadCrumb";
 import MyProfile from "./components/my-profile";
-import SocialNetworkBox from "./components/SocialNetworkBox";
-import ContactInfoBox from "./components/ContactInfoBox";
+import SocialNetworkBox from "./components/EducationBox";
+import ContactInfoBox from "./components/LanguageBox";
 import CopyrightFooter from "../../CopyrightFooter";
 import DashboardCandidatesHeader from "../../../header/DashboardCandidatesHeader";
 import MenuToggler from "../../MenuToggler";
@@ -51,7 +51,7 @@ const index = () => {
               <div className="ls-widget">
                 <div className="tabs-box">
                   <div className="widget-title">
-                    <h4>Sosyal Medya Hesaplarım</h4>
+                    <h4>Eğitim Bilgisi</h4>
                   </div>
                   {/* End widget-title */}
 
@@ -65,7 +65,7 @@ const index = () => {
               <div className="ls-widget">
                 <div className="tabs-box">
                   <div className="widget-title">
-                    <h4>İletişim Bİlgilerim</h4>
+                    <h4>Yabancı Dil</h4>
                   </div>
                   {/* End widget-title */}
                   <div className="widget-content">
