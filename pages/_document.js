@@ -17,7 +17,7 @@ export default function Document() {
           name="description"
           content="İş Anahtarı"
         />
-        <meta name="ibthemes" content="ATFN" />
+        <meta name="isanahtari" content="iş ilanı, aday, işveren, iş arama" />
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
