@@ -34,8 +34,13 @@ const FormContent = () => {
         document.body.classList.remove('modal-open');
       }
       // Use router.push to redirect
-      router.push('/candidates-dashboard/dashboard')
-      .then(() => window.location.reload())
+      if (data.role === 'admin') {
+        router.push('/employers-dashboard/dashboard')
+        .then(() => window.location.reload())
+      } else if (data.role === 'user') {
+        router.push('/candidates-dashboard/dashboard')
+        .then(() => window.location.reload())
+      }
     } else {
       // Handle error
       console.log(data.error);
