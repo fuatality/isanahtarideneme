@@ -1,4 +1,6 @@
 import { useState } from "react";
+import axios from "axios";
+import Cookies from 'js-cookie';
 
 const FormContent = () => {
   const [fullname, setFullname] = useState("");
@@ -11,6 +13,7 @@ const FormContent = () => {
   const [dataProcessingConsent, setDataProcessingConsent] = useState(false);
   const [communicationConsent, setCommunicationConsent] = useState(false);
   const [termsConsent, setTermsConsent] = useState(false);
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,19 +30,22 @@ const FormContent = () => {
     formData.append('communicationConsent', communicationConsent);
     formData.append('termsConsent', termsConsent);
 
-    const response = await fetch("/api/register", {
-      method: "POST",
-      body: formData,
-    });
+    try {
+      const response = await axios.post("/api/register", formData);
+      const data = response.data;
+      const token = data.token;
+      Cookies.set('jwt', token);
 
-    const data = await response.json();
-
-    if (response.ok) {
-      // TODO: Handle successful registration
+      // Handle successful registration
       console.log(data);
-    } else {
-      // TODO: Handle error
-      console.log(data.error);
+
+      
+      router.push('/candidates-dashboard/dashboard')
+      
+
+    } catch (error) {
+      // Handle error
+      console.log(error);
     }
   };
 

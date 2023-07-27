@@ -7,6 +7,8 @@ import { Provider } from "react-redux";
 import { store } from "../app/store";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import axios from 'axios';
+import Cookies from 'js-cookie';
 
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
@@ -20,6 +22,10 @@ function MyApp({ Component, pageProps }) {
       duration: 1400,
       once: true,
     });
+
+    // Set up axios to include the JWT in the Authorization header of future requests
+    axios.defaults.headers.common['Authorization'] = `Bearer ${Cookies.get('jwt')}`;
+
   }, []);
 
   return (
