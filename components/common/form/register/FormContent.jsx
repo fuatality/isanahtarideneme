@@ -90,7 +90,7 @@ const FormContent = () => {
       {/* file upload */}
       <div className="form-group">
         <label>CV'ni Yükle</label>
-        <input type="file" name="documents" accept=".pdf,.jpeg,.doc,.docx" required onChange={handleFileChange} />
+        <input type="file" name="documents" accept=".pdf,.jpeg,.doc,.docx"  onChange={handleFileChange} />
       </div>
 
       {/* checkboxes */}
