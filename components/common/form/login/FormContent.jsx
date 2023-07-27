@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from 'next/router';
 import LoginWithSocial from "./LoginWithSocial";
 
 const FormContent = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const router = useRouter(); // Declare router here
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,10 +20,24 @@ const FormContent = () => {
     const data = await response.json();
 
     if (response.ok) {
-      // TODO: Handle successful login
+      // Handle successful login
       console.log(data);
+      const loginModal = document.getElementById('loginPopupModal');
+      if (loginModal) {
+        loginModal.classList.remove('show');
+        loginModal.setAttribute('aria-modal', 'false');
+        loginModal.setAttribute('style', 'display: none');
+        const modalBackdrops = document.getElementsByClassName('modal-backdrop');
+        if (modalBackdrops[0]) modalBackdrops[0].remove();
+
+      // Remove the "modal-open" class from the body
+        document.body.classList.remove('modal-open');
+      }
+      // Use router.push to redirect
+      router.push('/candidates-dashboard/dashboard')
+      .then(() => window.location.reload())
     } else {
-      // TODO: Handle error
+      // Handle error
       console.log(data.error);
     }
   };
