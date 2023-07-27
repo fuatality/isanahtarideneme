@@ -1,12 +1,10 @@
-import Map from "../../../Map";
-
-const ContactInfoBox = () => {
+const LanguageBox = ({ boxId, index }) => {
   return (
     <form className="default-form">
       <div className="row">
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>1. Yabanci Dil</label>
+          <label>{index}. Yabanci Dil</label>
           <select className="chosen-single form-select" required>
             <option>İngilizce</option>
             <option>Fransızca</option>
@@ -67,14 +65,9 @@ const ContactInfoBox = () => {
         {/* End MapBox */}
 
         {/* <!-- Input --> */}
-        <div className="form-group col-lg-12 col-md-12">
-          <button type="submit" className="theme-btn btn-style-one">
-            +
-          </button>
-        </div>
       </div>
     </form>
   );
 };
 
-export default ContactInfoBox;
+export default LanguageBox;

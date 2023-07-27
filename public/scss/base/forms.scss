@@ -698,9 +698,9 @@ input {
 .register-dual {
   ul {
     li.react-tabs__tab--selected {
-      .btn-style-four {
-        background: #34a853;
-        color: #fff;
+      .btn-style-five {
+        background: var(--primary-color);
+        color: #ffffff;
       }
     }
   }

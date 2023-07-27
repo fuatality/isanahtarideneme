@@ -13,13 +13,13 @@ const Register = () => {
         <div className="form-group register-dual">
           <TabList className="btn-box row">
             <Tab className="col-lg-6 col-md-12">
-              <button className="theme-btn btn-style-four">
+              <button className="theme-btn btn-style-five">
                 <i className="la la-user"></i> İş Arayan
               </button>
             </Tab>
 
             <Tab className="col-lg-6 col-md-12">
-              <button className="theme-btn btn-style-four">
+              <button className="theme-btn btn-style-five">
                 <i className="la la-briefcase"></i> Şirket
               </button>
             </Tab>
