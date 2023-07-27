@@ -1,7 +1,6 @@
 import dynamic from "next/dynamic";
 import shopItems from "../../../data/shopItems";
 import Breadcrumb from "../../../components/shop/Breadcrumb";
-import LoginPopup from "../../../components/common/form/login/LoginPopup";
 import Seo from "../../../components/common/Seo";
 import MobileMenu from "../../../components/header/MobileMenu";
 import FooterDefault from "../../../components/footer/common-footer";
@@ -46,8 +45,6 @@ const ShopSingleDyanmic = () => {
       <Seo pageTitle="Paket" />
       {/* <!-- Header Span --> */}
 
-      <LoginPopup />
-      {/* End Login Popup Modal */}
 
       <ShopHeader />
       {/* <!--End Main Header --> */}

@@ -1,17 +1,13 @@
 import FormContent from "../../common/form/login/FormContent";
-import LoginPopup from "../../common/form/login/LoginPopup";
 import MobileMenu from "../../header/MobileMenu";
 import Header from "./Header";
-import DefaulHeader2 from "../../header/DefaulHeader2";
 
 const index = () => {
   return (
     <>
-      <DefaulHeader2 />
+      <Header />
       {/* <!--End Main Header -->  */}
 
-      <LoginPopup />
-      {/* End Login Popup Modal */}
 
       <MobileMenu />
       {/* End MobileMenu */}

@@ -1,5 +1,4 @@
 import FooterDefault from "../../../components/footer/common-footer";
-import LoginPopup from "../../common/form/login/LoginPopup";
 import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import FilterTopBox from "./FilterTopBox";
@@ -11,8 +10,6 @@ const index = () => {
             {/* <!-- Header Span --> */}
             <span className="header-span"></span>
 
-            <LoginPopup />
-            {/* End Login Popup Modal */}
 
             <DefaulHeader2 />
             {/* End Header with upload cv btn */}

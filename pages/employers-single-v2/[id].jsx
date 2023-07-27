@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
 import employersInfo from "../../data/topCompany";
-import LoginPopup from "../../components/common/form/login/LoginPopup";
 import FooterDefault from "../../components/footer/common-footer";
 import DefaultHeader2 from "../../components/header/DefaulHeader2";
 import MobileMenu from "../../components/header/MobileMenu";
@@ -31,9 +30,6 @@ const EmployersSingle = () => {
 
       {/* <!-- Header Span --> */}
       <span className="header-span"></span>
-
-      <LoginPopup />
-      {/* End Login Popup Modal */}
 
       <DefaultHeader2 />
       {/* <!--End Main Header --> */}

@@ -2,7 +2,6 @@ import Hero from "../hero/hero";
 import Header from "./Header";
 import JobFeatured8 from "../job-featured/JobFeatured8";
 import AppSection from "../app-section/AppSection";
-import LoginPopup from "../common/form/login/LoginPopup";
 import MobileMenu from "../header/MobileMenu";
 import Link from "next/link";
 import FooterDefault from "../footer/common-footer";
@@ -14,8 +13,6 @@ import Blog from "../blog/Blog";
 const index = () => {
   return (
     <>
-      <LoginPopup />
-      {/* End Login Popup Modal */}
 
       <Header />
       {/* <!--End Main Header --> */}

@@ -1,4 +1,4 @@
-import LoginPopup from "../../common/form/login/LoginPopup";
+
 import Register from "../../common/form/register/Register";
 import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
@@ -9,9 +9,6 @@ const index = () => {
     <>
       <DefaulHeader2 />
       {/* <!--End Main Header -->  */}
-
-      <LoginPopup />
-      {/* End Login Popup Modal */}
 
       <MobileMenu />
       {/* End MobileMenu */}

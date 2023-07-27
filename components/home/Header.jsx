@@ -53,10 +53,8 @@ const Header = () => {
               İlan Ver
             </Link>
             <a
-              href="#"
-              className="theme-btn btn-style-four  call-modal"
-              data-bs-toggle="modal"
-              data-bs-target="#loginPopupModal"
+              href="/login"
+              className="theme-btn btn-style-four"
             >
               Giriş Yap / Üye Ol
             </a>  

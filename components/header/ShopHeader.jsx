@@ -62,10 +62,8 @@ const ShopHeader = () => {
           </Link>
           <div className="btn-box">
             <a
-              href="#"
+              href="/login"
               className="theme-btn btn-style-one"
-              data-bs-toggle="modal"
-              data-bs-target="#loginPopupModal"
             >
               Giriş Yap / Üye Ol
             </a>

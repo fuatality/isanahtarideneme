@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import HeaderNavContent from "../../header/HeaderNavContent";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
+
   const changeBackground = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY >= 0) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -16,42 +18,34 @@ const Header = () => {
   }, []);
 
   return (
+    // <!-- Main Header-->
     <header
-      className={`main-header ${
-        navbar ? "fixed-header animated slideInDown" : ""
+      className={`main-header  ${
+        navbar ? "fixed-header" : ""
       }`}
     >
-      <div className="container-fluid">
-        {/* <!-- Main box --> */}
-        <div className="main-box">
-          {/* <!--Nav Outer --> */}
-          <div className="nav-outer">
-            <div className="logo-box">
-              <div className="logo">
-                <Link href="/" className="noSticky">
-                  <img src="images/logo.png" alt="logo" title="brand" />
-                </Link>
-                <Link href="/" className="isSticky">
-                  <img src="images/logo.svg" alt="logo" title="brand" />
-                </Link>
-              </div>
-            </div>
-          </div>
-          {/* End nav-outer */}
-
-          <div className="outer-box">
-            {/* <!-- Login/Register --> */}
-            <div className="btn-box">
-              <Link
-                href="/employers-dashboard/post-jobs"
-                className="theme-btn btn-style-one"
-              >
-                <span className="btn-title">Job Post</span>
+      {/* <!-- Main box --> */}
+      <div className="main-box">
+        {/* <!--Nav Outer --> */}
+        <div className="nav-outer">
+          <div className="logo-box">
+            <div className="logo">
+              <Link href="/">
+                <img src="/images/logo.png" alt="brand" height="50px" width="50px"/>
               </Link>
+              <text>İş Anahtarı</text>
             </div>
+            
           </div>
-          {/* End outer-box */}
+          {/* End .logo-box */}
+          
+
+          <HeaderNavContent />
+          {/* <!-- Main Menu End--> */}
         </div>
+        {/* End .nav-outer */}
+
+        
       </div>
     </header>
   );

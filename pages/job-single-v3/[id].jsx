@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
 import jobs from "../../data/job-featured";
-import LoginPopup from "../../components/common/form/login/LoginPopup";
 import FooterDefault from "../../components/footer/common-footer";
 import DefaulHeader from "../../components/header/DefaulHeader";
 import MobileMenu from "../../components/header/MobileMenu";
@@ -36,8 +35,6 @@ const JobSingleDynamicV3 = () => {
       {/* <!-- Header Span --> */}
       <span className="header-span"></span>
 
-      <LoginPopup />
-      {/* End Login Popup Modal */}
 
       <DefaulHeader2 />
       {/* <!--End Main Header --> */}

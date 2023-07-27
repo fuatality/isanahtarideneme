@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from 'next/router';
 import LoginWithSocial from "./LoginWithSocial";
+import axios from "axios";
 
 const FormContent = () => {
   const [email, setEmail] = useState("");
@@ -22,24 +23,11 @@ const FormContent = () => {
     if (response.ok) {
       // Handle successful login
       console.log(data);
-      const loginModal = document.getElementById('loginPopupModal');
-      if (loginModal) {
-        loginModal.classList.remove('show');
-        loginModal.setAttribute('aria-modal', 'false');
-        loginModal.setAttribute('style', 'display: none');
-        const modalBackdrops = document.getElementsByClassName('modal-backdrop');
-        if (modalBackdrops[0]) modalBackdrops[0].remove();
-
-      // Remove the "modal-open" class from the body
-        document.body.classList.remove('modal-open');
-      }
       // Use router.push to redirect
       if (data.role === 'admin') {
         router.push('/employers-dashboard/dashboard')
-        .then(() => window.location.reload())
       } else if (data.role === 'user') {
         router.push('/candidates-dashboard/dashboard')
-        .then(() => window.location.reload())
       }
     } else {
       // Handle error
@@ -87,7 +75,7 @@ const FormContent = () => {
       <div className="bottom-box">
         <div className="text">
           Hesabınız Yok Mu?{" "}
-          <Link href="#" className="call-modal signup" data-bs-toggle="modal" data-bs-target="#registerModal">
+          <Link href="/register">
             Kayıt Ol
           </Link>
 
