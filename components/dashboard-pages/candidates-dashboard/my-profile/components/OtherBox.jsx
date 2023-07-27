@@ -79,6 +79,7 @@ const OtherBox = () => {
             Kaydet
           </button>
         </div>
+        
       </div>
     </form>
   );

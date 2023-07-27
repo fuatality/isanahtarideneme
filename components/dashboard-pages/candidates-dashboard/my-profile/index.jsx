@@ -3,13 +3,13 @@ import LoginPopup from "../../../common/form/login/LoginPopup";
 import DashboardCandidatesSidebar from "../../../header/DashboardCandidatesSidebar";
 import BreadCrumb from "../../BreadCrumb";
 import MyProfile from "./components/my-profile";
-import SocialNetworkBox from "./components/EducationBox";
 import LanguageBox from "./components/LanguageBox";
 import EducationBox from "./components/EducationBox"
 import ReferenceBox from "./components/ReferenceBox"
 import ExperienceBox from "./components/ExperienceBox"
 import CertificateBox from "./components/CertificateBox"
 import OtherBox from "./components/OtherBox"
+import SkillBox from "./components/SkillBox"
 import CopyrightFooter from "../../CopyrightFooter";
 import DashboardCandidatesHeader from "../../../header/DashboardCandidatesHeader";
 import MenuToggler from "../../MenuToggler";
@@ -18,6 +18,10 @@ import React, { useState } from "react";
 const index = () => {
   const [educationBoxes, setEducationBoxes] = useState([1]);  // initial state with 1 box
   const [languageBoxes, setLanguageBoxes] = useState([1]);  // initial state with 1 box
+  const [experienceBoxes, setExperienceBoxes] = useState([1]);  // initial state with 1 box
+  const [referenceBoxes, setReferenceBoxes] = useState([1]);  // initial state with 1 box
+  const [certificateBoxes, setCertificateBoxes] = useState([1]);  // initial state with 1 box
+  const [skillBoxes, setSkillBoxes] = useState([1]);  // initial state with 1 box
 
   // ... other code ...
 
@@ -40,6 +44,48 @@ const index = () => {
     newEducationBoxes.pop();
     setEducationBoxes(newEducationBoxes);
   };
+
+  const addExperienceBox = () => {
+    setExperienceBoxes([...experienceBoxes, experienceBoxes.length + 1]);
+  };
+
+  const removeExperienceBox = () => {
+    const newExperienceBoxes = [...experienceBoxes];
+    newExperienceBoxes.pop();
+    setExperienceBoxes(newExperienceBoxes);
+  };
+
+  const addReferenceBox = () => {
+    setReferenceBoxes([...referenceBoxes, referenceBoxes.length + 1]);
+  };
+
+  const removeReferenceBox = () => {
+    const newReferenceBoxes = [...referenceBoxes];
+    newReferenceBoxes.pop();
+    setReferenceBoxes(newReferenceBoxes);
+  };
+
+  const addCertificateBox = () => {
+    setCertificateBoxes([...certificateBoxes, certificateBoxes.length + 1]);
+  };
+
+  const removeCertificateBox = () => {
+    const newCertificateBoxes = [...certificateBoxes];
+    newCertificateBoxes.pop();
+    setCertificateBoxes(newCertificateBoxes);
+  };
+
+  const addSkillBox = () => {
+    setSkillBoxes([...skillBoxes, skillBoxes.length + 1]);
+  };
+
+  const removeSkillBox = () => {
+    const newSkillBoxes = [...skillBoxes];
+    newSkillBoxes.pop();
+    setSkillBoxes(newSkillBoxes);
+  };
+
+
   return (
     <div className="page-wrapper dashboard">
       <span className="header-span"></span>
@@ -104,7 +150,7 @@ const index = () => {
               </div>
       {/* <!-- Ls widget --> */}
 
-              <div className="ls-widget">
+      <div className="ls-widget">
         <div className="tabs-box">
           <div className="widget-title">
             <h4>Yabancı Dil</h4>
@@ -129,6 +175,129 @@ const index = () => {
         </div>
       </div>
       {/* <!-- Ls widget --> */}
+
+      <div className="ls-widget">
+        <div className="tabs-box">
+          <div className="widget-title">
+            <h4>İş Deneyimi</h4>
+          </div>
+          {/* End widget-title */}
+
+          <div className="widget-content">
+            {experienceBoxes.map((boxId, index) => (
+              <ExperienceBox key={boxId} boxId={boxId} index={index+1} />
+            ))}
+            <div className="form-group col-lg-6 col-md-12">
+              <button type="button" className="theme-btn btn-style-one" onClick={addExperienceBox}>
+                <strong>Ekle</strong>
+              </button>
+              {experienceBoxes.length > 1 && (
+                <button type="button" className="theme-btn btn-style-one" onClick={removeExperienceBox}>
+                  <strong>Çıkar</strong>
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Ls widget --> */}
+
+      <div className="ls-widget">
+        <div className="tabs-box">
+          <div className="widget-title">
+            <h4>Referanslar</h4>
+          </div>
+          {/* End widget-title */}
+
+          <div className="widget-content">
+            {referenceBoxes.map((boxId, index) => (
+              <ReferenceBox key={boxId} boxId={boxId} index={index+1} />
+            ))}
+            <div className="form-group col-lg-6 col-md-12">
+              <button type="button" className="theme-btn btn-style-one" onClick={addReferenceBox}>
+                <strong>Ekle</strong>
+              </button>
+              {referenceBoxes.length > 1 && (
+                <button type="button" className="theme-btn btn-style-one" onClick={removeReferenceBox}>
+                  <strong>Çıkar</strong>
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Ls widget --> */}
+
+
+      <div className="ls-widget">
+        <div className="tabs-box">
+          <div className="widget-title">
+            <h4>Eğitim ve Sertifikalar</h4>
+          </div>
+          {/* End widget-title */}
+
+          <div className="widget-content">
+            {certificateBoxes.map((boxId, index) => (
+              <CertificateBox key={boxId} boxId={boxId} index={index+1} />
+            ))}
+            <div className="form-group col-lg-6 col-md-12">
+              <button type="button" className="theme-btn btn-style-one" onClick={addCertificateBox}>
+                <strong>Ekle</strong>
+              </button>
+              {certificateBoxes.length > 1 && (
+                <button type="button" className="theme-btn btn-style-one" onClick={removeCertificateBox}>
+                  <strong>Çıkar</strong>
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Ls widget --> */}
+
+      <div className="ls-widget">
+        <div className="tabs-box">
+          <div className="widget-title">
+            <h4>Yetenekler</h4>
+          </div>
+          {/* End widget-title */}
+
+          <div className="widget-content">
+            {skillBoxes.map((boxId, index) => (
+              <SkillBox key={boxId} boxId={boxId} index={index+1} />
+            ))}
+            <div className="form-group col-lg-6 col-md-12">
+              <button type="button" className="theme-btn btn-style-one" onClick={addSkillBox}>
+                <strong>Ekle</strong>
+              </button>
+              {skillBoxes.length > 1 && (
+                <button type="button" className="theme-btn btn-style-one" onClick={removeSkillBox}>
+                  <strong>Çıkar</strong>
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Ls widget --> */}
+
+
+      <div className="ls-widget">
+        <div className="tabs-box">
+          <div className="widget-title">
+            <h4>Diğer Bilgiler</h4>
+          </div>
+          {/* End widget-title */}
+
+          <div className="widget-content">
+            <OtherBox />
+          </div>
+        </div>
+      </div>
+      {/* <!-- Ls widget --> */}
+
+
+
             </div>
           </div>
           {/* End .row */}
