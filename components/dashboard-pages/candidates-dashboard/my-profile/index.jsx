@@ -4,7 +4,12 @@ import DashboardCandidatesSidebar from "../../../header/DashboardCandidatesSideb
 import BreadCrumb from "../../BreadCrumb";
 import MyProfile from "./components/my-profile";
 import SocialNetworkBox from "./components/EducationBox";
-import ContactInfoBox from "./components/LanguageBox";
+import LanguageBox from "./components/LanguageBox";
+import EducationBox from "./components/EducationBox"
+import ReferenceBox from "./components/ReferenceBox"
+import ExperienceBox from "./components/ExperienceBox"
+import CertificateBox from "./components/CertificateBox"
+import OtherBox from "./components/OtherBox"
 import CopyrightFooter from "../../CopyrightFooter";
 import DashboardCandidatesHeader from "../../../header/DashboardCandidatesHeader";
 import MenuToggler from "../../MenuToggler";
@@ -56,7 +61,7 @@ const index = () => {
                   {/* End widget-title */}
 
                   <div className="widget-content">
-                    <SocialNetworkBox />
+                    <EducationBox />
                   </div>
                 </div>
               </div>
@@ -69,11 +74,64 @@ const index = () => {
                   </div>
                   {/* End widget-title */}
                   <div className="widget-content">
-                    <ContactInfoBox />
+                    <LanguageBox />
                   </div>
                 </div>
               </div>
               {/* <!-- Ls widget --> */}
+
+              <div className="ls-widget">
+                <div className="tabs-box">
+                  <div className="widget-title">
+                    <h4>İş Deneyimleri</h4>
+                  </div>
+                  {/* End widget-title */}
+                  <div className="widget-content">
+                    <ExperienceBox />
+                  </div>
+                </div>
+              </div>
+              {/* <!-- Ls widget --> */}
+
+              <div className="ls-widget">
+                <div className="tabs-box">
+                  <div className="widget-title">
+                    <h4>Referanslar</h4>
+                  </div>
+                  {/* End widget-title */}
+                  <div className="widget-content">
+                    <ReferenceBox />
+                  </div>
+                </div>
+              </div>
+              {/* <!-- Ls widget --> */}
+
+              <div className="ls-widget">
+                <div className="tabs-box">
+                  <div className="widget-title">
+                    <h4>Eğitim ve Sertifikalar</h4>
+                  </div>
+                  {/* End widget-title */}
+                  <div className="widget-content">
+                    <CertificateBox />
+                  </div>
+                </div>
+              </div>
+              {/* <!-- Ls widget --> */}
+
+              <div className="ls-widget">
+                <div className="tabs-box">
+                  <div className="widget-title">
+                    <h4>Diğer Bilgiler</h4>
+                  </div>
+                  {/* End widget-title */}
+                  <div className="widget-content">
+                    <OtherBox />
+                  </div>
+                </div>
+              </div>
+              {/* <!-- Ls widget --> */}
+
             </div>
           </div>
           {/* End .row */}

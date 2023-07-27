@@ -3,7 +3,6 @@ const SocialNetworkBox = () => {
     <form className="default-form">
       <div className="row">
 
-
         <div className="form-group col-lg-6 col-md-12">
           <label>Eğitim Seviyesi</label>
           <select className="chosen-single form-select" required>
@@ -25,9 +24,9 @@ const SocialNetworkBox = () => {
         <div className="form-group col-lg-6 col-md-12">
           <label>Üniversite</label>
           <select className="chosen-single form-select" required>
-            <option>Boğaziçi Üniversitesi</option>
             <option>İstanbul Teknik Üniversitesi</option>
-            <option>Orta Doğu Teknik Üniversitesi</option>
+            <option>Boğaziçi Üniversitesi</option>
+            <option>Gazi Üniversitesi</option>
           </select>
         </div>
 
@@ -40,21 +39,19 @@ const SocialNetworkBox = () => {
           </select>
         </div>
 
-
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-          <label>Not Ortalaması</label>
+          <label>Not Ortalaması(Opsiyonel)</label>
           <input
             type="text"
             name="name"
-            placeholder="Opsiyonel"
+            placeholder=""
             required
           />
         </div>
 
-        {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
-       
+
         </div>
 
         {/* <!-- Input --> */}
