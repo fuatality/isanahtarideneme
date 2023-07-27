@@ -16,17 +16,19 @@ const FormContent = () => {
     try {
       const response = await axios.post("/api/login", { email, password });
       const data = response.data;
-      const token=data.token;
+      const token = data.token;
+      const userRole = data.role;  // Extract the role from the response data
       
       Cookies.set('jwt', token);
+      Cookies.set('userRole', userRole);  // Save the user's role in a cookie
 
       // Handle successful login
       console.log(data);
       
       // Use router.push to redirect
-      if (data.role === 'admin') {
+      if (userRole === 'admin') {
         router.push('/employers-dashboard/dashboard')
-      } else if (data.role === 'user') {
+      } else if (userRole === 'user') {
         router.push('/candidates-dashboard/dashboard')
       }
     } catch (error) {

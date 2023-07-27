@@ -16,8 +16,12 @@ handler.post(async (req, res) => {
   // TODO: Validate and process the form data
   // TODO: Register the new user (e.g., save to database, send confirmation email, etc.)
 
-  // Send a successful response back to the client
-  res.status(200).json({ message: 'Registration successful' });
+  // Send a successful response back to the client, along with a mock JWT and user role
+  res.status(200).json({ 
+    message: 'Registration successful', 
+    token: 'mock-jwt-for-user',  // replace with actual JWT
+    role: 'user'  // since only users register, this can be hard-coded
+  });
 });
 
 export default handler;

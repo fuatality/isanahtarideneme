@@ -17,7 +17,7 @@ const FormContent = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     const formData = new FormData();
     formData.append('fullname', fullname);
     formData.append('username', username);
@@ -29,25 +29,25 @@ const FormContent = () => {
     formData.append('dataProcessingConsent', dataProcessingConsent);
     formData.append('communicationConsent', communicationConsent);
     formData.append('termsConsent', termsConsent);
-
+  
     try {
       const response = await axios.post("/api/register", formData);
       const data = response.data;
       const token = data.token;
       Cookies.set('jwt', token);
-
+      Cookies.set('userRole', data.userRole);  // Save the user's role in a cookie
+  
       // Handle successful registration
       console.log(data);
-
       
-      router.push('/candidates-dashboard/dashboard')
-      
-
+      router.push('/candidates-dashboard/dashboard');
     } catch (error) {
       // Handle error
       console.log(error);
     }
-  };
+};
+
+  
 
   const handleFileChange = (e) => {
     setDocuments(e.target.files[0]);
