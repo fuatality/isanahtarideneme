@@ -1,12 +1,13 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Cookies from 'js-cookie';
+import { useSelector } from 'react-redux';  // Import useSelector
 
 const withAuth = (Component, role) => {
   return function ProtectedRoute(props) {
     const router = useRouter();
     const token = Cookies.get('jwt');
-    let userRole = Cookies.get('userRole');  // Assuming you also store the user role in a cookie
+    let userRole = useSelector((state) => state.user.role);  // Use useSelector to access the user role from the Redux store
 
     // If there's no token, consider the user as a "guest"
     if (!token) {

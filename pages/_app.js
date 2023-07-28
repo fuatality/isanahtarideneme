@@ -9,6 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import axios from 'axios';
 import Cookies from 'js-cookie';
+import { setRole } from "../features/user/userSlice";
 
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
@@ -25,7 +26,10 @@ function MyApp({ Component, pageProps }) {
 
     // Set up axios to include the JWT in the Authorization header of future requests
     axios.defaults.headers.common['Authorization'] = `Bearer ${Cookies.get('jwt')}`;
-
+    const userRole = Cookies.get('userRole');
+    if (userRole) {
+      store.dispatch(setRole(userRole));
+    }
   }, []);
 
   return (

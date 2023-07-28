@@ -1,6 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 import Cookies from 'js-cookie';
+import { useDispatch } from 'react-redux';
+import { setRole } from "../../../../features/user/userSlice";
 
 const FormContent = () => {
   const [fullname, setFullname] = useState("");
@@ -14,6 +16,7 @@ const FormContent = () => {
   const [communicationConsent, setCommunicationConsent] = useState(false);
   const [termsConsent, setTermsConsent] = useState(false);
   const router = useRouter();
+  const dispatch = useDispatch();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -35,7 +38,9 @@ const FormContent = () => {
       const data = response.data;
       const token = data.token;
       Cookies.set('jwt', token);
-      Cookies.set('userRole', data.userRole);  // Save the user's role in a cookie
+      Cookies.set('userRole', userRole);  // Save the user's role in a cookie
+
+      dispatch(setRole(userRole));
   
       // Handle successful registration
       console.log(data);

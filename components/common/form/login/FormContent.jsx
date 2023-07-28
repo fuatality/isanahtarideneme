@@ -4,11 +4,14 @@ import { useRouter } from 'next/router';
 import LoginWithSocial from "./LoginWithSocial";
 import axios from "axios";
 import Cookies from 'js-cookie';
+import { useDispatch } from 'react-redux';
+import { setRole } from "../../../../features/user/userSlice"; // replace with actual path
 
 const FormContent = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
+  const dispatch = useDispatch(); // Add this line
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -21,6 +24,9 @@ const FormContent = () => {
       
       Cookies.set('jwt', token);
       Cookies.set('userRole', userRole);  // Save the user's role in a cookie
+
+      // Update the user role in the Redux store
+      dispatch(setRole(userRole)); // Add this line
 
       // Handle successful login
       console.log(data);
