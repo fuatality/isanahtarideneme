@@ -5,8 +5,12 @@ import MobileMenu from "../../header/MobileMenu";
 import BlogPagination from "../blog-sidebar/BlogPagination";
 import BlogSidebar from "../blog-sidebar";
 import Breadcrumb from "../../common/Breadcrumb";
+import DashboardCandidatesHeader from "../../header/DashboardCandidatesHeader";
+import DashboardHeader from "../../header/DashboardHeader";
+import { useSelector } from 'react-redux';
 
 const index = () => {
+  const userRole = useSelector((state) => state.user.role);
   return (
     <>
       {/* <!-- Header Span --> */}
@@ -14,7 +18,7 @@ const index = () => {
     
       {/* End Login Popup Modal */}
 
-      <DefaulHeader2 />
+      {userRole === 'user' ? <DashboardCandidatesHeader /> : userRole === 'admin' ? <DashboardHeader /> : <DefaulHeader2 />}
       {/* <!--End Main Header --> */}
 
       <MobileMenu />

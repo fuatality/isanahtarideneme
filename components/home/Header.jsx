@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import HeaderNavContent from "../header/HeaderNavContent";
+import { useSelector } from 'react-redux'; // <-- Add this line
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
+  const userRole = useSelector(state => state.user.role);
 
   const changeBackground = () => {
     if (window.scrollY >= 10) {
@@ -46,18 +48,22 @@ const Header = () => {
         <div className="outer-box">
           {/* <!-- Login/Register --> */}
           <div className="btn-box">
+            {userRole === 'admin' && (
+              <Link
+                href="/employers-dashboard/post-jobs"
+                className="theme-btn btn-style-one"
+              >
+                İlan Ver
+              </Link>
+            )}
+            {userRole === 'guest' &&( 
             <Link
-              href="/employers-dashboard/post-jobs"
-              className="theme-btn btn-style-one"
-            >
-              İlan Ver
-            </Link>
-            <a
               href="/login"
               className="theme-btn btn-style-four"
             >
               Giriş Yap / Üye Ol
-            </a>  
+            </Link> 
+            )} 
           </div>
         </div>
       </div>

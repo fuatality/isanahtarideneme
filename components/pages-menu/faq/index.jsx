@@ -3,15 +3,20 @@ import FooterDefault from "../../footer/common-footer";
 import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import FaqChild from "./FaqChild";
+import DashboardCandidatesHeader from "../../header/DashboardCandidatesHeader";
+import DashboardHeader from "../../header/DashboardHeader";
+import { useSelector } from 'react-redux';
 
 const index = () => {
+  const userRole = useSelector((state) => state.user.role);
   return (
     <>
       {/* <!-- Header Span --> */}
       <span className="header-span"></span>
 
 
-      <DefaulHeader2 />
+      {userRole === 'user' ? <DashboardCandidatesHeader /> : userRole === 'admin' ? <DashboardHeader /> : <DefaulHeader2 />}
+
       {/* <!--End Main Header --> */}
 
       <MobileMenu />

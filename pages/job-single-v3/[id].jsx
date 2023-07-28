@@ -15,11 +15,16 @@ import JobOverView2 from "../../components/job-single-pages/job-overview/JobOver
 import ApplyJobModalContent from "../../components/job-single-pages/shared-components/ApplyJobModalContent";
 import DefaulHeader2 from "../../components/header/DefaulHeader2";
 import Link from "next/link";
+import { useSelector } from 'react-redux';
+import DashboardCandidatesHeader from "../../components/header/DashboardCandidatesHeader";
+import DashboardHeader from "../../components/header/DashboardHeader";
 
 const JobSingleDynamicV3 = () => {
   const router = useRouter();
   const [company, setCompany] = useState({});
   const id = router.query.id;
+  const userRole = useSelector((state) => state.user.role);
+
 
   useEffect(() => {
     if (!id) <h1>Loading...</h1>;
@@ -36,7 +41,7 @@ const JobSingleDynamicV3 = () => {
       <span className="header-span"></span>
 
 
-      <DefaulHeader2 />
+      {userRole === 'user' ? <DashboardCandidatesHeader /> : userRole === 'admin' ? <DashboardHeader /> : <DefaulHeader2 />}
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
@@ -111,6 +116,7 @@ const JobSingleDynamicV3 = () => {
 
               <div className="sidebar-column col-lg-4 col-md-12 col-sm-12">
                 <aside className="sidebar">
+                  {userRole === 'user' &&(
                   <div className="btn-box">
                     <a
                       href="#"
@@ -124,6 +130,7 @@ const JobSingleDynamicV3 = () => {
                       <i className="flaticon-bookmark"></i>
                     </button>
                   </div>
+                  )}
                   {/* End apply for job btn */}
 
                   {/* <!-- Modal --> */}

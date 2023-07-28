@@ -6,30 +6,29 @@ const FooterContent4 = () => {
     {
       id: 1,
       title: "Adaylar İçin",
-      colClass: "col-lg-2",
+      colClass: "col-lg-3",
       menuList: [
         { name: "İş İlanları", route: "/job-list-v5" },
-        { name: "Şirketler", route: "/employers-list-v3" },
        /* { name: "Candidate Dashboard", route: "/" },
         { name: "Job Alerts", route: "/" },
         { name: "My Bookmarks", route: "/" },*/
       ],
     },
-    {
+    /*{
       id: 2,
       title: "Firmalar İçin",
-      colClass: "col-lg-2",
+      colClass: "col-lg-3",
       menuList: [
         /*{ name: "Browse Candidates", route: "/" },
-        { name: "Employer Dashboard", route: "/" },*/
+        { name: "Employer Dashboard", route: "/" },
         { name: "İlan Ver", route: "/employers-dashboard/post-jobs" },
         { name: "Paketler", route: "/pricing" },
       ],
-    },
+    },*/
     {
-      id: 3,
+      id: 2,
       title: "Sayfalar",
-      colClass: "col-lg-2",
+      colClass: "col-lg-3",
       menuList: [
         { name: "SSS", route: "/faq" },
         { name: "Şartlar ve Koşullar", route: "/terms" },
@@ -38,9 +37,9 @@ const FooterContent4 = () => {
       ],
     },
     {
-      id: 4,
+      id: 3,
       title: "Hoşgeldin",
-      colClass: "col-lg-2",
+      colClass: "col-lg-3",
       menuList: [
         { name: "Giriş Yap", route: "/login" },
         { name: "Aramıza Katıl", route: "/register" },   

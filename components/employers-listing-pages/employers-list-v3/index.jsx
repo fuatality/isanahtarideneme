@@ -3,8 +3,20 @@ import DefaulHeader2 from "../../header/DefaulHeader2";
 import MobileMenu from "../../header/MobileMenu";
 import FilterTopBox from "./FilterTopBox";
 import JobSearchForm from "./JobSearchForm";
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { useSelector } from 'react-redux';
 
 const index = () => {
+    const router = useRouter();
+    const userRole = useSelector((state) => state.user.role);
+
+    useEffect(() => {
+        if(userRole !== 'admin') {
+            router.push('/admin-dashboard/dashboard');
+        }
+    }, []);
+
     return (
         <>
             {/* <!-- Header Span --> */}

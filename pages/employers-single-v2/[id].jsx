@@ -11,11 +11,16 @@ import RelatedJobs from "../../components/employer-single-pages/related-jobs/Rel
 import MapJobFinder from "../../components/job-listing-pages/components/MapJobFinder";
 import Social from "../../components/employer-single-pages/social/Social";
 import PrivateMessageBox from "../../components/employer-single-pages/shared-components/PrivateMessageBox";
+import { useSelector } from 'react-redux';
+import DashboardCandidatesHeader from "../../components/header/DashboardCandidatesHeader";
+import DashboardHeader from "../../components/header/DashboardHeader";
 
 const EmployersSingle = () => {
   const router = useRouter();
   const [employer, setEmployersInfo] = useState({});
   const id = router.query.id;
+  const userRole = useSelector((state) => state.user.role);
+
 
   useEffect(() => {
     if (!id) <h1>Loading...</h1>;
@@ -31,7 +36,8 @@ const EmployersSingle = () => {
       {/* <!-- Header Span --> */}
       <span className="header-span"></span>
 
-      <DefaultHeader2 />
+      {userRole === 'user' ? <DashboardCandidatesHeader /> : userRole === 'admin' ? <DashboardHeader /> : <DefaultHeader2 />}
+
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
@@ -67,6 +73,7 @@ const EmployersSingle = () => {
 
               <div className="sidebar-column col-lg-4 col-md-12 col-sm-12">
                 <aside className="sidebar">
+                  {userRole === 'user' &&(
                   <div className="btn-box">
                     <button
                       className="theme-btn btn-style-one"
@@ -79,6 +86,7 @@ const EmployersSingle = () => {
                       <i className="flaticon-bookmark"></i>
                     </button>
                   </div>
+                  )}
                   {/* End btn-box */}
 
                   {/* <!-- Modal --> */}

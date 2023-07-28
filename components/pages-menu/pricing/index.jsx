@@ -1,17 +1,29 @@
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { useSelector } from 'react-redux';
 import Breadcrumb from "../../common/Breadcrumb";
 import FooterDefault from "../../footer/common-footer";
-import DefaulHeader2 from "../../header/DefaulHeader2";
+import DashboardHeader from '../../header/DashboardHeader';
 import MobileMenu from "../../header/MobileMenu";
 import Pricing from "../../pricing/Pricing";
 
-const index = () => {
+const PricingPage = () => {
+  const router = useRouter();
+  const userRole = useSelector((state) => state.user.role);  // Use useSelector to access the user role from the Redux store
+
+  useEffect(() => {
+    // If the user's role is not 'admin', redirect them to their own dashboard
+    if (userRole !== 'admin') {
+      router.push(`/`);
+    }
+  }, [userRole]);
+
   return (
     <>
       {/* <!-- Header Span --> */}
       <span className="header-span"></span>
 
-
-      <DefaulHeader2 />
+      <DashboardHeader />
       {/* <!--End Main Header --> */}
 
       <MobileMenu />
@@ -41,4 +53,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default PricingPage;

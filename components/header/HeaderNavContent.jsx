@@ -12,9 +12,12 @@ import {
   isActiveParentChaild,
 } from "../../utils/linkActiveChecker";
 import { useRouter } from "next/router";
+import { useSelector } from 'react-redux';
 
 const HeaderNavContent = () => {
   const router = useRouter();
+  const userRole = useSelector((state) => state.user.role);
+
 
   return (
     <>
@@ -37,111 +40,10 @@ const HeaderNavContent = () => {
           {/* End homepage menu items */}
           {/* End findjobs menu items */}
 
-          <li
-            className={`${
-              isActiveParent(employerItems, router.asPath) ||
-              router.asPath === "/employers-dashboard/dashboard"
-                ? "current"
-                : ""
-            } dropdown`}
-          >
-            <span>Şirketler</span>
-            <ul>
-              {employerItems.map((item) => (
-                <li className="dropdown" key={item.id}>
-                  <span
-                    className={
-                      isActiveParentChaild(item.items, router.asPath)
-                        ? "current"
-                        : ""
-                    }
-                  >
-                    {item.title}
-                  </span>
-                  <ul>
-                    {item.items.map((menu, i) => (
-                      <li
-                        className={
-                          isActiveLink(menu.routePath, router.asPath)
-                            ? "current"
-                            : ""
-                        }
-                        key={i}
-                      >
-                        <Link href={menu.routePath}>{menu.name}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-              <li
-                className={
-                  isActiveLink("/employers-dashboard/dashboard", router.asPath)
-                    ? "current"
-                    : ""
-                }
-              >
-                <Link href="/employers-dashboard/dashboard">
-                  Şirket Paneli
-                </Link>
-              </li>
-            </ul>
-          </li>
-          {/* End Employers menu items */}
+          
 
-          <li
-            className={`${
-              isActiveParent(candidateItems, router.asPath) ||
-              router.asPath === "/candidates-dashboard/dashboard"
-                ? "current"
-                : ""
-                ? "current"
-                : ""
-            } dropdown`}
-          >
-            <span>Adaylar</span>
-            <ul>
-              {candidateItems.map((item) => (
-                <li className="dropdown" key={item.id}>
-                  <span
-                    className={
-                      isActiveParentChaild(item.items, router.asPath)
-                        ? "current"
-                        : ""
-                    }
-                  >
-                    {item.title}
-                  </span>
-                  <ul>
-                    {item.items.map((menu, i) => (
-                      <li
-                        className={
-                          isActiveLink(menu.routePath, router.asPath)
-                            ? "current"
-                            : ""
-                        }
-                        key={i}
-                      >
-                        <Link href={menu.routePath}>{menu.name}</Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))}
-              <li
-                className={
-                  router.asPath === "/candidates-dashboard/dashboard"
-                    ? "current"
-                    : ""
-                }
-              >
-                <Link href="/candidates-dashboard/dashboard">
-                  Aday Paneli
-                </Link>
-              </li>
-            </ul>
-          </li>
-          {/* End Candidates menu items */}
+
+          
 
           <li className={`${
     isActiveParent(blogItems, router.asPath) ? "current" : ""

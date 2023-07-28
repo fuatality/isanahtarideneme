@@ -7,14 +7,20 @@ import Link from "next/link";
 import FooterDefault from "../footer/common-footer";
 import JobFilterTab2 from "../job-featured/JobFilterTab2";
 import Blog from "../blog/Blog";
+import DashboardCandidatesHeader from "../header/DashboardCandidatesHeader";
+import { useSelector } from 'react-redux';
+import DashboardHeader from "../header/DashboardHeader";
+
 
 
 
 const index = () => {
+  const userRole = useSelector((state) => state.user.role);
   return (
     <>
 
-      <Header />
+      {userRole === 'user' ? <DashboardCandidatesHeader /> : userRole === 'admin' ? <DashboardHeader /> : <Header />}
+
       {/* <!--End Main Header --> */}
 
       <MobileMenu />

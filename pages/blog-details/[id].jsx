@@ -7,11 +7,15 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Seo from "../../components/common/Seo";
 import DefaulHeader2 from "../../components/header/DefaulHeader2";
+import { useSelector } from 'react-redux'; // <-- Add this line
+import DashboardCandidatesHeader from "../../components/header/DashboardCandidatesHeader";
+import DashboardHeader from "../../components/header/DashboardHeader";
 
 const BlogDetailsDynamic = () => {
   const router = useRouter();
   const [blog, setBlogItem] = useState({});
   const id = router.query.id;
+  const userRole = useSelector((state) => state.user.role);
 
   useEffect(() => {
     if (!id) <h1>Loading...</h1>;
@@ -28,7 +32,7 @@ const BlogDetailsDynamic = () => {
       <span className="header-span"></span>
 
 
-      <DefaulHeader2 />
+      {userRole === 'user' ? <DashboardCandidatesHeader /> : userRole === 'admin' ? <DashboardHeader /> : <DefaulHeader2 />}
       {/* <!--End Main Header --> */}
 
       <MobileMenu />

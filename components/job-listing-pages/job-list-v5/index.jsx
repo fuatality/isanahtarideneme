@@ -4,15 +4,19 @@ import MobileMenu from "../../header/MobileMenu";
 import FilterJobBox from "./FilterJobBox";
 import JobSearchForm from "./JobSearchForm";
 import SearchForm from "../../common/job-search/SearchForm";
+import DashboardCandidatesHeader from "../../header/DashboardCandidatesHeader";
+import DashboardHeader from "../../header/DashboardHeader";
+import { useSelector } from 'react-redux';
 
 const index = () => {
+  const userRole = useSelector((state) => state.user.role);
   return (
     <>
       {/* <!-- Header Span --> */}
       <span className="header-span"></span>
 
 
-      <DefaulHeader2 />
+      {userRole === 'user' ? <DashboardCandidatesHeader /> : userRole === 'admin' ? <DashboardHeader /> : <DefaulHeader2 />}
       {/* End Header with upload cv btn */}
 
       <MobileMenu />

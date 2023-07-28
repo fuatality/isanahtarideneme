@@ -1,13 +1,25 @@
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import { useSelector } from 'react-redux';
 import FormContent from "../../common/form/login/FormContent";
 import MobileMenu from "../../header/MobileMenu";
-import Header from "./Header";
+import DefaulHeader2 from "../../header/DefaulHeader2";
 
-const index = () => {
+const LoginPage = () => {
+  const router = useRouter();
+  const userRole = useSelector((state) => state.user.role);  // Use useSelector to access the user role from the Redux store
+
+  useEffect(() => {
+    // If the user's role is not 'guest', redirect them to their own dashboard
+    if (userRole !== 'guest') {
+      router.push(`/`);
+    }
+  }, [userRole]);
+
   return (
     <>
-      <Header />
-      {/* <!--End Main Header -->  */}
-
+      <DefaulHeader2 />
+      {/* <!--End Main Header --> */}
 
       <MobileMenu />
       {/* End MobileMenu */}
@@ -30,4 +42,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default LoginPage;
