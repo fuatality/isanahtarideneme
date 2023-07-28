@@ -22,7 +22,7 @@ const Index = () => {
 
   return (
     <div
-      className="offcanvas offcanvas-start mobile_menu-contnet"
+      className="offcanvas offcanvas-end mobile_menu-contnet"
       tabIndex="-1"
       id="offcanvasMenu"
       data-bs-scroll="true"

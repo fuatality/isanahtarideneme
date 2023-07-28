@@ -148,6 +148,7 @@
 }
 .mobile_menu-contnet {
   &.offcanvas {
+    direction: rtl;
     min-height: 100vh;
     overflow-y: auto;
 
@@ -161,6 +162,7 @@
         font-size: 16px;
       }
       .ps-submenu-content {
+        direction: rtl;
         ul li a {
           padding-left: 30px;
           padding-right: 20px;
@@ -171,7 +173,7 @@
       .ps-submenu-expand-icon > span {
         width: 8px;
         height: 8px;
-        color: #666;
+        color: var(--primary-color);    
       }
     }
   }
