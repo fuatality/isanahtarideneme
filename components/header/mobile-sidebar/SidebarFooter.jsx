@@ -8,24 +8,24 @@ const SidebarFooter = () => {
 
   return (
     <div className="mm-add-listing mm-listitem pro-footer">
-      <a href="/login" className="theme-btn btn-style-one mm-listitem__text">
-        Giriş Yap / Üye Ol
+      <a href="#" className="theme-btn btn-style-one mm-listitem__text">
+        Job Post
       </a>
       {/* job post btn */}
 
       <div className="mm-listitem__text">
         <div className="contact-info">
           <span className="phone-num">
-            <span>Bize Ulaşın</span>
-            <text>1234567894</text>
-          </span>
-          <span className="phone-num">
-            <text>cgd@yandex.com</text>
+            <span>Call us</span>
+            <a href="tel:1234567890">123 456 7890</a>
           </span>
           <span className="address">
-          Atatürk Mahallesi, Ataşehir Bulvarı
-          Ataşehir, İstanbul.
+            329 Queensberry Street, North Melbourne VIC <br />
+            3051, Australia.
           </span>
+          <a href="mailto:support@superio.com" className="email">
+            support@superio.com
+          </a>
         </div>
         {/* End .contact-info */}
 
