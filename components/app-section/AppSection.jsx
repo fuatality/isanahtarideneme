@@ -29,7 +29,7 @@ const AppSection = () => {
           {/* <!-- Image Column --> */}
           <div className="image-column col-lg-6 col-md-12 col-sm-12 order-1">
             <figure className="image" data-aos="fade-right">
-              <img src="images/index-15/app/2.png" alt="hero" />
+              <img src="images/index-15/app/1.jpg" alt="hero" />
             </figure>
           </div>
 

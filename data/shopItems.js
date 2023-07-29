@@ -56,7 +56,7 @@ module.exports = [
   {
     id: 7,
     title: "Product 7",
-    img: "/images/resource/products/7.jpg",
+    img: "/images/resource/products/1.jpg",
     price: "71.99",
     oldPrice: "99",
     category: "Book 7",
