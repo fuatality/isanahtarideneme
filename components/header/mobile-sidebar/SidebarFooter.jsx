@@ -1,3 +1,9 @@
+import { useDispatch, useSelector } from "react-redux";
+import { setRole } from "../../../features/user/userSlice";
+import Cookies from "js-cookie";
+import Link from "next/link";
+import { useRouter } from "next/router";
+
 const SidebarFooter = () => {
   const socialContent = [
     { id: 1, icon: "fa-facebook-f", link: "https://www.facebook.com/" },
@@ -6,12 +12,33 @@ const SidebarFooter = () => {
     { id: 4, icon: "fa-linkedin-in", link: "https://www.linkedin.com/" },
   ];
 
+  const userRole = useSelector((state) => state.user.role); // Replace with your logic to retrieve the user role
+  const router = useRouter();
+  const dispatch = useDispatch();
+
+  const logout = () => {
+    // Clear the JWT token and user role from the Cookies
+    Cookies.remove("jwt");
+    Cookies.remove("userRole");
+
+    // Set the user role in the Redux store to "guest"
+    dispatch(setRole("guest"));
+
+    // Redirect the user to the home page
+    router.push("/");
+  };
+
   return (
     <div className="mm-add-listing mm-listitem pro-footer">
-      <a href="/login" className="theme-btn btn-style-four mm-listitem__text">
-        Giriş Yap / Üye Ol
-      </a>
-      {/* job post btn */}
+      {userRole === "guest" ? (
+        <a href="/login" className="theme-btn btn-style-four mm-listitem__text">
+          Giriş Yap / Üye Ol
+        </a>
+      ) : (
+        <button onClick={logout} className="theme-btn btn-style-one mm-listitem__text">
+          Çıkış Yap
+        </button>
+      )}
 
       <div className="mm-listitem__text">
         <div className="contact-info">

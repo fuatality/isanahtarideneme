@@ -1,4 +1,4 @@
-"use client";
+import { useSelector } from "react-redux";
 import Link from "next/link";
 import {
   ProSidebarProvider,
@@ -7,18 +7,16 @@ import {
   MenuItem,
   SubMenu,
 } from "react-pro-sidebar";
-
-import mobileMenuData from "../../../data/mobileMenuData";
+import mobileMenuDataFunction from "../../../data/mobileMenuData";
 import SidebarFooter from "./SidebarFooter";
 import SidebarHeader from "./SidebarHeader";
-import {
-  isActiveLink,
-  isActiveParentChaild,
-} from "../../../utils/linkActiveChecker";
+import { isActiveLink, isActiveParentChaild } from "../../../utils/linkActiveChecker";
 import { useRouter } from "next/router";
 
 const Index = () => {
   const router = useRouter();
+  const userRole = useSelector((state) => state.user.role); // Replace with your logic to retrieve the user role
+  const mobileMenuData = mobileMenuDataFunction(userRole);
 
   return (
     <div
@@ -29,7 +27,6 @@ const Index = () => {
     >
       <SidebarHeader />
       {/* End pro-header */}
-
       <ProSidebarProvider>
         <Sidebar>
           <Menu>
@@ -61,7 +58,6 @@ const Index = () => {
           </Menu>
         </Sidebar>
       </ProSidebarProvider>
-
       <SidebarFooter />
     </div>
   );
