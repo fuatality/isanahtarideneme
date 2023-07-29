@@ -19,7 +19,7 @@ const ChatboxContactList = () => {
               <span>Darlene Robertson</span>
               <p> Head of Development</p>
             </div>
-            <span className="info">35 mins</span>
+            <span className="info">35 dakika</span>
           </div>
         </a>
       </li>
@@ -66,7 +66,7 @@ const ChatboxContactList = () => {
               <p>Head of Development</p>
             </div>
             <span className="info">
-              35 mins <span className="count bg-success">2</span>
+              35 dakika <span className="count bg-success">2</span>
             </span>
           </div>
         </a>
@@ -89,7 +89,7 @@ const ChatboxContactList = () => {
               <span>Albert Flores</span>
               <p>Head of Development</p>
             </div>
-            <span className="info">35 mins</span>
+            <span className="info">35 dakika</span>
           </div>
         </a>
       </li>
@@ -112,7 +112,7 @@ const ChatboxContactList = () => {
               <p>Head of Development</p>
             </div>
             <span className="info">
-              35 mins <span className="count bg-warning">2</span>
+              35 dakika <span className="count bg-warning">2</span>
             </span>
           </div>
         </a>
@@ -135,7 +135,7 @@ const ChatboxContactList = () => {
               <span>Kristin Watson</span>
               <p>Head of Development</p>
             </div>
-            <span className="info">35 mins</span>
+            <span className="info">35 dakika</span>
           </div>
         </a>
       </li>
@@ -157,7 +157,7 @@ const ChatboxContactList = () => {
               <span>Annette Black</span>
               <p>Head of Development</p>
             </div>
-            <span className="info">35 mins</span>
+            <span className="info">35 dakika</span>
           </div>
         </a>
       </li>
@@ -179,7 +179,7 @@ const ChatboxContactList = () => {
               <span>Jacob Jones</span>
               <p>Head of Development</p>
             </div>
-            <span className="info">35 mins</span>
+            <span className="info">35 dakika</span>
           </div>
         </a>
       </li>

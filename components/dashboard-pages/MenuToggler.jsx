@@ -15,7 +15,7 @@ const MenuToggler = () => {
         type="button"
         className="theme-btn toggle-filters"
       >
-        <span className="flaticon-menu-1"></span> Menu
+        <span className="flaticon-menu-1"></span> Menü
       </button>
     </div>
   );

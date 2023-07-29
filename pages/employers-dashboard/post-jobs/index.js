@@ -6,7 +6,7 @@ import withAuth from "../../../components/withAuth/withAuth";
 const index = () => {
   return (
     <>
-      <Seo pageTitle="Post Jobs" />
+      <Seo pageTitle="İlan Aç" />
       <PostJob />
     </>
   );

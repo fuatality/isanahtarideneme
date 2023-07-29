@@ -1,7 +1,6 @@
 import dynamic from "next/dynamic";
 import jobs from "../../data/job-featured";
 import FooterDefault from "../../components/footer/common-footer";
-import DefaulHeader from "../../components/header/DefaulHeader";
 import MobileMenu from "../../components/header/MobileMenu";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";

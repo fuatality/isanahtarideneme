@@ -3,7 +3,6 @@ import DashboardCandidatesSidebar from "../../../header/DashboardCandidatesSideb
 import BreadCrumb from "../../BreadCrumb";
 import TopCardBlock from "./components/TopCardBlock";
 import ProfileChart from "./components/ProfileChart";
-import Notification from "./components/Notification";
 import CopyrightFooter from "../../CopyrightFooter";
 import JobApplied from "./components/JobApplied";
 import DashboardCandidatesHeader from "../../../header/DashboardCandidatesHeader";
@@ -48,17 +47,7 @@ const Index = () => {
             </div>
             {/* End .col */}
 
-            <div className="col-xl-5 col-lg-12">
-              {/* <!-- Notification Widget --> */}
-              <div className="notification-widget ls-widget">
-                <div className="widget-title">
-                  <h4>Bildirimler</h4>
-                </div>
-                <div className="widget-content">
-                  <Notification />
-                </div>
-              </div>
-            </div>
+          
             {/* End .col */}
 
             <div className="col-lg-12">

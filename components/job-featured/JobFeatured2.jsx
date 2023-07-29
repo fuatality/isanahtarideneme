@@ -16,7 +16,7 @@ const JobFeatured2 = () => {
                 <img src={item.logo} alt="item brand" />
               </span>
               <h4>
-                <Link href={`/job-single-v1/${item.id}`}>{item.jobTitle}</Link>
+                <Link href={`/job-single-v3/${item.id}`}>{item.jobTitle}</Link>
               </h4>
 
               <ul className="job-info">
@@ -34,9 +34,6 @@ const JobFeatured2 = () => {
                   <span className="icon flaticon-clock-3"></span> {item.time}
                 </li>
                 {/* time info */}
-                <li>
-                  <span className="icon flaticon-money"></span> {item.salary}
-                </li>
                 {/* salary info */}
               </ul>
               {/* End .job-info */}

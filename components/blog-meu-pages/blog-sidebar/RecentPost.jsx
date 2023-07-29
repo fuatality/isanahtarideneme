@@ -14,7 +14,7 @@ const RecentPost = () => {
           <h6>
             <Link href={`/blog-details/${item.id}`}>{item.title}</Link>
           </h6>
-          <div className="post-info">August 9, 2021</div>
+          <div className="post-info">Ağustos 2078</div>
         </article>
       ))}
     </>

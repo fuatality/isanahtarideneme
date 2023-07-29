@@ -25,11 +25,6 @@ const SocialNetworkBox = () => {
           <input type="text" name="name" placeholder="" required />
         </div>
 
-        {/* <!-- Input --> */}
-        <div className="form-group col-lg-6 col-md-12">
-          <label>Google Plus</label>
-          <input type="text" name="name" placeholder="" required />
-        </div>
 
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">

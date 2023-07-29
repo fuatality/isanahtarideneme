@@ -7,9 +7,9 @@ const JobFeatured11 = () => {
     <>
       <div className="tab-buttons-wrap">
         <ul className="tab-buttons -pills-condensed -blue">
-          <li className="tab-btn">Feature</li>
-          <li className="tab-btn active-btn">Urgent</li>
-          <li className="tab-btn">Private</li>
+          <li className="tab-btn">Öne Çıkarılan</li>
+          <li className="tab-btn active-btn">Aci</li>
+          <li className="tab-btn">Özel</li>
         </ul>
       </div>
       {/* <!--Tabs Box--> */}
@@ -26,7 +26,7 @@ const JobFeatured11 = () => {
                   <img src={item.logo} alt="item brand" />
                 </span>
                 <h4>
-                  <Link href={`/job-single-v5/${item.id}`}>
+                  <Link href={`/job-single-v3/${item.id}`}>
                     {item.jobTitle}
                   </Link>
                 </h4>

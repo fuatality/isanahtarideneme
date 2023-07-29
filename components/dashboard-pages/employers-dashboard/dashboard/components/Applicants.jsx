@@ -43,7 +43,7 @@ const Applicants = () => {
             <div className="option-box">
               <ul className="option-list">
                 <li>
-                  <button data-text="View Aplication">
+                  <button data-text="Görüntüle">
                     <span className="la la-eye"></span>
                   </button>
                 </li>

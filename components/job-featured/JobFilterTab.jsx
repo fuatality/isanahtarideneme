@@ -60,7 +60,7 @@ const JobFilterTab = () => {
                         <img src={item.logo} alt="item brand" />
                       </span>
                       <h4>
-                        <Link href={`/job-single-v5/${item.id}`}>
+                        <Link href={`/job-single-v3/${item.id}`}>
                           {item.jobTitle}
                         </Link>
                       </h4>
@@ -81,11 +81,6 @@ const JobFilterTab = () => {
                           {item.time}
                         </li>
                         {/* time info */}
-                        <li>
-                          <span className="icon flaticon-money"></span>{" "}
-                          {item.salary}
-                        </li>
-                        {/* salary info */}
                       </ul>
                       {/* End .job-info */}
 
@@ -122,7 +117,7 @@ const JobFilterTab = () => {
                         <img src={item.logo} alt="item brand" />
                       </span>
                       <h4>
-                        <Link href={`/job-single-v5/${item.id}`}>
+                        <Link href={`/job-single-v3/${item.id}`}>
                           {item.jobTitle}
                         </Link>
                       </h4>
@@ -143,11 +138,6 @@ const JobFilterTab = () => {
                           {item.time}
                         </li>
                         {/* time info */}
-                        <li>
-                          <span className="icon flaticon-money"></span>{" "}
-                          {item.salary}
-                        </li>
-                        {/* salary info */}
                       </ul>
                       {/* End .job-info */}
 
@@ -184,7 +174,7 @@ const JobFilterTab = () => {
                         <img src={item.logo} alt="item brand" />
                       </span>
                       <h4>
-                        <Link href={`/job-single-v5/${item.id}`}>
+                        <Link href={`/job-single-v3/${item.id}`}>
                           {item.jobTitle}
                         </Link>
                       </h4>
@@ -205,11 +195,7 @@ const JobFilterTab = () => {
                           {item.time}
                         </li>
                         {/* time info */}
-                        <li>
-                          <span className="icon flaticon-money"></span>{" "}
-                          {item.salary}
-                        </li>
-                        {/* salary info */}
+
                       </ul>
                       {/* End .job-info */}
 
@@ -246,7 +232,7 @@ const JobFilterTab = () => {
                         <img src={item.logo} alt="item brand" />
                       </span>
                       <h4>
-                        <Link href={`/job-single-v5/${item.id}`}>
+                        <Link href={`/job-single-v3/${item.id}`}>
                           {item.jobTitle}
                         </Link>
                       </h4>
@@ -267,11 +253,7 @@ const JobFilterTab = () => {
                           {item.time}
                         </li>
                         {/* time info */}
-                        <li>
-                          <span className="icon flaticon-money"></span>{" "}
-                          {item.salary}
-                        </li>
-                        {/* salary info */}
+
                       </ul>
                       {/* End .job-info */}
 
@@ -308,7 +290,7 @@ const JobFilterTab = () => {
                         <img src={item.logo} alt="item brand" />
                       </span>
                       <h4>
-                        <Link href={`/job-single-v5/${item.id}`}>
+                        <Link href={`/job-single-v3/${item.id}`}>
                           {item.jobTitle}
                         </Link>
                       </h4>
@@ -329,11 +311,6 @@ const JobFilterTab = () => {
                           {item.time}
                         </li>
                         {/* time info */}
-                        <li>
-                          <span className="icon flaticon-money"></span>{" "}
-                          {item.salary}
-                        </li>
-                        {/* salary info */}
                       </ul>
                       {/* End .job-info */}
 

@@ -26,10 +26,6 @@ const Applicants = () => {
                   <span className="icon flaticon-map-locator"></span>{" "}
                   {candidate.location}
                 </li>
-                <li>
-                  <span className="icon flaticon-money"></span> $
-                  {candidate.hourlyRate} / saat
-                </li>
               </ul>
               {/* End candidate-info */}
 
@@ -46,22 +42,22 @@ const Applicants = () => {
             <div className="option-box">
               <ul className="option-list">
                 <li>
-                  <button data-text="View Aplication">
+                  <button data-text="Görüntüle">
                     <span className="la la-eye"></span>
                   </button>
                 </li>
                 <li>
-                  <button data-text="Approve Aplication">
+                  <button data-text="Onayla">
                     <span className="la la-check"></span>
                   </button>
                 </li>
                 <li>
-                  <button data-text="Reject Aplication">
+                  <button data-text="Reddet">
                     <span className="la la-times-circle"></span>
                   </button>
                 </li>
                 <li>
-                  <button data-text="Delete Aplication">
+                  <button data-text="Sil">
                     <span className="la la-trash"></span>
                   </button>
                 </li>

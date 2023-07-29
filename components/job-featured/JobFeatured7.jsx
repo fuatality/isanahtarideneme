@@ -12,7 +12,7 @@ const JobFeatured7 = () => {
                 <img src={item.logo} alt="item brand" />
               </span>
               <h4>
-                <Link href={`/job-single-v5/${item.id}`}>{item.jobTitle}</Link>
+                <Link href={`/job-single-v3/${item.id}`}>{item.jobTitle}</Link>
               </h4>
               <ul className="job-info">
                 <li>
@@ -29,10 +29,7 @@ const JobFeatured7 = () => {
                   <span className="icon flaticon-clock-3"></span> {item.time}
                 </li>
                 {/* time info */}
-                <li>
-                  <span className="icon flaticon-money"></span> {item.salary}
-                </li>
-                {/* salary info */}
+
               </ul>
               {/* End .job-info */}
             </div>
@@ -44,10 +41,10 @@ const JobFeatured7 = () => {
               ))}
             </ul>
             <Link
-              href={`/job-single-v5/${item.id}`}
+              href={`/job-single-v3/${item.id}`}
               className="theme-btn btn-style-eight"
             >
-              Apply Job
+              Başvur
             </Link>
           </div>
         </div>

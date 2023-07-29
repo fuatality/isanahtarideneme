@@ -1,11 +1,11 @@
 const ListingShowing = () => {
   return (
     <div className="ls-show-more">
-      <p>Showing 36 of 497 Jobs</p>
+      <p>497 işten 36'sı gösteriliyor.</p>
       <div className="bar">
         <span className="bar-inner" style={{ width: "40%" }}></span>
       </div>
-      <button className="show-more">Show More</button>
+      <button className="show-more">Daha Fazla Göster</button>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import CandidatesListV1 from "../components/candidates-listing-pages/candidates-
 const index = () => {
     return (
         <>
-            <Seo pageTitle="Candidates List V1" />
+            <Seo pageTitle="Aday Listesi" />
             <CandidatesListV1 />
         </>
     );

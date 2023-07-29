@@ -82,11 +82,6 @@ const JobFeatured9 = () => {
                                         {item.time}
                                     </li>
                                     {/* time info */}
-                                    <li>
-                                        <span className="icon flaticon-money"></span>{" "}
-                                        {item.salary}
-                                    </li>
-                                    {/* salary info */}
                                 </ul>
                                 {/* End .job-info */}
                             </div>
@@ -98,7 +93,7 @@ const JobFeatured9 = () => {
                                 ))}
                             </ul>
                             <a href="#" className="theme-btn btn-dark-blue">
-                                Apply Job
+                                Başvur
                             </a>
                         </div>
                     </div>

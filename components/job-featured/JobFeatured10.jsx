@@ -7,13 +7,13 @@ const JobFeatured10 = () => {
       <div className="tab-buttons-wrap">
         <ul className="tab-buttons -pills-condensed">
           <li className="tab-btn" data-tab="#tab1">
-            Popular
+            Popüler
           </li>
           <li className="tab-btn active-btn" data-tab="#tab2">
-            Recent
+            En Son
           </li>
           <li className="tab-btn" data-tab="#tab3">
-            Featured
+            Öne Çıkarılan
           </li>
         </ul>
       </div>
@@ -28,7 +28,7 @@ const JobFeatured10 = () => {
                   <img src={item.logo} alt="item brand" />
                 </span>
                 <h4>
-                  <Link href={`/job-single-v1/${item.id}`}>
+                  <Link href={`/job-single-v3/${item.id}`}>
                     {item.jobTitle}
                   </Link>
                 </h4>
@@ -48,10 +48,6 @@ const JobFeatured10 = () => {
                     <span className="icon flaticon-clock-3"></span> {item.time}
                   </li>
                   {/* time info */}
-                  <li>
-                    <span className="icon flaticon-money"></span> {item.salary}
-                  </li>
-                  {/* salary info */}
                 </ul>
                 {/* End .job-info */}
 
