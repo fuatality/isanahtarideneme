@@ -8,20 +8,20 @@ const SidebarFooter = () => {
 
   return (
     <div className="mm-add-listing mm-listitem pro-footer">
-      <a href="#" className="theme-btn btn-style-one mm-listitem__text">
-        Job Post
+      <a href="/login" className="theme-btn btn-style-four mm-listitem__text">
+        Giriş Yap / Üye Ol
       </a>
       {/* job post btn */}
 
       <div className="mm-listitem__text">
         <div className="contact-info">
           <span className="phone-num">
-            <span>Call us</span>
+            <span>Bize Ulaşın</span>
             <a href="tel:1234567890">123 456 7890</a>
           </span>
           <span className="address">
-            329 Queensberry Street, North Melbourne VIC <br />
-            3051, Australia.
+          Atatürk Mahallesi, Ataşehir Bulvarı
+Ataşehir, İstanbul.
           </span>
           <a href="mailto:support@cgd.com" className="email">
             support@cgd.com
