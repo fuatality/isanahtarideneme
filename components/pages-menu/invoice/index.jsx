@@ -46,12 +46,12 @@ const index = () => {
               <ul className="bottom-links">
                 <li>
                   <a
-                    href="http://cgd.com.tr"
+                    href="http://unicorn.com.tr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="link"
                   >
-                    cgd.com.tr
+                    unicorn.com.tr
                   </a>
                 </li>
                 <li>

@@ -162,7 +162,7 @@ const PostBoxForm = () => {
           <input
             type="text"
             name="name"
-            placeholder="Ataşehir Bulvarı, Ataşehir, İstanbul/Türkiye"
+            placeholder="Ataşehir, İstanbul/Türkiye"
           />
         </div>
 
@@ -172,7 +172,7 @@ const PostBoxForm = () => {
           <input
             type="text"
             name="name"
-            placeholder="Ataşehir Bulvarı, Ataşehir, İstanbul/Türkiye"
+            placeholder="Ataşehir, İstanbul/Türkiye"
           />
         </div>
 

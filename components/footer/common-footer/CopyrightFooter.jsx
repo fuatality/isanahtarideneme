@@ -13,11 +13,11 @@ const CopyrightFooter = () => {
           <div className="copyright-text">
             © {new Date().getFullYear()} İş Anahtarı, Created by{" "}
             <a
-              href="http://cgd.com.tr"
+              href="http://unicorn.com.tr"
               target="_blank"
               rel="noopener noreferrer"
             >
-              CGD ve İnsan Kaynakları
+              Unicorn
             </a>
             . All rights reserved.
           </div>

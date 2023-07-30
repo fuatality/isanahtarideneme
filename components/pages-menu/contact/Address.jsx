@@ -6,8 +6,7 @@ const Address = () => {
       title: "Adres",
       text: (
         <>
-          Atatürk Mahallesi, Ataşehir Bulvarı
-          <br /> Ataşehir, İstanbul.
+           Ataşehir, İstanbul.
         </>
       ),
     },
@@ -30,7 +29,7 @@ const Address = () => {
       text: (
         <>
           {" "}
-          <a href="#">cgd@yandex.com</a>
+          <a href="#">unicorn@yandex.com</a>
         </>
       ),
     },

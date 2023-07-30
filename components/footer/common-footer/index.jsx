@@ -21,7 +21,7 @@ const index = ({ footerStyle = "" }) => {
                   <a href="thebeehost@support.com">123 456 7890</a>
                 </p>
                 <p className="address">
-                  Ataşehir Bulvarı, Ataşehir, Istanbul
+                  Ataşehir, Istanbul
                   <br /> 34000, Türkiye. <br />
                   <a href="mailto:help@isanahtari.com" className="email">
                     help@isanahtari.com

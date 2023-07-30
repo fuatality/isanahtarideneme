@@ -33,7 +33,7 @@ const LanguageBox = ({ boxId, index }) => {
           <input
             type="text"
             name="name"
-            placeholder="Ataşehir Bulvarı, Ataşehir, İstanbul/Türkiye."
+            placeholder="Ataşehir, İstanbul/Türkiye."
             required
           />
         </div>*/}

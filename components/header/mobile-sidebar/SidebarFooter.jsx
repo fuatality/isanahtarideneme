@@ -47,11 +47,10 @@ const SidebarFooter = () => {
             <a href="tel:1234567890">123 456 7890</a>
           </span>
           <span className="address">
-          Atatürk Mahallesi, Ataşehir Bulvarı
-Ataşehir, İstanbul.
+          Ataşehir, İstanbul.
           </span>
-          <a href="mailto:support@cgd.com" className="email">
-            support@cgd.com
+          <a href="mailto:support@unicorn.com" className="email">
+            support@unicorn.com
           </a>
         </div>
         {/* End .contact-info */}

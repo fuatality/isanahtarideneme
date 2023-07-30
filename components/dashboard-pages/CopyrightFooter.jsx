@@ -4,11 +4,11 @@ const CopyrightFooter = () => {
       <p>
         © {new Date().getFullYear()} Created by{" "}
         <a
-          href="http://cgd.com.tr"
+          href="http://unicorn.com.tr"
           target="_blank"
           rel="noopener noreferrer"
         >
-          CGD ve İnsan Kaynakları
+          Unicorn
         </a>
         . Bütün Hakları Saklıdır.
       </p>
