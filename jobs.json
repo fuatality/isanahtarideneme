@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "jobTitle": "PHP Developer",
+    "description": "Developer",
+    "email": "fuat.ozturk@ozu.edu.tr",
+    "company": "Laravel",
+    "skills": [
+      {
+        "value": "Digital & Creative",
+        "label": "Digital & Creative"
+      }
+    ],
+    "jobType": "Hibrit",
+    "experience": "2-5 yıl",
+    "industry": "Digital & Creative",
+    "applicationDeadline": "2023-08-09",
+    "country": "Azerbaycan",
+    "city": "Bakü",
+    "address": "",
+    "type": ""
+  },
+  {
+    "id": 2,
+    "jobTitle": "PHP Developer",
+    "description": "Developer",
+    "email": "fuat.ozturk@ozu.edu.tr",
+    "company": "Laravel",
+    "skills": [
+      {
+        "value": "Digital & Creative",
+        "label": "Digital & Creative"
+      }
+    ],
+    "jobType": "Hibrit",
+    "experience": "2-5 yıl",
+    "industry": "Digital & Creative",
+    "applicationDeadline": "2023-08-09",
+    "country": "Azerbaycan",
+    "city": "Bakü",
+    "address": "",
+    "type": ""
+  },
+  {
+    "id": 3,
+    "jobTitle": "PHP Developer",
+    "description": "Developer",
+    "email": "fuat.ozturk@ozu.edu.tr",
+    "company": "CGD",
+    "skills": [
+      {
+        "value": "Digital & Creative",
+        "label": "Digital & Creative"
+      }
+    ],
+    "jobType": "Hibrit",
+    "experience": "5-10 yıl",
+    "industry": "Digital & Creative",
+    "applicationDeadline": "2023-07-27",
+    "country": "Azerbaycan",
+    "city": "Bakü",
+    "address": "",
+    "type": "Öne Çıkarılan"
+  },
+  {
+    "id": 4,
+    "jobTitle": "HR Specialist",
+    "description": "İnsan Kaynakları",
+    "email": "fuat.ozturk@ozu.edu.tr",
+    "company": "CGD",
+    "skills": [
+      {
+        "value": "Human Resources",
+        "label": "Human Resources"
+      }
+    ],
+    "jobType": "Yüz yüze",
+    "experience": "0-1 yıl",
+    "industry": "Human Resources",
+    "applicationDeadline": "2023-08-03",
+    "country": "Türkiye",
+    "city": "İstanbul",
+    "address": "",
+    "type": "Öne Çıkarılan"
+  },
+  {
+    "id": 5,
+    "jobTitle": "Data Scientist",
+    "description": "Data",
+    "email": "fuat.ozturk@ozu.edu.tr",
+    "company": "CGD",
+    "skills": [
+      {
+        "value": "Digital",
+        "label": "Digital"
+      }
+    ],
+    "jobType": "Hibrit",
+    "experience": "2-5 yıl",
+    "industry": "Management",
+    "applicationDeadline": "2023-09-07",
+    "country": "",
+    "city": "İzmir",
+    "address": "",
+    "type": "Öne Çıkarılan"
+  }
+]

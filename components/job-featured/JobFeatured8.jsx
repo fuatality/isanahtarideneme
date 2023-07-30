@@ -1,19 +1,30 @@
-import Link from "next/link";
-import jobFeatured from "../../data/job-featured";
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import axios from 'axios';
 
 const JobFeatured8 = () => {
+  const [jobs, setJobs] = useState([]);
+
+  useEffect(() => {
+    axios.get('/api/getJobs')
+      .then(response => {
+        setJobs(response.data);
+      })
+      .catch(error => {
+        console.error('An error occurred while fetching the jobs:', error);
+      });
+  }, []);
+
   return (
     <>
-      {jobFeatured.slice(0, 8).map((item) => (
+      {jobs
+        .filter((item) => item.type === 'Öne Çıkarılan') // Filter jobs by type "Öne Çıkarılan"
+        .reverse()
+        .map((item) => (
         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12" key={item.id}>
           <div className="job-block -type-2">
             <div className="inner-box">
-              <div className="inner-header">
-                <div className="icon-wrap">
-                  <div className={`icon ${item.jobCatIcon}`}></div>
-                </div>
-                <div className="title">{item.jobCat}</div>
-              </div>
+              
 
               <div className="inner-content">
                 <h4>
@@ -24,19 +35,20 @@ const JobFeatured8 = () => {
                 <ul className="job-other-info">
                   <li className="privacy">
                     <span className="icon fa fa-map-marker-alt pe-1"></span>
-                    İstanbul, Türkiye
+                    {item.city}, {item.country}
                   </li>
-                  <li className="time">Tam Zamanlı</li>
+                  <li className="time">(<bold>{item.jobType}</bold>)</li>
+                  <li className="time">{item.industry}</li>
                 </ul>
               </div>
 
               <div className="inner-footer">
                 <div className="content">
-                  <div className="days">3 gün önce</div>
+                  <div className="days">{item.applicationDeadline}</div>
                   <div className="company-name">{item.company}</div>
                 </div>
                 <span className="company-logo">
-                  <img src={item.logo} alt="company brand" />
+                  <img src="images/logo.png" alt="company brand" />
                 </span>
               </div>
             </div>

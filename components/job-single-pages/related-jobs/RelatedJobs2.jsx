@@ -1,24 +1,30 @@
-import Link from "next/link";
-import jobs from "../../../data/job-featured";
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import axios from 'axios';
 
 const RelatedJobs2 = () => {
+  const [jobs, setJobs] = useState([]);
+
+  useEffect(() => {
+    axios.get('/api/getJobs')
+      .then(response => {
+        setJobs(response.data);
+      })
+      .catch(error => {
+        console.error('An error occurred while fetching the jobs:', error);
+      });
+  }, []);
+
   return (
     <>
-      {jobs.slice(20, 24).map((item) => (
+      {jobs.slice(-4).map((item) => (
         <div
           className="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
           key={item.id}
         >
           <div className="inner-box">
-            <ul className="job-other-info">
-              {item.jobType.map((val, i) => (
-                <li key={i} className={`${val.styleClass}`}>
-                  {val.type}
-                </li>
-              ))}
-            </ul>
             <span className="company-logo">
-              <img src={item.logo} alt="featured job" />
+              <img src="/images/logo.png" alt="featured job" />
             </span>
             <span className="company-name">{item.company}</span>
             <h4>
@@ -26,7 +32,7 @@ const RelatedJobs2 = () => {
             </h4>
             <div className="location">
               <span className="icon flaticon-map-locator"></span>
-              {item.location}
+              {item.city}, {item.country}
             </div>
           </div>
         </div>
