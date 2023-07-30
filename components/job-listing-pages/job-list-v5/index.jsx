@@ -28,7 +28,7 @@ const index = () => {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <SearchForm btnStyle="btn-style-two" />
+            <JobSearchForm />
           </div>
       </section>
       {/* <!--End Page Title--> */}

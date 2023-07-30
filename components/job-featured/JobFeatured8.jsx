@@ -33,6 +33,7 @@ const JobFeatured8 = () => {
                   </Link>
                 </h4>
                 <ul className="job-other-info">
+                <li className="time">{item.title}</li>
                   <li className="privacy">
                     <span className="icon fa fa-map-marker-alt pe-1"></span>
                     {item.city}, {item.country}

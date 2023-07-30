@@ -1,23 +1,12 @@
-import Select from "react-select";
 import axios from 'axios'; // Importing axios
 import { useState } from 'react'; // Importing useState
 
 const PostBoxForm = () => {
-  const specialisms = [
-    { value: "Banking", label: "Banking" },
-    { value: "Digital & Creative", label: "Digital & Creative" },
-    { value: "Retail", label: "Retail" },
-    { value: "Human Resources", label: "Human Resources" },
-    { value: "Managemnet", label: "Managemnet" },
-    { value: "Accounting & Finance", label: "Accounting & Finance" },
-    { value: "Digital", label: "Digital" },
-    { value: "Creative Art", label: "Creative Art" },
-  ];
+  
   const [jobTitle, setJobTitle] = useState('');
   const [description, setDescription] = useState('');
   const [email, setEmail] = useState('');
   const [company, setCompany] = useState('');
-  const [skills, setSkills] = useState([]);
   const [jobType, setJobType] = useState('');
   const [experience, setExperience] = useState('');
   const [industry, setIndustry] = useState('');
@@ -26,8 +15,11 @@ const PostBoxForm = () => {
   const [city, setCity] = useState('');
   const [address, setAddress] = useState('');
   const [type, setType] = useState('');
+  const [title, setTitle] = useState('');
   const [successMessage, setSuccessMessage] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
+  const currentTime = new Date().toISOString();
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,7 +28,6 @@ const PostBoxForm = () => {
       description,
       email,
       company,
-      skills,
       jobType,
       experience,
       industry,
@@ -44,7 +35,9 @@ const PostBoxForm = () => {
       country,
       city,
       address,
-      type
+      type,
+      title,
+      submissionTime: currentTime
       // ... other fields ...
     };
     try {
@@ -83,6 +76,11 @@ const PostBoxForm = () => {
           <textarea placeholder="" value={description} onChange={e => setDescription(e.target.value)}></textarea>
         </div>
 
+        <div className="form-group col-lg-12 col-md-12">
+          <label>Ünvan</label>
+          <input type="text" name="name" placeholder="" value={title} onChange={e => setTitle(e.target.value)}/>
+        </div>
+
         {/* <!-- Input --> */}
         <div className="form-group col-lg-6 col-md-12">
           <label>E-mail Adresi</label>
@@ -95,20 +93,6 @@ const PostBoxForm = () => {
           <input type="text" name="name" placeholder="" value={company} onChange={e => setCompany(e.target.value)}/>
         </div>
 
-        {/* <!-- Search Select --> */}
-        <div className="form-group col-lg-6 col-md-12">
-          <label>Aranılan Yetenek </label>
-          <Select
-            defaultValue={[specialisms[2]]}
-            isMulti
-            name="colors"
-            options={specialisms}
-            className="basic-multi-select"
-            classNamePrefix="select"
-            value={skills}
-            onChange={selectedOptions => setSkills(selectedOptions)}
-          />
-        </div>
 
         <div className="form-group col-lg-6 col-md-12">
           <label>İş Türü</label>
@@ -138,11 +122,10 @@ const PostBoxForm = () => {
           <label>Endüstri</label>
           <select className="chosen-single form-select" value={industry}
             onChange={e => setIndustry(e.target.value)}>
-            <option>Banking</option>
-            <option>Digital & Creative</option>
-            <option>Retail</option>
-            <option>Human Resources</option>
-            <option>Management</option>
+            <option>Yazılım & IT</option>
+            <option>İnsan Kaynakları</option>
+            <option>Pazarlama</option>
+            <option>Muhasebe</option>
           </select>
         </div>
 
