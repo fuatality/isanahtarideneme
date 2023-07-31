@@ -7,7 +7,7 @@ const CopyrightFooter = () => {
         <div className="outer-box">
         <div className="logo">
                   <a href="#" >
-                    <img src="/images/logo.png" alt="brand" width="75px" height="75px"/>
+                    <img src="/images/logo.svg" alt="brand" width="75px" height="75px"/>
                   </a>
                 </div>
           <div className="copyright-text">

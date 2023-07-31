@@ -49,7 +49,7 @@ const JobFeatured8 = () => {
                   <div className="company-name">{item.company}</div>
                 </div>
                 <span className="company-logo">
-                  <img src="images/logo.png" alt="company brand" />
+                  <img src="images/logo.svg" alt="company brand" />
                 </span>
               </div>
             </div>

@@ -53,7 +53,7 @@ const JobFilterTab2 = () => {
                                           <div className="content">
                                               <span className="company-logo">
                                                   <img
-                                                      src="images/logo.png"
+                                                      src="images/logo.svg"
                                                       alt="item brand"
                                                   />
                                               </span>

@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Seo from "../../components/common/Seo";
 import DefaulHeader2 from "../../components/header/DefaulHeader2";
-import { useSelector } from 'react-redux'; // <-- Add this line
+import { useSelector } from 'react-redux'; 
 import DashboardCandidatesHeader from "../../components/header/DashboardCandidatesHeader";
 import DashboardHeader from "../../components/header/DashboardHeader";
 

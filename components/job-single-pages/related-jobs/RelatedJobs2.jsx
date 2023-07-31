@@ -24,7 +24,7 @@ const RelatedJobs2 = () => {
         >
           <div className="inner-box">
             <span className="company-logo">
-              <img src="/images/logo.png" alt="featured job" />
+              <img src="/images/logo.svg" alt="featured job" />
             </span>
             <span className="company-name">{item.company}</span>
             <h4>

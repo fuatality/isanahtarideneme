@@ -52,7 +52,7 @@ const DashboardHeader = () => {
                         <div className="logo-box">
                             <div className="logo">
                                 <Link href="/">
-                                    <Image alt="brand" src="/images/logo.png" width={50} height={50} priority />
+                                    <Image alt="brand" src="/images/logo.svg" width={50} height={50} priority />
                                 </Link>
                             </div>
                         </div>

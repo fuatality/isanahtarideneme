@@ -33,9 +33,9 @@ const Header = () => {
           <div className="logo-box">
             <div className="logo">
               <Link href="/">
-                <img src="/images/logo.png" alt="brand" height="100px" width="100px"/>
+                <img src="/images/logo.svg" alt="brand" height="100px" width="100px"/>
               </Link>
-              <text>İş Anahtarı</text>
+              
             </div>
           </div>
           {/* End .logo-box */}

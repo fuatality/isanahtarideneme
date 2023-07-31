@@ -4,8 +4,8 @@ const SidebarHeader = () => {
   return (
     <div className="pro-header">
       <Link href="/">
-        <img src="/images/logo.png" alt="brand" />
-        <text>İş Anahtarı</text>
+        <img src="/images/logo.svg" alt="brand" height="100px" width="100px"/>
+        
       </Link>
       {/* End logo */}
 
