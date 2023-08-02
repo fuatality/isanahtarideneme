@@ -1,122 +1,93 @@
-import Select from "react-select";
+import axios from 'axios';
+import React from 'react';
+import Select from 'react-select';
 
 const FormInfoBox = () => {
-    const catOptions = [
-        { value: "Banking", label: "Banking" },
-        { value: "Digital & Creative", label: "Digital & Creative" },
-        { value: "Retail", label: "Retail" },
-        { value: "Human Resources", label: "Human Resources" },
-        { value: "Managemnet", label: "Managemnet" },
-        { value: "Accounting & Finance", label: "Accounting & Finance" },
-        { value: "Digital", label: "Digital" },
-        { value: "Creative Art", label: "Creative Art" },
-    ];
+  const [logoPreview, setLogoPreview] = React.useState(null);
+  const [coverImagePreview, setCoverImagePreview] = React.useState(null);
 
-    return (
-        <form className="default-form">
-            <div className="row">
+  const handleImageChange = (e, setPreview) => {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setPreview(reader.result);
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append('name', e.target.name.value);
+    formData.append('industry', e.target.industry.value);
+    formData.append('country', e.target.country.value);
+    formData.append('city', e.target.city.value);
+    formData.append('address', e.target.address.value);
+    formData.append('website', e.target.website.value);
+    formData.append('logo', e.target.logo.files[0]);
+    formData.append('coverImage', e.target.coverImage.files[0]);
+
+    axios.post('/companies', formData, {
+        headers: { 'Content-Type': 'multipart/form-data' }
+    })
+    .then((response) => {
+      alert('Employer created successfully!');
+    })
+    .catch((error) => {
+      alert('Error creating employer. Please check the entered details.');
+    });
+  };
+
+  return (
+    <form className="default-form" onSubmit={handleSubmit}>
+      <div className="row">
+        {/* Existing fields here */}
+        <div className="form-group col-lg-6 col-md-12">
+          <label>Logo</label>
+          <input type="file" name="logo" accept="image/*" onChange={(e) => handleImageChange(e, setLogoPreview)} required />
+          {logoPreview && <img src={logoPreview} alt="Logo Preview" />}
+        </div>
+        <div className="form-group col-lg-6 col-md-12">
+          <label>Cover Image</label>
+          <input type="file" name="coverImage" accept="image/*" onChange={(e) => handleImageChange(e, setCoverImagePreview)} required />
+          {coverImagePreview && <img src={coverImagePreview} alt="Cover Image Preview" />}
+        </div>
+      <div className="form-group col-lg-6 col-md-12">
+        <label>Şirket Adı</label>
+        <input type="text" name="name" placeholder="Employer Name" required />
+      </div>
+      <div className="form-group col-lg-6 col-md-12">
+        <label>Endüstri</label>
+        <input type="text" name="industry" placeholder="Industry" required />
+      </div>
+
+      <div className="form-group col-lg-6 col-md-12">
+        <label>Ülke</label>
+        <input type="text" name="country" placeholder="Ülke" required />
+      </div>
                 {/* <!-- Input --> */}
-                <div className="form-group col-lg-6 col-md-12">
-                    <label>Şirket Adı</label>
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="İş Anahtarı"
-                        required
-                    />
-                </div>
-
-                {/* <!-- Input --> */}
-                <div className="form-group col-lg-6 col-md-12">
-                    <label>E-mail Adresi</label>
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="help@isanahtari.com"
-                        required
-                    />
-                </div>
-
-                {/* <!-- Input --> */}
-                <div className="form-group col-lg-6 col-md-12">
-                    <label>Telefon Numarası</label>
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="0 123 456 7890"
-                        required
-                    />
-                </div>
-
-                {/* <!-- Input --> */}
-                <div className="form-group col-lg-6 col-md-12">
-                    <label>Websitesi</label>
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="www.isanahtari.com"
-                        required
-                    />
-                </div>
-
-                {/* <!-- Input --> */}
-                <div className="form-group col-lg-6 col-md-12">
-                    <label>Kuruluş Tarihi</label>
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="06.04.2020"
-                        required
-                    />
-                </div>
-
-                {/* <!-- Input --> */}
-                <div className="form-group col-lg-6 col-md-12">
-                    <label>Şirket Çalışan Sayısı</label>
-                    <select className="chosen-single form-select" required>
-                        <option>50 - 100</option>
-                        <option>100 - 150</option>
-                        <option>200 - 250</option>
-                        <option>300 - 350</option>
-                        <option>500 - 1000</option>
-                    </select>
-                </div>
-
-                {/* <!-- Search Select --> */}
-                <div className="form-group col-lg-6 col-md-12">
-                    <label>Şirket Endüstri</label>
-                    <Select
-                        defaultValue={[catOptions[2]]}
-                        isMulti
-                        name="colors"
-                        options={catOptions}
-                        className="basic-multi-select"
-                        classNamePrefix="select"
-                    />
-                </div>
+      <div className="form-group col-lg-6 col-md-12">
+        <label>Şehir</label>
+        <input type="text" name="city" placeholder="Şehir" required />
+      </div>
 
                 {/* <!-- Input --> */}
-                <div className="form-group col-lg-6 col-md-12">
-                    <label>Akışta Şirketi Göster</label>
-                    <select className="chosen-single form-select">
-                        <option>Evet</option>
-                        <option>Hayır</option>
-                    </select>
-                </div>
-
-                {/* <!-- About Company --> */}
-                <div className="form-group col-lg-12 col-md-12">
-                    <label>Şirket Hakkında</label>
-                    <textarea placeholder=""></textarea>
-                </div>
-
-                {/* <!-- Input --> */}
-                <div className="form-group col-lg-6 col-md-12">
-                    <button className="theme-btn btn-style-one">Kaydet</button>
-                </div>
-            </div>
-        </form>
-    );
+      <div className="form-group col-lg-6 col-md-12">
+            <label>Açık Adres</label>
+            <input type="text" name="address" placeholder="Açık Adres" required />
+      </div>
+      <div className="form-group col-lg-6 col-md-12">
+        <label>Websitesi</label>
+        <input type="text" name="website" placeholder="Website" required />
+      </div>
+      
+    </div>
+    <div className="form-group col-lg-6 col-md-12">
+        <button type="submit" className="theme-btn btn-style-one">Şirket Yarat</button>
+      </div>
+    </form>
+  );
 };
 
 export default FormInfoBox;

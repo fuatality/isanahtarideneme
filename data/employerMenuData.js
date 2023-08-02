@@ -90,4 +90,11 @@ module.exports = [
     routePath: "/",
     active: "",
   },
+  {
+    id: 14,  // New ID, ensure it's unique
+    name: "Şirketleri Düzenle",
+    icon: "la-building",
+    routePath: "/employers-dashboard/manage-company",
+    active: "",
+  },
 ];
