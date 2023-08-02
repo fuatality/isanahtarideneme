@@ -91,21 +91,20 @@ const FormContent = () => {
 
     try {
       const response = await axios.post("/api/register", formData);
-      const data = response.data;
-      const token = data.token;
-      const userRole = data.userRole; // Extract the user role from the response data
-      Cookies.set('jwt', token);
-      Cookies.set('userRole', userRole); // Save the user's role in a cookie
+      const { token, role } = response.data;
 
-      dispatch(setRole(userRole));
+    // Set the token and role in cookies
+    Cookies.set('token', token);
+    Cookies.set('role', role);
 
+    // Dispatch the role to the Redux store
+    dispatch(setRole(role));
       // Handle successful registration
-      console.log(data);
-      
+      console.log(data);     
       router.push('/candidates-dashboard/dashboard');
     } catch (error) {
-      // Handle error
-      console.log(error);
+      const errorMessage = error.response?.data?.error || 'An error occurred while registering';
+      setError(errorMessage);
     }
   };
 
