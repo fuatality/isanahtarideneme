@@ -1,19 +1,19 @@
-import dynamic from "next/dynamic";
-import employersInfo from "../../data/topCompany";
-import FooterDefault from "../../components/footer/common-footer";
-import DefaultHeader2 from "../../components/header/DefaulHeader2";
-import MobileMenu from "../../components/header/MobileMenu";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import Seo from "../../components/common/Seo";
-import JobDetailsDescriptions from "../../components/employer-single-pages/shared-components/JobDetailsDescriptions";
-import RelatedJobs from "../../components/employer-single-pages/related-jobs/RelatedJobs";
-import MapJobFinder from "../../components/job-listing-pages/components/MapJobFinder";
-import Social from "../../components/employer-single-pages/social/Social";
-import PrivateMessageBox from "../../components/employer-single-pages/shared-components/PrivateMessageBox";
+import axios from 'axios';
+import dynamic from 'next/dynamic';
+import FooterDefault from '../../components/footer/common-footer';
+import DefaultHeader2 from '../../components/header/DefaulHeader2';
+import MobileMenu from '../../components/header/MobileMenu';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import Seo from '../../components/common/Seo';
+import JobDetailsDescriptions from '../../components/employer-single-pages/shared-components/JobDetailsDescriptions';
+import RelatedJobs from '../../components/employer-single-pages/related-jobs/RelatedJobs';
+import MapJobFinder from '../../components/job-listing-pages/components/MapJobFinder';
+import Social from '../../components/employer-single-pages/social/Social';
+import PrivateMessageBox from '../../components/employer-single-pages/shared-components/PrivateMessageBox';
 import { useSelector } from 'react-redux';
-import DashboardCandidatesHeader from "../../components/header/DashboardCandidatesHeader";
-import DashboardHeader from "../../components/header/DashboardHeader";
+import DashboardCandidatesHeader from '../../components/header/DashboardCandidatesHeader';
+import DashboardHeader from '../../components/header/DashboardHeader';
 
 const EmployersSingle = () => {
   const router = useRouter();
@@ -21,12 +21,16 @@ const EmployersSingle = () => {
   const id = router.query.id;
   const userRole = useSelector((state) => state.user.role);
 
-
   useEffect(() => {
-    if (!id) <h1>Loading...</h1>;
-    else setEmployersInfo(employersInfo.find((item) => item.id == id));
-
-    return () => {};
+    if (id) {
+      axios.get(`/companies/${id}`)
+        .then((response) => {
+          setEmployersInfo(response.data);
+        })
+        .catch((error) => {
+          console.error('Error fetching employer details:', error);
+        });
+    }
   }, [id]);
 
   return (
