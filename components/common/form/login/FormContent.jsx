@@ -10,8 +10,8 @@ import { setRole } from "../../../../features/user/userSlice"; // replace with a
 const FormContent = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [emailError, setEmailError] = useState(""); // Add this line
-  const [passwordError, setPasswordError] = useState(""); // Add this line
+  const [emailError, setEmailError] = useState(""); 
+  const [passwordError, setPasswordError] = useState(""); 
   const router = useRouter();
   const dispatch = useDispatch();
 
@@ -41,19 +41,17 @@ const FormContent = () => {
     }
 
     try {
-      const response = await axios.post("/api/login", { email, password });
-      const data = response.data;
-      const token = data.token;
-      const userRole = data.role;  // Extract the role from the response data
-      
-      Cookies.set('jwt', token);
-      Cookies.set('userRole', userRole);  // Save the user's role in a cookie
+      const response = await axios.post('/api/login', { email, password });
 
-      // Update the user role in the Redux store
-      dispatch(setRole(userRole));
+    // Extract the token and role from the response
+    const { token, role } = response.data;
 
-      // Handle successful login
-      console.log(data);
+    // Set the token and role in cookies
+    Cookies.set('token', token);
+    Cookies.set('role', role);
+
+    // Dispatch the role to the Redux store
+    dispatch(setRole(role));
       
       // Use router.push to redirect
       if (userRole === 'admin') {
@@ -62,8 +60,8 @@ const FormContent = () => {
         router.push('/candidates-dashboard/dashboard');
       }
     } catch (error) {
-      // Handle error
-      console.log(error);
+       const errorMessage = error.response?.data?.error || 'An error occurred while logging in';
+       setError(errorMessage);
     }
   };
 
